@@ -17,9 +17,10 @@ Die Anwendung ist als clientseitige Webanwendung strukturiert.
 - **DR-Schnittstelle:** Standardisierte JSON-Struktur, gespeichert in `/src/data/`, die PDB-ähnliche Koordinaten für jede Aminosäure repräsentiert.
 
 ### Komponentendiagramm
+Die Architektur wird durch das folgende Diagramm visualisiert:
 ![Top Architektur](./TOP_ARCHITECTURE.puml)
 
-## Wichtige technische Entscheidung: 3D-Rendering-Framework
+## Wichtige technische Entscheidung 1: 3D-Rendering-Framework
 Wir haben drei Optionen für die 3D-Visualisierung bewertet:
 
 ### 1. Three.js (Gewählt)
@@ -39,6 +40,28 @@ Ein Web-Framework zum Erstellen von VR-Erlebnissen.
 
 **Entscheidung:** Wir haben uns für **Three.js** entschieden, da es das richtige Gleichgewicht zwischen Kontrolle, Leistung und Community-Unterstützung für die molekulare Visualisierung bietet.
 
+## Wichtige technische Entscheidung 2: Zustandsmanagement
+Für die Verwaltung des Anwendungszustands (z.B. ausgewählte Aminosäure, Darstellungsmodus) wurden drei Ansätze evaluiert:
+
+### 1. React Context API (Gewählt)
+Verwendung der eingebauten Context API von React zur globalen Zustandsverwaltung.
+- **Vorteile:** Keine zusätzlichen Abhängigkeiten, einfach zu implementieren für mittlere Komplexität.
+- **Nachteile:** Performance-Einbußen bei sehr häufigen Updates in tiefen Komponentenbäumen.
+
+### 2. Redux Toolkit
+Ein mächtiges Framework für das Zustandsmanagement mit striktem Datenfluss.
+- **Vorteile:** Hervorragende Debugging-Tools (Redux DevTools), klare Trennung von Logik und UI.
+- **Nachteile:** Viel Boilerplate-Code, für diese Anwendung wahrscheinlich überdimensioniert.
+
+### 3. Zustand
+Eine kleine, schnelle und skalierbare Lösung für das Zustandsmanagement.
+- **Vorteile:** Minimalistischer API-Ansatz, sehr performant, weniger Boilerplate als Redux.
+- **Nachteile:** Eine weitere externe Abhängigkeit.
+
+**Entscheidung:** Wir haben uns für die **React Context API** entschieden, da sie für den Umfang dieses Projekts völlig ausreicht und die Anzahl der Abhängigkeiten gering hält.
+
 ## Zusammenfassung der verworfenen Alternativen
 - **Babylon.js:** Verworfen aufgrund der Bundle-Größe und Komplexität für diesen spezifischen Anwendungsfall.
 - **A-Frame:** Verworfen aufgrund der begrenzten Kontrolle über komplexes strukturelles Rendering.
+- **Redux Toolkit:** Verworfen wegen des hohen Overheads für eine relativ einfache Zustandsverwaltung.
+- **Zustand:** Verworfen, um die Anzahl der Third-Party-Bibliotheken zu minimieren, da React Context ausreicht.
