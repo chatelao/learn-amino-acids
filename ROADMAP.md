@@ -20,10 +20,10 @@
 ## Phasen
 
 ### Phase 1: Konzeption ✅
-- [x] CONCEPT.md erstellen und um wesentliche Entscheidungen erweitern (2026-06-14 11:00:00 UTC)
-- [x] DESIGN.md erstellen und technische Schnittstellen definieren (2026-06-14 11:05:00 UTC)
+- [x] CONCEPT.md erstellen und um wesentliche Entscheidungen erweitern (2026-06-14 14:45:00 UTC)
+- [x] DESIGN.md erstellen und technische Schnittstellen definieren (2026-06-14 14:46:00 UTC)
 - [x] TOP_ARCHITECTURE.puml erstellen (2026-06-14 10:30:22 UTC)
-- [x] ROADMAP.md finalisieren und an CONCEPT/DESIGN anpassen (2026-06-14 11:10:00 UTC)
+- [x] ROADMAP.md finalisieren und an CONCEPT/DESIGN anpassen (2026-06-14 14:47:00 UTC)
 
 ### Phase 2: Projekt-Setup ✅
 - [x] Repository-Struktur initialisieren (2026-06-14 10:30:22 UTC)
