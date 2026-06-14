@@ -26,19 +26,19 @@ Wir haben drei Optionen für die 3D-Visualisierung bewertet:
 ### 1. Three.js (Gewählt)
 Eine leistungsstarke und weit verbreitete Bibliothek für WebGL.
 - **Vorteile:** Hervorragende Leistung, großes Ökosystem und ideal für benutzerdefiniertes molekulares Rendering.
-- **Nachteile:** Etwas steilere Lernkurve als Abstraktionen.
+- **Nachteile:** Alle molekularen Geometrien (Atome, Bindungen) müssen manuell implementiert werden.
 
-### 2. Babylon.js
-Eine weitere leistungsstarke WebGL-Engine.
-- **Vorteile:** Umfassender Funktionsumfang und großartige Dokumentation.
-- **Nachteile:** Größere Bundle-Größe und für einfache molekulare Visualisierungen im Vergleich zu Three.js etwas überdimensioniert.
+### 2. 3Dmol.js
+Eine spezialisierte JavaScript-Bibliothek für die molekulare Visualisierung.
+- **Vorteile:** Eingebaute Unterstützung für Molekülformate und automatisches Rendering von Stick-and-Ball-Modellen.
+- **Nachteile:** Weniger flexibel für allgemeine 3D-Effekte außerhalb der Molekülvisualisierung, ältere Codebasis (basiert auf jQuery).
 
-### 3. A-Frame
-Ein Web-Framework zum Erstellen von VR-Erlebnissen.
-- **Vorteile:** Sehr einfach zu bedienen (HTML-ähnliche Syntax).
-- **Nachteile:** Weniger flexibel für die feingranulare Steuerung komplexer molekularer Geometrien und Shader-Effekte.
+### 3. MolStar
+Ein modernes, hochperformantes Toolkit für die Visualisierung großer molekularer Strukturen.
+- **Vorteile:** Extrem schnell, unterstützt sehr komplexe Szenen und modernste Rendering-Techniken.
+- **Nachteile:** Hohe Komplexität der API, für die Darstellung einfacher Aminosäuren deutlich überdimensioniert.
 
-**Entscheidung:** Wir haben uns für **Three.js** entschieden, da es das richtige Gleichgewicht zwischen Kontrolle, Leistung und Community-Unterstützung für die molekulare Visualisierung bietet.
+**Entscheidung:** Wir haben uns für **Three.js** entschieden, da es das richtige Gleichgewicht zwischen Kontrolle, Leistung und Community-Unterstützung bietet. Da unser Fokus auf einer pädagogischen, hochgradig anpassbaren Darstellung von nur 21 kleinen Molekülen liegt, überwiegen die Vorteile der vollen Kontrolle gegenüber dem Komfort spezialisierter Bibliotheken.
 
 ## Wichtige technische Entscheidung 2: Zustandsmanagement
 Für die Verwaltung des Anwendungszustands (z.B. ausgewählte Aminosäure, Darstellungsmodus) wurden drei Ansätze evaluiert:
@@ -60,8 +60,28 @@ Eine kleine, schnelle und skalierbare Lösung für das Zustandsmanagement.
 
 **Entscheidung:** Wir haben uns für die **React Context API** entschieden, da sie für den Umfang dieses Projekts völlig ausreicht und die Anzahl der Abhängigkeiten gering hält.
 
+## Wichtige technische Entscheidung 3: 2D-Rendering-Ansatz
+Wir haben drei Optionen für die 2D-Visualisierung der Aminosäuren bewertet:
+
+### 1. Manuelles SVG (Gewählt)
+Direktes Erstellen von SVG-Elementen basierend auf den Atomkoordinaten.
+- **Vorteile:** Volle Kontrolle über das Design, keine externen Abhängigkeiten, minimale Bundle-Größe.
+- **Nachteile:** Bindungslogik und Layout müssen manuell berechnet werden.
+
+### 2. SmilesDrawer
+Eine performante JavaScript-Bibliothek zum Zeichnen von SMILES-Strings auf Canvas oder SVG.
+- **Vorteile:** Automatische Generierung ästhetischer 2D-Diagramme aus SMILES-Strings.
+- **Nachteile:** Erfordert SMILES-Daten für alle Aminosäuren; weniger Flexibilität bei der Interaktion mit einzelnen Atomen im Vergleich zu nativem SVG/React.
+
+### 3. RDKit-js
+Die JavaScript-Distribution des mächtigen RDKit-Cheminformatik-Toolkits.
+- **Vorteile:** Industriestandard für chemische Berechnungen und Rendering, extrem robust.
+- **Nachteile:** Sehr große WASM-Binärdatei erforderlich, was für eine einfache Webanwendung unverhältnismäßig ist.
+
+**Entscheidung:** Wir haben uns für **manuelles SVG** entschieden. Da die Strukturen der 21 Aminosäuren statisch und bekannt sind, ermöglicht dieser Ansatz die schlankste Implementierung bei maximaler grafischer Flexibilität.
+
 ## Zusammenfassung der verworfenen Alternativen
-- **Babylon.js:** Verworfen aufgrund der Bundle-Größe und Komplexität für diesen spezifischen Anwendungsfall.
-- **A-Frame:** Verworfen aufgrund der begrenzten Kontrolle über komplexes strukturelles Rendering.
-- **Redux Toolkit:** Verworfen wegen des hohen Overheads für eine relativ einfache Zustandsverwaltung.
-- **Zustand:** Verworfen, um die Anzahl der Third-Party-Bibliotheken zu minimieren, da React Context ausreicht.
+- **3Dmol.js / MolStar:** Verworfen zugunsten von Three.js, um eine maßgeschneiderte, schlanke Visualisierung ohne unnötige Abhängigkeiten oder veraltete Technologien (jQuery) zu ermöglichen.
+- **SmilesDrawer:** Verworfen, da die manuelle SVG-Kontrolle besser zu den Anforderungen an interaktive Lernelemente passt.
+- **RDKit-js:** Verworfen aufgrund der enormen Bundle-Größe durch WASM-Abhängigkeiten.
+- **Redux Toolkit / Zustand:** Verworfen, um die Anzahl der Third-Party-Bibliotheken zu minimieren, da React Context ausreicht.
