@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Amino Acid Data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "code1": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1
+      },
+      "code3": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 3
+      },
+      "codons": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[ACGU]{3}$"
+        }
+      },
+      "class": {
+        "type": "string",
+        "enum": [
+          "Nonpolar",
+          "Polar",
+          "Acidic",
+          "Basic"
+        ]
+      },
+      "atoms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "element": {
+              "type": "string"
+            },
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "z": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "element",
+            "x",
+            "y",
+            "z"
+          ]
+        }
+      }
+    },
+    "required": [
+      "name",
+      "code1",
+      "code3",
+      "codons",
+      "class",
+      "atoms"
+    ]
+  }
+}
