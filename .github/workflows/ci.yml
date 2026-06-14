@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, "*" ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: ./src/install.sh
+
+    - name: Install Playwright Browsers
+      run: ./test/install.sh
+
+    - name: Build
+      run: npm run build
+
+    - name: Run Unit Tests
+      run: npm run test -- --run
+
+    - name: Run UI Tests
+      run: npm run test:ui
+
+    - name: Upload Playwright report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30

@@ -4,7 +4,7 @@
 | Phase | Description | Status |
 | :--- | :--- | :--- |
 | Phase 1: Conceptualization | Definition of goals, architecture, and design. | ✅ |
-| Phase 2: Project Setup | Initialization of repo, tech stack, and CI/CD. | 🏗️ |
+| Phase 2: Project Setup | Initialization of repo, tech stack, and CI/CD. | ✅ |
 | Phase 3: Data Acquisition | Collection of atomic coordinates and codon data. | ⏳ |
 | Phase 4: Visualization Engine | Implementation of 2D, Stick, and Ball models. | ⏳ |
 | Phase 5: Curriculum UI | Development of the interactive exploration interface. | ⏳ |
@@ -12,7 +12,7 @@
 
 ## Goals
 - ✅ Define project scope and architecture.
-- 🏗️ Setup development environment.
+- ✅ Setup development environment.
 - ⏳ Provide 21 amino acid models in three different modes.
 - ⏳ Integrate mRNA codon learning content.
 - ⏳ Deploy interactive curriculum via GitHub Pages / RTD.
@@ -25,11 +25,11 @@
 - [x] Create TOP_ARCHITECTURE.puml
 - [x] Create initial ROADMAP.md
 
-### Phase 2: Project Setup 🏗️
-- [ ] Initialize repository structure
-- [ ] Create `src/install.sh` for build tools
-- [ ] Setup empty CI/CD pipeline in GitHub Actions
-- [ ] Configure ReadTheDocs (RTD) integration
+### Phase 2: Project Setup ✅
+- [x] Initialize repository structure (2026-06-14 10:30:22 UTC)
+- [x] Create `src/install.sh` for build tools (2026-06-14 10:30:22 UTC)
+- [x] Setup empty CI/CD pipeline in GitHub Actions (2026-06-14 10:30:22 UTC)
+- [x] Configure ReadTheDocs (RTD) integration (2026-06-14 10:30:22 UTC)
 
 ### Phase 3: Data Acquisition ⏳
 - [ ] Create JSON schema for amino acid data
