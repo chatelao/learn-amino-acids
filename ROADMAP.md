@@ -41,7 +41,7 @@
 - [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)
 
 ### Phase 4: Visualisierungs-Engine ⏳
-- [ ] SVG-basierten 2D-Renderer implementieren
+- [x] SVG-basierten 2D-Renderer implementieren (2026-06-14 20:00:00 UTC)
 - [ ] Three.js-basierten Stick-Modell-Renderer implementieren
 - [ ] Three.js-basierten Ball-Modell-Renderer implementieren
 - [ ] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen
@@ -52,6 +52,6 @@
 - [ ] Codon-Suche und Filter für chemische Gruppen hinzufügen
 
 ### Phase 6: Testen & Qualitätssicherung ⏳
-- [ ] Unit-Tests für den Data Provider schreiben
-- [ ] Integrationstests für Visualisierungskomponenten schreiben
+- [x] Unit-Tests für den Data Provider schreiben (2026-06-14 19:40:00 UTC)
+- [x] Integrationstests für Visualisierungskomponenten schreiben (2026-06-14 20:10:00 UTC)
 - [ ] UI/UX-Verifizierung mit Screenshots durchführen
