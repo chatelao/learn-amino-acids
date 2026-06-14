@@ -1,53 +1,53 @@
-# Roadmap: Amino Acid Learning Curriculum
+# Roadmap: Aminosäure-Lerncurriculum
 
-## Progress Overview
-| Phase | Description | Status |
+## Fortschrittsübersicht
+| Phase | Beschreibung | Status |
 | :--- | :--- | :--- |
-| Phase 1: Conceptualization | Definition of goals, architecture, and design. | ✅ |
-| Phase 2: Project Setup | Initialization of repo, tech stack, and CI/CD. | ✅ |
-| Phase 3: Data Acquisition | Collection of atomic coordinates and codon data. | ⏳ |
-| Phase 4: Visualization Engine | Implementation of 2D, Stick, and Ball models. | ⏳ |
-| Phase 5: Curriculum UI | Development of the interactive exploration interface. | ⏳ |
-| Phase 6: Testing & QA | Full curriculum verification and user testing. | ⏳ |
+| Phase 1: Konzeption | Definition der Ziele, Architektur und des Designs. | ✅ |
+| Phase 2: Projekt-Setup | Initialisierung des Repositories, Tech-Stack und CI/CD. | ✅ |
+| Phase 3: Datenerfassung | Sammlung von Atomkoordinaten und Codon-Daten. | ⏳ |
+| Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | ⏳ |
+| Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | ⏳ |
+| Phase 6: Testen & Qualitätssicherung | Vollständige Curriculum-Verifizierung und Benutzertests. | ⏳ |
 
-## Goals
-- ✅ Define project scope and architecture.
-- ✅ Setup development environment.
-- ⏳ Provide 21 amino acid models in three different modes.
-- ⏳ Integrate mRNA codon learning content.
-- ⏳ Deploy interactive curriculum via GitHub Pages / RTD.
+## Ziele
+- ✅ Projektumfang und Architektur definieren.
+- ✅ Entwicklungsumgebung einrichten.
+- ⏳ 21 Aminosäure-Modelle in drei verschiedenen Modi bereitstellen.
+- ⏳ Lerninhalte zu mRNA-Codons integrieren.
+- ⏳ Interaktives Curriculum über GitHub Pages / RTD bereitstellen.
 
-## Phases
+## Phasen
 
-### Phase 1: Conceptualization ✅
-- [x] Create CONCEPT.md
-- [x] Create DESIGN.md
-- [x] Create TOP_ARCHITECTURE.puml
-- [x] Create initial ROADMAP.md
+### Phase 1: Konzeption ✅
+- [x] CONCEPT.md erstellen (2026-06-14 11:00:00 UTC)
+- [x] DESIGN.md erstellen (2026-06-14 11:05:00 UTC)
+- [x] TOP_ARCHITECTURE.puml erstellen (2026-06-14 10:30:22 UTC)
+- [x] ROADMAP.md erstellen (2026-06-14 11:10:00 UTC)
 
-### Phase 2: Project Setup ✅
-- [x] Initialize repository structure (2026-06-14 10:30:22 UTC)
-- [x] Create `src/install.sh` for build tools (2026-06-14 10:30:22 UTC)
-- [x] Setup empty CI/CD pipeline in GitHub Actions (2026-06-14 10:30:22 UTC)
-- [x] Configure ReadTheDocs (RTD) integration (2026-06-14 10:30:22 UTC)
+### Phase 2: Projekt-Setup ✅
+- [x] Repository-Struktur initialisieren (2026-06-14 10:30:22 UTC)
+- [x] `src/install.sh` für Build-Tools erstellen (2026-06-14 10:30:22 UTC)
+- [x] Leere CI/CD-Pipeline in GitHub Actions einrichten (2026-06-14 10:30:22 UTC)
+- [x] ReadTheDocs (RTD) Integration konfigurieren (2026-06-14 10:30:22 UTC)
 
-### Phase 3: Data Acquisition ⏳
-- [ ] Create JSON schema for amino acid data
-- [ ] Fetch/Create structural data for all 21 amino acids
-- [ ] Compile codon mapping table
+### Phase 3: Datenerfassung ⏳
+- [ ] JSON-Schema für Aminosäure-Daten erstellen
+- [ ] Strukturdaten für alle 21 Aminosäuren abrufen/erstellen
+- [ ] Codon-Mapping-Tabelle zusammenstellen
 
-### Phase 4: Visualization Engine ⏳
-- [ ] Implement SVG-based 2D renderer
-- [ ] Implement Three.js-based Stick model renderer
-- [ ] Implement Three.js-based Ball model renderer
-- [ ] Add interaction (rotate, zoom) to 3D models
+### Phase 4: Visualisierungs-Engine ⏳
+- [ ] SVG-basierten 2D-Renderer implementieren
+- [ ] Three.js-basierten Stick-Modell-Renderer implementieren
+- [ ] Three.js-basierten Ball-Modell-Renderer implementieren
+- [ ] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen
 
-### Phase 5: Curriculum UI ⏳
-- [ ] Build navigation menu for all amino acids
-- [ ] Implement detailed view with metadata and models
-- [ ] Add codon lookup and chemical group filters
+### Phase 5: Curriculum-Benutzeroberfläche ⏳
+- [ ] Navigationsmenü für alle Aminosäuren aufbauen
+- [ ] Detailansicht mit Metadaten und Modellen implementieren
+- [ ] Codon-Suche und Filter für chemische Gruppen hinzufügen
 
-### Phase 6: Testing & QA ⏳
-- [ ] Write unit tests for data provider
-- [ ] Write integration tests for visualization components
-- [ ] Perform UI/UX verification with screenshots
+### Phase 6: Testen & Qualitätssicherung ⏳
+- [ ] Unit-Tests für den Data Provider schreiben
+- [ ] Integrationstests für Visualisierungskomponenten schreiben
+- [ ] UI/UX-Verifizierung mit Screenshots durchführen
