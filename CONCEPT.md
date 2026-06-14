@@ -14,7 +14,7 @@ Das System besteht aus den folgenden funktionalen Komponenten und ihren Geschäf
 
 ### Funktionale Komponenten
 - **Curriculum Content Provider (CCP):** Verwaltet die Bildungsdaten, einschließlich Aminosäureeigenschaften und Codon-Mappings.
-- **Visualization Engine (VE):** Verantwortlich für das Rendering von 2D- und 3D-Modellen (Stick und Ball).
+- **Visualization Engine (VE):** Verantwortlich für das Rendering von 2D- und 3D-Modellen.
 - **User Interface (UI):** Bietet den Einstiegspunkt für Benutzer zur Erkundung des Curriculums.
 - **Data Repository (DR):** Speichert die Strukturdaten (Koordinaten, Atomtypen) für die Aminosäuren.
 
@@ -35,13 +35,12 @@ Ein strukturierter Schritt-für-Schritt-Leitfaden, der den Benutzer in einer fes
 Ein freies Explorationswerkzeug, bei dem Benutzer jede beliebige Aminosäure auswählen und nach Belieben zwischen verschiedenen Visualisierungsmodi wechseln können.
 - **Vorteile:** Fördert die Exploration und ist hochgradig interaktiv.
 - **Nachteile:** Könnte ohne einen geführten "Start" überwältigend wirken.
+- **Begründung:** Diese Option bietet die größte Flexibilität für verschiedene Lernstile und Vorwissensstufen.
 
 ### 3. Quiz-basierter Fortschritt
 Benutzer müssen Aminosäuren freischalten, indem sie diese oder ihre Codons in Quizfragen erfolgreich identifizieren.
 - **Vorteile:** Hohes Engagement und Gamifizierung.
 - **Nachteile:** Kann frustrierend sein, wenn der Benutzer lediglich Informationen nachschlagen möchte.
-
-**Entscheidung:** Wir haben uns für die **Interaktive Sandbox** entschieden, da sie am besten mit dem Ziel übereinstimmt, ein flexibles Lernwerkzeug bereitzustellen, das unterschiedliche Lernstile und Vorwissensstufen berücksichtigt.
 
 ## Wichtige konzeptionelle Entscheidung 2: Datenhaltung und -bereitstellung
 Wir haben drei Optionen für die Speicherung und Bereitstellung der molekularen Daten untersucht:
@@ -50,21 +49,20 @@ Wir haben drei Optionen für die Speicherung und Bereitstellung der molekularen 
 Die Daten werden als JSON-Dateien direkt im Repository gespeichert und mit der Anwendung ausgeliefert.
 - **Vorteile:** Einfache Bereitstellung als statische Seite, keine Server-Infrastruktur erforderlich, schnelle Ladezeiten.
 - **Nachteile:** Änderungen erfordern einen neuen Build/Deployment.
+- **Begründung:** Die Daten für 21 Aminosäuren sind stabil und statisch, daher ist dies die effizienteste und wartungsärmste Lösung.
 
 ### 2. Zentrale SQL-Datenbank
 Die Daten werden in einer relationalen Datenbank (z.B. PostgreSQL) gespeichert und über eine API bereitgestellt.
-- **Vorteile:** Dynamische Updates ohne Deployment möglich, bessere Skalierbarkeit für riesige Datenmengen.
-- **Nachteile:** Erfordert Backend-Server und Datenbank-Hosting, erhöht die Komplexität der Architektur erheblich.
+- **Vorteile:** Dynamische Updates ohne Deployment möglich.
+- **Nachteile:** Erfordert Backend-Server und Datenbank-Hosting, erhöht die Komplexität erheblich.
 
 ### 3. Externe Bio-Datenbank-API
 Die Daten werden zur Laufzeit direkt von Diensten wie PubChem oder der Protein Data Bank (PDB) abgerufen.
-- **Vorteile:** Immer auf dem neuesten Stand der Forschung, kein eigener Speicheraufwand.
-- **Nachteile:** Abhängigkeit von externen Diensten, potenzielle Latenzprobleme, komplexe Transformation der Rohdaten erforderlich.
-
-**Entscheidung:** Wir haben uns für **Statische JSON-Dateien** entschieden, da die Daten für 21 Aminosäuren stabil sind und dieser Ansatz die einfachste und robusteste Lösung für eine Bildungsanwendung darstellt.
+- **Vorteile:** Immer auf dem neuesten Stand der Forschung.
+- **Nachteile:** Abhängigkeit von externen Diensten, potenzielle Latenzprobleme.
 
 ## Zusammenfassung der verworfenen Alternativen
-- **Linearer Kurs:** Verworfen aufgrund mangelnder Flexibilität.
-- **Quiz-basierter Fortschritt:** Verworfen, um einen einfachen Zugang zu Informationen ohne künstliche Barrieren zu gewährleisten.
-- **Zentrale SQL-Datenbank:** Verworfen wegen unnötiger Infrastruktur-Komplexität für einen begrenzten Datensatz.
-- **Externe Bio-Datenbank-API:** Verworfen wegen der Abhängigkeit von Drittanbietern und der Komplexität des Datenmappings.
+- **Linearer Kurs:** Verworfen aufgrund mangelnder Flexibilität für erfahrene Benutzer.
+- **Quiz-basierter Fortschritt:** Verworfen, um einen barrierefreien Zugang zu Informationen zu gewährleisten.
+- **Zentrale SQL-Datenbank:** Verworfen wegen unnötiger Infrastruktur-Komplexität für einen begrenzten, statischen Datensatz.
+- **Externe Bio-Datenbank-API:** Verworfen wegen der Abhängigkeit von Drittanbietern und der Komplexität des Mappings.
