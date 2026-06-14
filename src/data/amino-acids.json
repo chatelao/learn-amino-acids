@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Alanine",
+    "code1": "A",
+    "code3": "Ala",
+    "codons": ["GCU", "GCC", "GCA", "GCG"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Arginine",
+    "code1": "R",
+    "code3": "Arg",
+    "codons": ["CGU", "CGC", "CGA", "CGG", "AGA", "AGG"],
+    "class": "Basic",
+    "atoms": []
+  },
+  {
+    "name": "Asparagine",
+    "code1": "N",
+    "code3": "Asn",
+    "codons": ["AAU", "AAC"],
+    "class": "Polar",
+    "atoms": []
+  },
+  {
+    "name": "Aspartic acid",
+    "code1": "D",
+    "code3": "Asp",
+    "codons": ["GAU", "GAC"],
+    "class": "Acidic",
+    "atoms": []
+  },
+  {
+    "name": "Cysteine",
+    "code1": "C",
+    "code3": "Cys",
+    "codons": ["UGU", "UGC"],
+    "class": "Polar",
+    "atoms": []
+  },
+  {
+    "name": "Glutamine",
+    "code1": "Q",
+    "code3": "Gln",
+    "codons": ["CAA", "CAG"],
+    "class": "Polar",
+    "atoms": []
+  },
+  {
+    "name": "Glutamic acid",
+    "code1": "E",
+    "code3": "Glu",
+    "codons": ["GAA", "GAG"],
+    "class": "Acidic",
+    "atoms": []
+  },
+  {
+    "name": "Glycine",
+    "code1": "G",
+    "code3": "Gly",
+    "codons": ["GGU", "GGC", "GGA", "GGG"],
+    "class": "Nonpolar",
+    "atoms": [
+      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
+      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
+      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 }
+    ]
+  },
+  {
+    "name": "Histidine",
+    "code1": "H",
+    "code3": "His",
+    "codons": ["CAU", "CAC"],
+    "class": "Basic",
+    "atoms": []
+  },
+  {
+    "name": "Isoleucine",
+    "code1": "I",
+    "code3": "Ile",
+    "codons": ["AUU", "AUC", "AUA"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Leucine",
+    "code1": "L",
+    "code3": "Leu",
+    "codons": ["UUA", "UUG", "CUU", "CUC", "CUA", "CUG"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Lysine",
+    "code1": "K",
+    "code3": "Lys",
+    "codons": ["AAA", "AAG"],
+    "class": "Basic",
+    "atoms": []
+  },
+  {
+    "name": "Methionine",
+    "code1": "M",
+    "code3": "Met",
+    "codons": ["AUG"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Phenylalanine",
+    "code1": "F",
+    "code3": "Phe",
+    "codons": ["UUU", "UUC"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Proline",
+    "code1": "P",
+    "code3": "Pro",
+    "codons": ["CCU", "CCC", "CCA", "CCG"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Serine",
+    "code1": "S",
+    "code3": "Ser",
+    "codons": ["UCU", "UCC", "UCA", "UCG", "AGU", "AGC"],
+    "class": "Polar",
+    "atoms": []
+  },
+  {
+    "name": "Threonine",
+    "code1": "T",
+    "code3": "Thr",
+    "codons": ["ACU", "ACC", "ACA", "ACG"],
+    "class": "Polar",
+    "atoms": []
+  },
+  {
+    "name": "Tryptophan",
+    "code1": "W",
+    "code3": "Trp",
+    "codons": ["UGG"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Tyrosine",
+    "code1": "Y",
+    "code3": "Tyr",
+    "codons": ["UAU", "UAC"],
+    "class": "Polar",
+    "atoms": []
+  },
+  {
+    "name": "Valine",
+    "code1": "V",
+    "code3": "Val",
+    "codons": ["GUU", "GUC", "GUA", "GUG"],
+    "class": "Nonpolar",
+    "atoms": []
+  },
+  {
+    "name": "Selenocysteine",
+    "code1": "U",
+    "code3": "Sec",
+    "codons": ["UGA"],
+    "class": "Polar",
+    "atoms": []
+  }
+]

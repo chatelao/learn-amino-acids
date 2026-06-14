@@ -5,7 +5,7 @@
 | :--- | :--- | :--- |
 | Phase 1: Konzeption | Definition der Ziele, Architektur und des Designs. | ✅ |
 | Phase 2: Projekt-Setup | Initialisierung des Repositories, Tech-Stack und CI/CD. | ✅ |
-| Phase 3: Datenerfassung | Sammlung von Atomkoordinaten und Codon-Daten. | ⏳ |
+| Phase 3: Datenerfassung | Sammlung von Atomkoordinaten und Codon-Daten. | 🏗️ |
 | Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | ⏳ |
 | Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | ⏳ |
 | Phase 6: Testen & Qualitätssicherung | Vollständige Curriculum-Verifizierung und Benutzertests. | ⏳ |
@@ -31,10 +31,10 @@
 - [x] Leere CI/CD-Pipeline in GitHub Actions einrichten (2026-06-14 10:30:22 UTC)
 - [x] ReadTheDocs (RTD) Integration konfigurieren (2026-06-14 10:30:22 UTC)
 
-### Phase 3: Datenerfassung ⏳
-- [ ] JSON-Schema für Aminosäure-Daten erstellen
+### Phase 3: Datenerfassung 🏗️
+- [x] JSON-Schema für Aminosäure-Daten erstellen (2026-06-14 11:40:00 UTC)
 - [ ] Strukturdaten für alle 21 Aminosäuren abrufen/erstellen
-- [ ] Codon-Mapping-Tabelle zusammenstellen
+- [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)
 
 ### Phase 4: Visualisierungs-Engine ⏳
 - [ ] SVG-basierten 2D-Renderer implementieren
