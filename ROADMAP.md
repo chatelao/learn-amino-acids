@@ -35,7 +35,7 @@
 - [x] JSON-Schema für Aminosäure-Daten erstellen (2026-06-14 11:40:00 UTC)
 - [x] Curriculum Content Provider (CCP) Service implementieren (2026-06-14 15:51:00 UTC)
 - [x] Strukturdaten für Aminosäuren 1-5 abrufen/erstellen (Ala, Arg, Asn, Asp, Cys) (2026-06-15 12:19:34 UTC)
-- [ ] Strukturdaten für Aminosäuren 6-10 abrufen/erstellen (Gln, Glu, Gly, His, Ile)
+- [x] Strukturdaten für Aminosäuren 6-10 abrufen/erstellen (Gln, Glu, Gly, His, Ile) (2026-06-15 18:42:59 UTC)
 - [ ] Strukturdaten für Aminosäuren 11-15 abrufen/erstellen (Leu, Lys, Met, Phe, Pro)
 - [ ] Strukturdaten für Aminosäuren 16-21 abrufen/erstellen (Ser, Thr, Trp, Tyr, Val, Sec)
 - [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)

@@ -70,3 +70,49 @@ test('verifies chemical class filter', async ({ page }) => {
 
   await page.screenshot({ path: 'test-results/filter-acidic.png' });
 });
+
+test('verifies rendering of newly added amino acid Glutamine', async ({ page }) => {
+  await page.goto('/');
+
+  // Select Glutamine
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Gln');
+
+  // Check info
+  await expect(page.locator('h2')).toHaveText(/Glutamine \(Gln \/ Q\)/);
+
+  // Check if SVG is rendered
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+
+  // Glutamine has 10 atoms in our new data
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(10);
+
+  // Check if 3D canvases are visible
+  const stickCanvas = page.locator('section').filter({ has: page.getByRole('heading', { name: 'Stick Model (3D)', exact: true }) }).locator('canvas');
+  await expect(stickCanvas).toBeVisible();
+
+  await page.screenshot({ path: 'test-results/glutamine-rendering.png' });
+});
+
+test('verifies rendering of Glycine', async ({ page }) => {
+  await page.goto('/');
+
+  // Select Glycine
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Gly');
+
+  // Check info
+  await expect(page.locator('h2')).toHaveText(/Glycine \(Gly \/ G\)/);
+
+  // Check if SVG is rendered
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+
+  // Glycine has 5 atoms
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(5);
+
+  await page.screenshot({ path: 'test-results/glycine-rendering.png' });
+});
