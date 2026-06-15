@@ -7,7 +7,7 @@
 | Phase 2: Projekt-Setup | Initialisierung des Repositories, Tech-Stack und CI/CD. | ✅ |
 | Phase 3: Datenerfassung | Sammlung von Atomkoordinaten und Codon-Daten. | 🏗️ |
 | Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | ✅ |
-| Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | 🏗️ |
+| Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | ✅ |
 | Phase 6: Testen & Qualitätssicherung | Vollständige Curriculum-Verifizierung und Benutzertests. | ⏳ |
 
 ## Ziele
@@ -46,10 +46,10 @@
 - [x] Three.js-basierten Ball-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
 - [x] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen (2026-06-15 14:30:00 UTC)
 
-### Phase 5: Curriculum-Benutzeroberfläche 🏗️
+### Phase 5: Curriculum-Benutzeroberfläche ✅
 - [x] Navigationsmenü für alle Aminosäuren aufbauen (2026-06-15 14:35:00 UTC)
-- [ ] Detailansicht mit Metadaten und Modellen implementieren
-- [ ] Codon-Suche und Filter für chemische Gruppen hinzufügen
+- [x] Detailansicht mit Metadaten und Modellen implementieren (2026-06-15 15:10:00 UTC)
+- [x] Codon-Suche und Filter für chemische Gruppen hinzufügen (2026-06-15 15:10:00 UTC)
 
 ### Phase 6: Testen & Qualitätssicherung ⏳
 - [x] Unit-Tests für den Data Provider schreiben (2026-06-14 19:40:00 UTC)
