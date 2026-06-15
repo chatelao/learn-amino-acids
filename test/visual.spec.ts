@@ -20,5 +20,17 @@ test('renders amino acid info', async ({ page }) => {
   await expect(circles).toHaveCount(6);
 
   // Capture screenshot
-  await page.screenshot({ path: 'test-results/alanine-2d.png' });
+  await page.screenshot({ path: 'test-results/alanine-all-modes.png' });
+});
+
+test('verifies 3D rendering modes', async ({ page }) => {
+  await page.goto('/');
+
+  // Check if Stick model canvas is present
+  const stickContainer = page.locator('h3:has-text("Stick Model") + div');
+  await expect(stickContainer.locator('canvas')).toBeVisible();
+
+  // Check if Ball model canvas is present
+  const ballContainer = page.locator('h3:has-text("Ball Model") + div');
+  await expect(ballContainer.locator('canvas')).toBeVisible();
 });

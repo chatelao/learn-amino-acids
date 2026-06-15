@@ -14,7 +14,20 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <h2>{ala.name} ({ala.code3})</h2>
           <p>Class: {ala.class}</p>
           <p>Codons: {ala.codons.join(', ')}</p>
-          <VisualizationEngine atoms={ala.atoms} mode="2D" />
+          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+            <div>
+              <h3>2D Model</h3>
+              <VisualizationEngine atoms={ala.atoms} mode="2D" />
+            </div>
+            <div>
+              <h3>Stick Model</h3>
+              <VisualizationEngine atoms={ala.atoms} mode="Stick" />
+            </div>
+            <div>
+              <h3>Ball Model</h3>
+              <VisualizationEngine atoms={ala.atoms} mode="Ball" />
+            </div>
+          </div>
         </div>
       ) : (
         <p>Loading amino acid data...</p>

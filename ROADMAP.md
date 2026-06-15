@@ -6,7 +6,7 @@
 | Phase 1: Konzeption | Definition der Ziele, Architektur und des Designs. | ✅ |
 | Phase 2: Projekt-Setup | Initialisierung des Repositories, Tech-Stack und CI/CD. | ✅ |
 | Phase 3: Datenerfassung | Sammlung von Atomkoordinaten und Codon-Daten. | 🏗️ |
-| Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | ⏳ |
+| Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | 🏗️ |
 | Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | ⏳ |
 | Phase 6: Testen & Qualitätssicherung | Vollständige Curriculum-Verifizierung und Benutzertests. | ⏳ |
 
@@ -34,16 +34,16 @@
 ### Phase 3: Datenerfassung 🏗️
 - [x] JSON-Schema für Aminosäure-Daten erstellen (2026-06-14 11:40:00 UTC)
 - [x] Curriculum Content Provider (CCP) Service implementieren (2026-06-14 15:51:00 UTC)
-- [ ] Strukturdaten für Aminosäuren 1-5 abrufen/erstellen (Ala, Arg, Asn, Asp, Cys)
+- [x] Strukturdaten für Aminosäuren 1-5 abrufen/erstellen (Ala, Arg, Asn, Asp, Cys) (2026-06-15 12:19:34 UTC)
 - [ ] Strukturdaten für Aminosäuren 6-10 abrufen/erstellen (Gln, Glu, Gly, His, Ile)
 - [ ] Strukturdaten für Aminosäuren 11-15 abrufen/erstellen (Leu, Lys, Met, Phe, Pro)
 - [ ] Strukturdaten für Aminosäuren 16-21 abrufen/erstellen (Ser, Thr, Trp, Tyr, Val, Sec)
 - [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)
 
-### Phase 4: Visualisierungs-Engine ⏳
+### Phase 4: Visualisierungs-Engine 🏗️
 - [x] SVG-basierten 2D-Renderer implementieren (2026-06-14 20:00:00 UTC)
-- [ ] Three.js-basierten Stick-Modell-Renderer implementieren
-- [ ] Three.js-basierten Ball-Modell-Renderer implementieren
+- [x] Three.js-basierten Stick-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
+- [x] Three.js-basierten Ball-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
 - [ ] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen
 
 ### Phase 5: Curriculum-Benutzeroberfläche ⏳
