@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Atom } from '../services/ccp';
 
 interface Renderer3DProps {
@@ -35,6 +36,11 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, heigh
 
     const moleculeGroup = new THREE.Group();
     scene.add(moleculeGroup);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 2.0;
 
     // --- Geometries & Materials (Reused) ---
     const atomRadius = mode === 'Ball' ? 0.6 : 0.2;
@@ -99,8 +105,7 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, heigh
     let animationId: number;
     const animate = () => {
       animationId = requestAnimationFrame(animate);
-      moleculeGroup.rotation.y += 0.01;
-      moleculeGroup.rotation.x += 0.005;
+      controls.update();
       renderer.render(scene, camera);
     };
     animate();
@@ -108,6 +113,7 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, heigh
     // --- Cleanup ---
     return () => {
       cancelAnimationFrame(animationId);
+      controls.dispose();
       if (containerRef.current) {
         containerRef.current.removeChild(renderer.domElement);
       }

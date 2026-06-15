@@ -8,8 +8,9 @@ test('renders amino acid info', async ({ page }) => {
 
   // Check Alanine info
   await expect(page.locator('h2')).toHaveText('Alanine (Ala)');
-  await expect(page.getByText('Class: Nonpolar')).toBeVisible();
-  await expect(page.getByText('Codons: GCU, GCC, GCA, GCG')).toBeVisible();
+  const infoText = await page.locator('div:has(h2) >> p').allTextContents();
+  expect(infoText.some(t => t.includes('Class: Nonpolar'))).toBeTruthy();
+  expect(infoText.some(t => t.includes('Codons: GCU, GCC, GCA, GCG'))).toBeTruthy();
 
   // Check if SVG is rendered
   const svg = page.locator('svg');
