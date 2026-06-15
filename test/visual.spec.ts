@@ -116,3 +116,24 @@ test('verifies rendering of Glycine', async ({ page }) => {
 
   await page.screenshot({ path: 'test-results/glycine-rendering.png' });
 });
+
+test('verifies rendering of Phenylalanine', async ({ page }) => {
+  await page.goto('/');
+
+  // Select Phenylalanine
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Phe');
+
+  // Check info
+  await expect(page.locator('h2')).toHaveText(/Phenylalanine \(Phe \/ F\)/);
+
+  // Check if SVG is rendered
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+
+  // Phenylalanine has 12 atoms
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(12);
+
+  await page.screenshot({ path: 'test-results/phenylalanine-rendering.png' });
+});
