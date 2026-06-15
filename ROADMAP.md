@@ -6,8 +6,8 @@
 | Phase 1: Konzeption | Definition der Ziele, Architektur und des Designs. | ✅ |
 | Phase 2: Projekt-Setup | Initialisierung des Repositories, Tech-Stack und CI/CD. | ✅ |
 | Phase 3: Datenerfassung | Sammlung von Atomkoordinaten und Codon-Daten. | 🏗️ |
-| Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | 🏗️ |
-| Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | ⏳ |
+| Phase 4: Visualisierungs-Engine | Implementierung von 2D-, Stick- und Ball-Modellen. | ✅ |
+| Phase 5: Curriculum-Benutzeroberfläche | Entwicklung der interaktiven Explorations-Schnittstelle. | 🏗️ |
 | Phase 6: Testen & Qualitätssicherung | Vollständige Curriculum-Verifizierung und Benutzertests. | ⏳ |
 
 ## Ziele
@@ -40,14 +40,14 @@
 - [ ] Strukturdaten für Aminosäuren 16-21 abrufen/erstellen (Ser, Thr, Trp, Tyr, Val, Sec)
 - [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)
 
-### Phase 4: Visualisierungs-Engine 🏗️
+### Phase 4: Visualisierungs-Engine ✅
 - [x] SVG-basierten 2D-Renderer implementieren (2026-06-14 20:00:00 UTC)
 - [x] Three.js-basierten Stick-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
 - [x] Three.js-basierten Ball-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
-- [ ] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen
+- [x] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen (2026-06-15 14:30:00 UTC)
 
-### Phase 5: Curriculum-Benutzeroberfläche ⏳
-- [ ] Navigationsmenü für alle Aminosäuren aufbauen
+### Phase 5: Curriculum-Benutzeroberfläche 🏗️
+- [x] Navigationsmenü für alle Aminosäuren aufbauen (2026-06-15 14:35:00 UTC)
 - [ ] Detailansicht mit Metadaten und Modellen implementieren
 - [ ] Codon-Suche und Filter für chemische Gruppen hinzufügen
 
