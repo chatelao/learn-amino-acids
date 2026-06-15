@@ -20,7 +20,20 @@
     "code3": "Arg",
     "codons": ["CGU", "CGC", "CGA", "CGG", "AGA", "AGG"],
     "class": "Basic",
-    "atoms": []
+    "atoms": [
+      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
+      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
+      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
+      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
+      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
+      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
+      { "element": "N", "x": 5.7, "y": -2.2, "z": 1.6 },
+      { "element": "C", "x": 6.4, "y": -3.3, "z": 2.4 },
+      { "element": "N", "x": 7.7, "y": -3.3, "z": 2.4 },
+      { "element": "N", "x": 5.8, "y": -4.4, "z": 3.2 }
+    ]
   },
   {
     "name": "Asparagine",
@@ -28,7 +41,17 @@
     "code3": "Asn",
     "codons": ["AAU", "AAC"],
     "class": "Polar",
-    "atoms": []
+    "atoms": [
+      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
+      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
+      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
+      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
+      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
+      { "element": "O", "x": 4.3, "y": -0.1, "z": 0.8 },
+      { "element": "N", "x": 4.1, "y": -2.3, "z": 0.8 }
+    ]
   },
   {
     "name": "Aspartic acid",
@@ -36,7 +59,17 @@
     "code3": "Asp",
     "codons": ["GAU", "GAC"],
     "class": "Acidic",
-    "atoms": []
+    "atoms": [
+      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
+      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
+      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
+      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
+      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
+      { "element": "O", "x": 4.3, "y": -0.1, "z": 0.8 },
+      { "element": "O", "x": 4.1, "y": -2.3, "z": 0.8 }
+    ]
   },
   {
     "name": "Cysteine",
@@ -44,7 +77,15 @@
     "code3": "Cys",
     "codons": ["UGU", "UGC"],
     "class": "Polar",
-    "atoms": []
+    "atoms": [
+      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
+      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
+      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
+      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
+      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
+      { "element": "S", "x": 3.9, "y": -1.1, "z": 0.8 }
+    ]
   },
   {
     "name": "Glutamine",
