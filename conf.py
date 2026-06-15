@@ -15,7 +15,7 @@ extensions = [
 ]
 
 templates_path = []
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'node_modules']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'node_modules', 'src', 'test']
 
 # -- Options for HTML output -------------------------------------------------
 
