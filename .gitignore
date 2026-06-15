@@ -27,3 +27,6 @@ dist-ssr
 /playwright-report
 /test-results
 /test-screenshots
+
+# Documentation
+/_build/
