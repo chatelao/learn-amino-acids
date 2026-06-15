@@ -46,7 +46,7 @@ jobs:
 
     - name: Validate documentation build
       run: |
-        python -m sphinx -T -j auto -b html -d _build/doctrees -D language=de -c docs . _build/html
+        python -m sphinx -T -j auto -b html -d _build/doctrees -D language=de . _build/html
 
     - name: Upload Playwright report
       uses: actions/upload-artifact@v4
