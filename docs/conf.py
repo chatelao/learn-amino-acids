@@ -8,14 +8,16 @@ author = 'Jules'
 
 # -- General configuration ---------------------------------------------------
 
+root_doc = 'docs/index'
+
 extensions = [
     'myst_parser',
 ]
 
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+templates_path = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'node_modules']
 
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'alabaster'
-html_static_path = ['_static']
+html_static_path = []
