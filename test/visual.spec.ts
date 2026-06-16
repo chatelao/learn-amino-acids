@@ -137,3 +137,24 @@ test('verifies rendering of Phenylalanine', async ({ page }) => {
 
   await page.screenshot({ path: 'test-results/phenylalanine-rendering.png' });
 });
+
+test('verifies rendering of Serine', async ({ page }) => {
+  await page.goto('/');
+
+  // Select Serine
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Ser');
+
+  // Check info
+  await expect(page.locator('h2')).toHaveText(/Serine \(Ser \/ S\)/);
+
+  // Check if SVG is rendered
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+
+  // Serine has 7 atoms in our new data
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(7);
+
+  await page.screenshot({ path: 'test-results/serine-rendering.png' });
+});
