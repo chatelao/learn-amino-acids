@@ -10,9 +10,9 @@ This project provides an interactive and comprehensive educational tool for bioc
 ```{toctree}
 :maxdepth: 1
 
-../README
-../CONCEPT
-../DESIGN
-../ROADMAP
-../GEMINI
+README
+CONCEPT
+DESIGN
+ROADMAP
+GEMINI
 ```

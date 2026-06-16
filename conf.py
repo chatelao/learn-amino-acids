@@ -8,7 +8,7 @@ author = 'Jules'
 
 # -- General configuration ---------------------------------------------------
 
-root_doc = 'docs/index'
+root_doc = 'index'
 
 extensions = [
     'myst_parser',
