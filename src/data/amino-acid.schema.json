@@ -59,6 +59,39 @@
             "z"
           ]
         }
+      },
+      "aaRS": {
+        "type": "object",
+        "properties": {
+          "class": {
+            "type": "string",
+            "enum": ["I", "II"]
+          },
+          "subclass": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "string"
+          }
+        },
+        "required": ["class", "mechanism"]
+      },
+      "tRNA": {
+        "type": "object",
+        "properties": {
+          "features": {
+            "type": "string"
+          }
+        }
+      },
+      "pKa": {
+        "type": "object",
+        "properties": {
+          "carboxyl": { "type": "number" },
+          "amine": { "type": "number" },
+          "sideChain": { "type": "number" }
+        },
+        "required": ["carboxyl", "amine"]
       }
     },
     "required": [

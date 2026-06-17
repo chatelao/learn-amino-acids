@@ -16,6 +16,19 @@ export interface AminoAcid {
   codons: string[];
   class: AminoAcidClass;
   atoms: Atom[];
+  aaRS?: {
+    class: 'I' | 'II';
+    subclass?: string;
+    mechanism: string;
+  };
+  tRNA?: {
+    features: string;
+  };
+  pKa?: {
+    carboxyl: number;
+    amine: number;
+    sideChain?: number;
+  };
 }
 
 export class CurriculumContentProvider {

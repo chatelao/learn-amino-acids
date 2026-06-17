@@ -3,345 +3,1465 @@
     "name": "Alanine",
     "code1": "A",
     "code3": "Ala",
-    "codons": ["GCU", "GCC", "GCA", "GCG"],
+    "codons": [
+      "GCU",
+      "GCC",
+      "GCA",
+      "GCG"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Unique recognition mechanism based on idiosyncratic architecture to distinguish from glycine and serine; utilizes steric selection."
+    },
+    "tRNA": {
+      "features": "Interaction with the idiosyncratic architecture of AlaRS."
+    },
+    "pKa": {
+      "carboxyl": 2.34,
+      "amine": 9.69
+    }
   },
   {
     "name": "Arginine",
     "code1": "R",
     "code3": "Arg",
-    "codons": ["CGU", "CGC", "CGA", "CGG", "AGA", "AGG"],
+    "codons": [
+      "CGU",
+      "CGC",
+      "CGA",
+      "CGG",
+      "AGA",
+      "AGG"
+    ],
     "class": "Basic",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "N", "x": 5.7, "y": -2.2, "z": 1.6 },
-      { "element": "C", "x": 6.4, "y": -3.3, "z": 2.4 },
-      { "element": "N", "x": 7.7, "y": -3.3, "z": 2.4 },
-      { "element": "N", "x": 5.8, "y": -4.4, "z": 3.2 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "N",
+        "x": 5.7,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "C",
+        "x": 6.4,
+        "y": -3.3,
+        "z": 2.4
+      },
+      {
+        "element": "N",
+        "x": 7.7,
+        "y": -3.3,
+        "z": 2.4
+      },
+      {
+        "element": "N",
+        "x": 5.8,
+        "y": -4.4,
+        "z": 3.2
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Utilizes the characteristic Class I HIGH motif for ligand stabilization; highly conserved salt bridges bind to the carboxyl group."
+    },
+    "tRNA": {
+      "features": "Backbone Brackets motif in aaRS delineates Class I interface."
+    },
+    "pKa": {
+      "carboxyl": 2.17,
+      "amine": 9.04,
+      "sideChain": 12.48
+    }
   },
   {
     "name": "Asparagine",
     "code1": "N",
     "code3": "Asn",
-    "codons": ["AAU", "AAC"],
+    "codons": [
+      "AAU",
+      "AAC"
+    ],
     "class": "Polar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 4.3, "y": -0.1, "z": 0.8 },
-      { "element": "N", "x": 4.1, "y": -2.3, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "O",
+        "x": 4.3,
+        "y": -0.1,
+        "z": 0.8
+      },
+      {
+        "element": "N",
+        "x": 4.1,
+        "y": -2.3,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Water-assisted hydrogen bonding between a binding site residue and the amide group; binding pocket perfectly fits the side chain."
+    },
+    "tRNA": {
+      "features": "Arginine Tweezers motif in aaRS delineates Class II interface."
+    },
+    "pKa": {
+      "carboxyl": 2.02,
+      "amine": 8.8
+    }
   },
   {
     "name": "Aspartic acid",
     "code1": "D",
     "code3": "Asp",
-    "codons": ["GAU", "GAC"],
+    "codons": [
+      "GAU",
+      "GAC"
+    ],
     "class": "Acidic",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 4.3, "y": -0.1, "z": 0.8 },
-      { "element": "O", "x": 4.1, "y": -2.3, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "O",
+        "x": 4.3,
+        "y": -0.1,
+        "z": 0.8
+      },
+      {
+        "element": "O",
+        "x": 4.1,
+        "y": -2.3,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "subclass": "IIb",
+      "mechanism": "Ligand orientation is distinct (torsion angle ~ -65 degrees); recognition is not entirely driven by side chain interactions."
+    },
+    "tRNA": {
+      "features": "Attacks the tRNA from the opposite side compared to Class I (e.g. GluRS)."
+    },
+    "pKa": {
+      "carboxyl": 1.88,
+      "amine": 9.6,
+      "sideChain": 3.65
+    }
   },
   {
     "name": "Cysteine",
     "code1": "C",
     "code3": "Cys",
-    "codons": ["UGU", "UGC"],
+    "codons": [
+      "UGU",
+      "UGC"
+    ],
     "class": "Polar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "S", "x": 3.9, "y": -1.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "S",
+        "x": 3.9,
+        "y": -1.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Recognition mechanism is among the closest Class I mechanisms to Class II."
+    },
+    "tRNA": {
+      "features": "Backbone Brackets motif in aaRS delineates Class I interface."
+    },
+    "pKa": {
+      "carboxyl": 1.96,
+      "amine": 10.28,
+      "sideChain": 8.18
+    }
   },
   {
     "name": "Glutamine",
     "code1": "Q",
     "code3": "Gln",
-    "codons": ["CAA", "CAG"],
+    "codons": [
+      "CAA",
+      "CAG"
+    ],
     "class": "Polar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "O", "x": 3.6, "y": -3.3, "z": 2.0 },
-      { "element": "N", "x": 5.5, "y": -2.2, "z": 1.6 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "O",
+        "x": 3.6,
+        "y": -3.3,
+        "z": 2.0
+      },
+      {
+        "element": "N",
+        "x": 5.5,
+        "y": -2.2,
+        "z": 1.6
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "subclass": "Ib",
+      "mechanism": "Distinguishes from glutamic acid without editing; relies on subtler interactions and allosteric effects."
+    },
+    "tRNA": {
+      "features": "Backbone Brackets motif in aaRS delineates Class I interface."
+    },
+    "pKa": {
+      "carboxyl": 2.17,
+      "amine": 9.13
+    }
   },
   {
     "name": "Glutamic acid",
     "code1": "E",
     "code3": "Glu",
-    "codons": ["GAA", "GAG"],
+    "codons": [
+      "GAA",
+      "GAG"
+    ],
     "class": "Acidic",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "O", "x": 3.6, "y": -3.3, "z": 2.0 },
-      { "element": "O", "x": 5.5, "y": -2.2, "z": 1.6 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "O",
+        "x": 3.6,
+        "y": -3.3,
+        "z": 2.0
+      },
+      {
+        "element": "O",
+        "x": 5.5,
+        "y": -2.2,
+        "z": 1.6
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "subclass": "Ib",
+      "mechanism": "Ligand orientation is distinct (torsion angle ~ 55 degrees); recognition relies on large binding site volume (avg 147 A^3)."
+    },
+    "tRNA": {
+      "features": "Attacks the tRNA from the opposite side compared to Class II (e.g. AspRS)."
+    },
+    "pKa": {
+      "carboxyl": 2.19,
+      "amine": 9.67,
+      "sideChain": 4.25
+    }
   },
   {
     "name": "Glycine",
     "code1": "G",
     "code3": "Gly",
-    "codons": ["GGU", "GGC", "GGA", "GGG"],
+    "codons": [
+      "GGU",
+      "GGC",
+      "GGA",
+      "GGG"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Unspecific interaction-driven recognition; specificity maintained by active site geometry that blocks larger amino acids."
+    },
+    "tRNA": {
+      "features": "Diverse recognition mechanisms observed across species."
+    },
+    "pKa": {
+      "carboxyl": 2.34,
+      "amine": 9.6
+    }
   },
   {
     "name": "Histidine",
     "code1": "H",
     "code3": "His",
-    "codons": ["CAU", "CAC"],
+    "codons": [
+      "CAU",
+      "CAC"
+    ],
     "class": "Basic",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "N", "x": 4.4, "y": -2.2, "z": 0.8 },
-      { "element": "C", "x": 5.7, "y": -1.9, "z": 0.8 },
-      { "element": "N", "x": 5.8, "y": -0.6, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -0.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "N",
+        "x": 4.4,
+        "y": -2.2,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -1.9,
+        "z": 0.8
+      },
+      {
+        "element": "N",
+        "x": 5.8,
+        "y": -0.6,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -0.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Forms a distinct cluster in recognition space, suggesting a unique and well-separated recognition mechanism."
+    },
+    "tRNA": {
+      "features": "Arginine Tweezers motif in aaRS delineates Class II interface."
+    },
+    "pKa": {
+      "carboxyl": 1.82,
+      "amine": 9.17,
+      "sideChain": 6.0
+    }
   },
   {
     "name": "Isoleucine",
     "code1": "I",
     "code3": "Ile",
-    "codons": ["AUU", "AUC", "AUA"],
+    "codons": [
+      "AUU",
+      "AUC",
+      "AUA"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 1.5, "y": -2.4, "z": 1.2 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.4, "z": 1.6 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 1.2
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.4,
+        "z": 1.6
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Double sieve mechanism: steric exclusion of larger amino acids at the activation site and editing of smaller ones (Val, Leu)."
+    },
+    "tRNA": {
+      "features": "Relies heavily on editing functionality for correct discrimination."
+    },
+    "pKa": {
+      "carboxyl": 2.36,
+      "amine": 9.6
+    }
   },
   {
     "name": "Leucine",
     "code1": "L",
     "code3": "Leu",
-    "codons": ["UUA", "UUG", "CUU", "CUC", "CUA", "CUG"],
+    "codons": [
+      "UUA",
+      "UUG",
+      "CUU",
+      "CUC",
+      "CUA",
+      "CUG"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.4, "z": 1.2 },
-      { "element": "C", "x": 4.2, "y": 0.2, "z": 1.2 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.4,
+        "z": 1.2
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": 0.2,
+        "z": 1.2
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Editing domain provides steric selection based on side chain length and shape to distinguish from similar hydrophobic amino acids."
+    },
+    "tRNA": {
+      "features": "Editing mechanism is essential for selectivity."
+    },
+    "pKa": {
+      "carboxyl": 2.36,
+      "amine": 9.6
+    }
   },
   {
     "name": "Lysine",
     "code1": "K",
     "code3": "Lys",
-    "codons": ["AAA", "AAG"],
+    "codons": [
+      "AAA",
+      "AAG"
+    ],
     "class": "Basic",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "C", "x": 5.7, "y": -2.2, "z": 1.6 },
-      { "element": "N", "x": 6.3, "y": -3.3, "z": 2.4 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "N",
+        "x": 6.3,
+        "y": -3.3,
+        "z": 2.4
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Unrelated recognition mechanism to ArgRS; poor editing capabilities regarding arginine."
+    },
+    "tRNA": {
+      "features": "Arginine Tweezers motif in aaRS delineates Class II interface."
+    },
+    "pKa": {
+      "carboxyl": 2.18,
+      "amine": 8.95,
+      "sideChain": 10.53
+    }
   },
   {
     "name": "Methionine",
     "code1": "M",
     "code3": "Met",
-    "codons": ["AUG"],
+    "codons": [
+      "AUG"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "S", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "C", "x": 5.7, "y": -2.2, "z": 1.6 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "S",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -2.2,
+        "z": 1.6
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Highly similar interaction patterns to IleRS and ValRS; relies on editing functionality for discrimination."
+    },
+    "tRNA": {
+      "features": "Backbone Brackets motif in aaRS delineates Class I interface."
+    },
+    "pKa": {
+      "carboxyl": 2.28,
+      "amine": 9.21
+    }
   },
   {
     "name": "Phenylalanine",
     "code1": "F",
     "code3": "Phe",
-    "codons": ["UUU", "UUC"],
+    "codons": [
+      "UUU",
+      "UUC"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -2.1, "z": 0.8 },
-      { "element": "C", "x": 5.9, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 5.9, "y": -2.1, "z": 0.8 },
-      { "element": "C", "x": 6.6, "y": -1.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -0.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -2.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 5.9,
+        "y": -0.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 5.9,
+        "y": -2.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 6.6,
+        "y": -1.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Evolved from the same precursor as TrpRS and TyrRS, but belongs to Class II."
+    },
+    "tRNA": {
+      "features": "Arginine Tweezers motif in aaRS delineates Class II interface."
+    },
+    "pKa": {
+      "carboxyl": 1.83,
+      "amine": 9.13
+    }
   },
   {
     "name": "Proline",
     "code1": "P",
     "code3": "Pro",
-    "codons": ["CCU", "CCC", "CCA", "CCG"],
+    "codons": [
+      "CCU",
+      "CCC",
+      "CCA",
+      "CCG"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 1.5, "y": -2.4, "z": 0.8 },
-      { "element": "C", "x": 0.1, "y": -2.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 0.1,
+        "y": -2.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Recognition mechanism is closely neighbored with Threonine and Serine in the embedding space."
+    },
+    "tRNA": {
+      "features": "Arginine Tweezers motif in aaRS delineates Class II interface."
+    },
+    "pKa": {
+      "carboxyl": 1.99,
+      "amine": 10.6
+    }
   },
   {
     "name": "Serine",
     "code1": "S",
     "code3": "Ser",
-    "codons": ["UCU", "UCC", "UCA", "UCG", "AGU", "AGC"],
+    "codons": [
+      "UCU",
+      "UCC",
+      "UCA",
+      "UCG",
+      "AGU",
+      "AGC"
+    ],
     "class": "Polar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 3.5, "y": -1.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "O",
+        "x": 3.5,
+        "y": -1.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Recognition mechanism is closely neighbored with Threonine and Proline; used as a reference for interaction fingerprinting."
+    },
+    "tRNA": {
+      "features": "Charges Serine onto both tRNA^Ser and tRNA^Sec."
+    },
+    "pKa": {
+      "carboxyl": 2.21,
+      "amine": 9.15
+    }
   },
   {
     "name": "Threonine",
     "code1": "T",
     "code3": "Thr",
-    "codons": ["ACU", "ACC", "ACA", "ACG"],
+    "codons": [
+      "ACU",
+      "ACC",
+      "ACA",
+      "ACG"
+    ],
     "class": "Polar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 1.5, "y": -2.4, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "O",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Double discrimination problem solved via editing; specifically edits serine that mischarges to the threonine site."
+    },
+    "tRNA": {
+      "features": "Arginine Tweezers motif in aaRS delineates Class II interface."
+    },
+    "pKa": {
+      "carboxyl": 2.09,
+      "amine": 9.1
+    }
   },
   {
     "name": "Tryptophan",
     "code1": "W",
     "code3": "Trp",
-    "codons": ["UGG"],
+    "codons": [
+      "UGG"
+    ],
     "class": "Nonpolar",
-    "atoms": []
+    "atoms": [],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Unique utilization of pi-stacking interactions; features two distinct recognition variants (bacterial/archaeal vs eukaryotic/archaeal)."
+    },
+    "tRNA": {
+      "features": "Late addition to the genetic code; specificity involves allosteric effects and interdomain cooperativity."
+    },
+    "pKa": {
+      "carboxyl": 2.83,
+      "amine": 9.39
+    }
   },
   {
     "name": "Tyrosine",
     "code1": "Y",
     "code3": "Tyr",
-    "codons": ["UAU", "UAC"],
+    "codons": [
+      "UAU",
+      "UAC"
+    ],
     "class": "Polar",
-    "atoms": []
+    "atoms": [],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Unique utilization of pi-stacking interactions; likely of common origin with TrpRS."
+    },
+    "tRNA": {
+      "features": "Late addition to the genetic code; separates well from other aaRSs in recognition space."
+    },
+    "pKa": {
+      "carboxyl": 2.2,
+      "amine": 9.11,
+      "sideChain": 10.07
+    }
   },
   {
     "name": "Valine",
     "code1": "V",
     "code3": "Val",
-    "codons": ["GUU", "GUC", "GUA", "GUG"],
+    "codons": [
+      "GUU",
+      "GUC",
+      "GUA",
+      "GUG"
+    ],
     "class": "Nonpolar",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 1.5, "y": -2.4, "z": 0.8 }
-    ]
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 0.8
+      }
+    ],
+    "aaRS": {
+      "class": "I",
+      "mechanism": "Relies on binding site geometry and editing for discrimination; closely related to IleRS and MetRS mechanisms."
+    },
+    "tRNA": {
+      "features": "Backbone Brackets motif in aaRS delineates Class I interface."
+    },
+    "pKa": {
+      "carboxyl": 2.32,
+      "amine": 9.62
+    }
   },
   {
     "name": "Selenocysteine",
     "code1": "U",
     "code3": "Sec",
-    "codons": ["UGA"],
+    "codons": [
+      "UGA"
+    ],
     "class": "Polar",
-    "atoms": []
+    "atoms": [],
+    "aaRS": {
+      "class": "II",
+      "mechanism": "Charged by SerRS as Serine onto tRNA^Sec, which is then enzymatically converted to Selenocysteine."
+    },
+    "tRNA": {
+      "features": "Recognized by SerRS, which ignores the anticodon but recognizes the acceptor stem features."
+    },
+    "pKa": {
+      "carboxyl": 1.91,
+      "amine": 10.0,
+      "sideChain": 5.43
+    }
   }
 ]

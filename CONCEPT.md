@@ -63,6 +63,11 @@ Die Daten werden zur Laufzeit direkt von Diensten wie PubChem oder der Protein D
 
 **Entscheidung:** Wir haben uns für **Statische JSON-Dateien** entschieden, da die Daten für 21 Aminosäuren stabil sind und dieser Ansatz die einfachste und robusteste Lösung für eine Bildungsanwendung darstellt.
 
+## Integration von evolutionärer Biochemie und Physikochemie
+Um das Curriculum über die bloße Struktur hinaus zu vertiefen, haben wir Erkenntnisse über die Erkennung von Aminosäuren durch Aminoacyl-tRNA-Synthetasen (aaRS) sowie signifikante pH-Werte (pKa-Werte) für die funktionellen Gruppen (Aminogruppe, Carboxylgruppe, Seitenkette) integriert.
+
+Die aaRS-Daten basieren auf computergestützten Analysen kristallographischer Daten (Nature Scientific Reports 2020), die zeigen, dass die Spezifität des genetischen Codes ein komplexes Zusammenspiel aus Bindungstaschenzusammensetzung, nicht-kovalenten Interaktionen und Korrekturmechanismen ist. Die pKa-Werte ermöglichen ein tieferes Verständnis des Ionisierungszustands der Aminosäuren bei unterschiedlichen pH-Werten, was für die Untersuchung von Proteininteraktionen und Enzymkatalyse unerlässlich ist.
+
 ## Zusammenfassung der verworfenen Alternativen
 - **Linearer Kurs:** Verworfen aufgrund mangelnder Flexibilität.
 - **Quiz-basierter Fortschritt:** Verworfen, um einen einfachen Zugang zu Informationen ohne künstliche Barrieren zu gewährleisten.

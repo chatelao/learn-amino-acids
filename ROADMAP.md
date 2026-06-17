@@ -40,6 +40,8 @@
 - [x] Strukturdaten für Aminosäuren 11-15 abrufen/erstellen (Leu, Lys, Met, Phe, Pro) (2026-06-15 20:20:00 UTC)
 - [x] Strukturdaten für Aminosäuren 16-18 abrufen/erstellen (Ser, Thr, Val) (2026-06-15 21:00:00 UTC)
 - [ ] Strukturdaten für Aminosäuren 19-21 abrufen/erstellen (Trp, Tyr, Sec)
+- [x] Integration von Erkenntnissen zu aaRS und tRNAs (2026-06-17 21:11:08 UTC)
+- [x] Integration signifikanter pH-Werte (pKa) für NH2/COOH Gruppen (2026-06-17 21:27:54 UTC)
 - [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)
 
 ### Phase 4: Visualisierungs-Engine ✅

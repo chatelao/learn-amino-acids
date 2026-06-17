@@ -93,11 +93,40 @@ const App = () => {
           <article>
             <div style={{ marginBottom: '20px' }}>
               <h2 style={{ margin: '0 0 10px 0' }}>{selectedAA.name} ({selectedAA.code3} / {selectedAA.code1})</h2>
-              <div style={{ display: 'flex', gap: '40px' }}>
+              <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
                 <p><strong>Chemical Class:</strong> <span style={{ padding: '4px 8px', backgroundColor: '#e0f7fa', borderRadius: '4px' }}>{selectedAA.class}</span></p>
                 <p><strong>mRNA Codons:</strong> {selectedAA.codons.map(c => <code key={c} style={{ marginLeft: '5px', padding: '2px 4px', backgroundColor: '#eee', borderRadius: '3px' }}>{c}</code>)}</p>
               </div>
             </div>
+
+            <section style={{ backgroundColor: '#fffde7', padding: '15px', borderRadius: '8px', marginBottom: '20px', border: '1px solid #fff59d' }}>
+              <h3 style={{ marginTop: 0 }}>Biological Context (aaRS & tRNA)</h3>
+              {selectedAA.aaRS && (
+                <div style={{ marginBottom: '10px' }}>
+                  <p><strong>aaRS Class:</strong> {selectedAA.aaRS.class} {selectedAA.aaRS.subclass ? `(Subclass ${selectedAA.aaRS.subclass})` : ''}</p>
+                  <p><strong>Recognition Mechanism:</strong> {selectedAA.aaRS.mechanism}</p>
+                </div>
+              )}
+              {selectedAA.tRNA && (
+                <p><strong>tRNA Interface Features:</strong> {selectedAA.tRNA.features}</p>
+              )}
+              <p style={{ fontSize: '0.8rem', color: '#888', marginTop: '10px' }}>
+                Source: <i>Nature Scientific Reports (2020) 10:12530</i>
+              </p>
+            </section>
+
+            {selectedAA.pKa && (
+              <section style={{ backgroundColor: '#e8f5e9', padding: '15px', borderRadius: '8px', marginBottom: '20px', border: '1px solid #c8e6c9' }}>
+                <h3 style={{ marginTop: 0 }}>Physicochemical Properties (pKa)</h3>
+                <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap' }}>
+                  <p><strong>-COOH (pKa1):</strong> {selectedAA.pKa.carboxyl}</p>
+                  <p><strong>-NH3+ (pKa2):</strong> {selectedAA.pKa.amine}</p>
+                  {selectedAA.pKa.sideChain !== undefined && (
+                    <p><strong>Side Chain (pKaR):</strong> {selectedAA.pKa.sideChain}</p>
+                  )}
+                </div>
+              </section>
+            )}
 
             {selectedAA.atoms.length === 0 && (
               <div style={{ color: '#d32f2f', backgroundColor: '#ffebee', padding: '15px', borderRadius: '4px', marginBottom: '20px', border: '1px solid #ef9a9a' }}>

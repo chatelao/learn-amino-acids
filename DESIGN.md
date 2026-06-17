@@ -14,7 +14,7 @@ Die Anwendung ist als clientseitige Webanwendung strukturiert.
 ### Technische Schnittstellen
 - **CCP API (Intern):** Ein TypeScript-Service, der Zugriff auf Aminosäure-Metadaten bietet (Name, 1-Buchstaben/3-Buchstaben-Code, Codons, chemische Klasse).
 - **VE API (Intern):** Eine React-Komponentenbibliothek, die Molekülkoordinaten und den Rendering-Modus (2D, Stick, Ball) als Props entgegennimmt und ein Canvas/SVG-Element zurückgibt.
-- **DR-Schnittstelle:** Standardisierte JSON-Struktur, gespeichert in `/src/data/`, die PDB-ähnliche Koordinaten für jede Aminosäure repräsentiert.
+- **DR-Schnittstelle:** Standardisierte JSON-Struktur, gespeichert in `/src/data/`, die PDB-ähnliche Koordinaten für jede Aminosäure sowie Informationen zu aaRS-Klassen, tRNA-Interface-Merkmalen und pKa-Werten repräsentiert.
 
 ### Komponentendiagramm
 Die Architektur wird durch das folgende Diagramm visualisiert:
