@@ -158,3 +158,39 @@ test('verifies rendering of Serine', async ({ page }) => {
 
   await page.screenshot({ path: 'test-results/serine-rendering.png' });
 });
+
+test('verifies rendering of Tryptophan', async ({ page }) => {
+  await page.goto('/');
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Trp');
+  await expect(page.locator('h2')).toHaveText(/Tryptophan \(Trp \/ W\)/);
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(15);
+  await page.screenshot({ path: 'test-results/tryptophan-rendering.png' });
+});
+
+test('verifies rendering of Tyrosine', async ({ page }) => {
+  await page.goto('/');
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Tyr');
+  await expect(page.locator('h2')).toHaveText(/Tyrosine \(Tyr \/ Y\)/);
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(13);
+  await page.screenshot({ path: 'test-results/tyrosine-rendering.png' });
+});
+
+test('verifies rendering of Selenocysteine', async ({ page }) => {
+  await page.goto('/');
+  const aaSelect = page.locator('#aa-select');
+  await aaSelect.selectOption('Sec');
+  await expect(page.locator('h2')).toHaveText(/Selenocysteine \(Sec \/ U\)/);
+  const svg = page.locator('svg');
+  await expect(svg).toBeVisible();
+  const circles = svg.locator('circle');
+  await expect(circles).toHaveCount(7);
+  await page.screenshot({ path: 'test-results/selenocysteine-rendering.png' });
+});
