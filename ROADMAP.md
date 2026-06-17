@@ -15,7 +15,7 @@
 - ✅ Entwicklungsumgebung einrichten.
 - ⏳ 21 Aminosäure-Modelle in drei verschiedenen Modi bereitstellen.
 - ⏳ Lerninhalte zu mRNA-Codons integrieren.
-- ⏳ Interaktives Curriculum über GitHub Pages / RTD bereitstellen.
+- ✅ Interaktives Curriculum über GitHub Pages / RTD bereitstellen. (2026-06-17 19:35:31 UTC)
 
 ## Phasen
 
@@ -30,6 +30,7 @@
 - [x] `src/install.sh` für Build-Tools erstellen (2026-06-14 10:30:22 UTC)
 - [x] Leere CI/CD-Pipeline in GitHub Actions einrichten (2026-06-14 10:30:22 UTC)
 - [x] ReadTheDocs (RTD) Integration konfigurieren (2026-06-14 10:30:22 UTC)
+- [x] GitHub Pages Deployment-Workflow einrichten (2026-06-17 19:35:31 UTC)
 
 ### Phase 3: Datenerfassung 🏗️
 - [x] JSON-Schema für Aminosäure-Daten erstellen (2026-06-14 11:40:00 UTC)
