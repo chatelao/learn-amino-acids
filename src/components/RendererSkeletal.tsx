@@ -10,15 +10,29 @@ interface RendererSkeletalProps {
 }
 
 const RendererSkeletal: React.FC<RendererSkeletalProps> = ({
-  atoms,
-  bonds,
+  atoms: rawAtoms,
+  bonds: rawBonds,
   aminoAcidClass,
   width = 400,
   height = 400
 }) => {
-  if (!atoms || atoms.length === 0) {
+  if (!rawAtoms || rawAtoms.length === 0) {
     return <div>No atomic data available.</div>;
   }
+
+  // Filter out hydrogens for skeletal view
+  const hIndices = rawAtoms.map((a, i) => a.element.toUpperCase() === 'H' ? i : -1).filter(i => i !== -1);
+  const atoms = rawAtoms.filter(a => a.element.toUpperCase() !== 'H');
+  const indexMap = new Map();
+  let newIdx = 0;
+  rawAtoms.forEach((a, i) => {
+    if (a.element.toUpperCase() !== 'H') {
+      indexMap.set(i, newIdx++);
+    }
+  });
+
+  const bonds = rawBonds.filter(b => !hIndices.includes(b.from) && !hIndices.includes(b.to))
+    .map(b => ({ ...b, from: indexMap.get(b.from), to: indexMap.get(b.to) }));
 
   // Calculate bounding box for scaling/centering
   const xs = atoms.map(a => a.x);
