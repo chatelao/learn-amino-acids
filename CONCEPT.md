@@ -69,3 +69,7 @@ Die Daten werden zur Laufzeit direkt von Diensten wie PubChem oder der Protein D
 - **Quiz-basierter Fortschritt:** Verworfen, um einen einfachen Zugang zu Informationen ohne künstliche Barrieren zu gewährleisten.
 - **Zentrale SQL-Datenbank:** Verworfen wegen unnötiger Infrastruktur-Komplexität für einen begrenzten Datensatz.
 - **Externe Bio-Datenbank-API:** Verworfen wegen der Abhängigkeit von Drittanbietern und der Komplexität des Datenmappings.
+
+## Quellen
+- **Jakubowski, H., and Flatt, P.** "3.1: Amino Acids and Peptides." *Fundamentals of Biochemistry*. Biology LibreTexts. [Link](https://bio.libretexts.org/Bookshelves/Biochemistry/Fundamentals_of_Biochemistry_(Jakubowski_and_Flatt)/01:_Unit_I-_Structure_and_Catalysis/03:_Amino_Acids_Peptides_and_Proteins/3.01:_Amino_Acids_and_Peptides)
+- **Kaiser et al. (2020).** Referenz für die Klassifizierung von Aminoacyl-tRNA-Synthetasen und tRNA-Erkennungselemente.
