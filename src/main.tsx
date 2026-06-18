@@ -101,6 +101,19 @@ const App = () => {
               <div style={{ marginBottom: '15px', padding: '10px', backgroundColor: '#fff8e1', borderRadius: '8px', borderLeft: '5px solid #ffc107' }}>
                 <strong>tRNA Recognition:</strong> {selectedAA.tRNA_info}
               </div>
+
+              <div style={{ display: 'flex', gap: '20px', marginBottom: '20px' }}>
+                <div style={{ flex: 1, padding: '15px', backgroundColor: '#ffebee', borderRadius: '8px', borderLeft: '5px solid #ef5350', textAlign: 'center' }}>
+                  <div style={{ fontWeight: 'bold', color: '#c62828' }}>Low pH Area</div>
+                  <div style={{ fontSize: '1.1rem', margin: '5px 0' }}>pH 2.0</div>
+                  <div style={{ fontSize: '2.5rem', fontWeight: 'bold', lineHeight: '1', color: '#c62828' }}>+</div>
+                </div>
+                <div style={{ flex: 1, padding: '15px', backgroundColor: '#e8f5e9', borderRadius: '8px', borderLeft: '5px solid #66bb6a', textAlign: 'center' }}>
+                  <div style={{ fontWeight: 'bold', color: '#2e7d32' }}>High pH Area</div>
+                  <div style={{ fontSize: '1.1rem', margin: '5px 0' }}>pH 12.0</div>
+                  <div style={{ fontSize: '2.5rem', fontWeight: 'bold', lineHeight: '1', color: '#2e7d32' }}>-</div>
+                </div>
+              </div>
             </div>
 
             {selectedAA.atoms.length === 0 && (
