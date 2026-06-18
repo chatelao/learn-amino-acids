@@ -79,6 +79,12 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, heigh
       const material = elementMaterials[atom.element.toUpperCase()] || elementMaterials['DEFAULT'];
       const sphere = new THREE.Mesh(atomGeometry, material);
       sphere.position.set(atom.x - centerX, atom.y - centerY, atom.z - centerZ);
+
+      // Make Hydrogens smaller
+      if (atom.element.toUpperCase() === 'H') {
+        sphere.scale.set(0.6, 0.6, 0.6);
+      }
+
       moleculeGroup.add(sphere);
     });
 

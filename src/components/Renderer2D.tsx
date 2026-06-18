@@ -77,7 +77,7 @@ const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, width = 400, height = 40
           <circle
             cx={projectX(atom.x)}
             cy={projectY(atom.y)}
-            r="10"
+            r={atom.element.toUpperCase() === 'H' ? "6" : "10"}
             fill={getElementColor(atom.element)}
             stroke="#000"
             strokeWidth="1"
@@ -87,7 +87,7 @@ const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, width = 400, height = 40
             y={projectY(atom.y)}
             textAnchor="middle"
             dominantBaseline="central"
-            fontSize="10"
+            fontSize={atom.element.toUpperCase() === 'H' ? "6" : "10"}
             fontWeight="bold"
             fill={atom.element.toUpperCase() === 'C' || atom.element.toUpperCase() === 'N' ? '#fff' : '#000'}
           >
