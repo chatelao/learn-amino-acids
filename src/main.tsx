@@ -115,6 +115,12 @@ const App = () => {
               gap: '20px'
             }}>
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
+                <h3 style={{ marginTop: 0 }}>Skeletal Notation (B/W)</h3>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <VisualizationEngine atoms={selectedAA.atoms} mode="Skeletal" aminoAcidClass={selectedAA.class} />
+                </div>
+              </section>
+              <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>2D Structure</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <VisualizationEngine atoms={selectedAA.atoms} mode="2D" />

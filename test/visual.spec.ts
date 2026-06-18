@@ -15,7 +15,7 @@ test('renders amino acid info', async ({ page }) => {
   expect(infoText.some(t => t.includes('mRNA Codons:'))).toBeTruthy();
 
   // Check if SVG is rendered
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
 
   // Check if some atoms are rendered (Alanine has 6 atoms in JSON)
@@ -82,7 +82,7 @@ test('verifies rendering of newly added amino acid Glutamine', async ({ page }) 
   await expect(page.locator('h2')).toHaveText(/Glutamine \(Gln \/ Q\)/);
 
   // Check if SVG is rendered
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
 
   // Glutamine has 10 atoms in our new data
@@ -107,7 +107,7 @@ test('verifies rendering of Glycine', async ({ page }) => {
   await expect(page.locator('h2')).toHaveText(/Glycine \(Gly \/ G\)/);
 
   // Check if SVG is rendered
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
 
   // Glycine has 5 atoms
@@ -128,7 +128,7 @@ test('verifies rendering of Phenylalanine', async ({ page }) => {
   await expect(page.locator('h2')).toHaveText(/Phenylalanine \(Phe \/ F\)/);
 
   // Check if SVG is rendered
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
 
   // Phenylalanine has 12 atoms
@@ -149,7 +149,7 @@ test('verifies rendering of Serine', async ({ page }) => {
   await expect(page.locator('h2')).toHaveText(/Serine \(Ser \/ S\)/);
 
   // Check if SVG is rendered
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
 
   // Serine has 7 atoms in our new data
@@ -164,7 +164,7 @@ test('verifies rendering of Tryptophan', async ({ page }) => {
   const aaSelect = page.locator('#aa-select');
   await aaSelect.selectOption('Trp');
   await expect(page.locator('h2')).toHaveText(/Tryptophan \(Trp \/ W\)/);
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
   const circles = svg.locator('circle');
   await expect(circles).toHaveCount(15);
@@ -176,7 +176,7 @@ test('verifies rendering of Tyrosine', async ({ page }) => {
   const aaSelect = page.locator('#aa-select');
   await aaSelect.selectOption('Tyr');
   await expect(page.locator('h2')).toHaveText(/Tyrosine \(Tyr \/ Y\)/);
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
   const circles = svg.locator('circle');
   await expect(circles).toHaveCount(13);
@@ -188,7 +188,7 @@ test('verifies rendering of Selenocysteine', async ({ page }) => {
   const aaSelect = page.locator('#aa-select');
   await aaSelect.selectOption('Sec');
   await expect(page.locator('h2')).toHaveText(/Selenocysteine \(Sec \/ U\)/);
-  const svg = page.locator('svg');
+  const svg = page.locator('section:has-text("2D Structure") svg');
   await expect(svg).toBeVisible();
   const circles = svg.locator('circle');
   await expect(circles).toHaveCount(7);
