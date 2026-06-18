@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { ccp, AminoAcidClass } from './services/ccp'
 import VisualizationEngine from './components/VisualizationEngine'
+import CodonTable from './components/CodonTable'
 
 const App = () => {
   const [selectedClass, setSelectedClass] = useState<AminoAcidClass | 'All'>('All');
@@ -125,7 +126,8 @@ const App = () => {
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-              gap: '20px'
+              gap: '20px',
+              marginBottom: '20px'
             }}>
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>2D Structure</h3>
@@ -146,6 +148,7 @@ const App = () => {
                 </div>
               </section>
             </div>
+            <CodonTable selectedAA={selectedAA} />
           </article>
         ) : (
           <p>Please select an amino acid to explore its details.</p>
