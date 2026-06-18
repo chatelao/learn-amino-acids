@@ -27,12 +27,20 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, heigh
     renderer.setSize(width, height);
     containerRef.current.appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
     scene.add(ambientLight);
 
-    const pointLight = new THREE.PointLight(0xffffff, 0.8);
-    pointLight.position.set(10, 10, 10);
-    scene.add(pointLight);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(5, 10, 7.5);
+    scene.add(directionalLight);
+
+    const pointLight1 = new THREE.PointLight(0xffffff, 0.5);
+    pointLight1.position.set(10, 10, 10);
+    scene.add(pointLight1);
+
+    const pointLight2 = new THREE.PointLight(0xffffff, 0.3);
+    pointLight2.position.set(-10, -10, -10);
+    scene.add(pointLight2);
 
     const moleculeGroup = new THREE.Group();
     scene.add(moleculeGroup);
