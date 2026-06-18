@@ -73,3 +73,10 @@ For more detailed information on the project's structure and goals, please refer
 - [CONCEPT.md](./CONCEPT.md)
 - [DESIGN.md](./DESIGN.md)
 - [ROADMAP.md](./ROADMAP.md)
+- [REFERENCES.md](./REFERENCES.md)
+
+## Sources
+
+This project utilizes scientific data and educational materials from:
+- [Biology LibreTexts: Amino Acids and Peptides](https://bio.libretexts.org/Bookshelves/Biochemistry/Fundamentals_of_Biochemistry_(Jakubowski_and_Flatt)/01:_Unit_I-_Structure_and_Catalysis/03:_Amino_Acids_Peptides_and_Proteins/3.01:_Amino_Acids_and_Peptides)
+- Kaiser et al. (2020) for aaRS and tRNA metadata.
