@@ -1,13 +1,14 @@
 import React from 'react';
-import { Atom } from '../services/ccp';
+import { Atom, Bond } from '../services/ccp';
 
 interface Renderer2DProps {
   atoms: Atom[];
+  bonds: Bond[];
   width?: number;
   height?: number;
 }
 
-const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, width = 400, height = 400 }) => {
+const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, bonds, width = 400, height = 400 }) => {
   if (!atoms || atoms.length === 0) {
     return <div>No atomic data available.</div>;
   }
@@ -41,35 +42,59 @@ const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, width = 400, height = 40
     }
   };
 
-  // Find bonds based on distance
-  const bonds: [number, number][] = [];
-  const BOND_THRESHOLD = 1.9; // Typical bond length is < 1.6, but we add some margin
-  for (let i = 0; i < atoms.length; i++) {
-    for (let j = i + 1; j < atoms.length; j++) {
-      const dx = atoms[i].x - atoms[j].x;
-      const dy = atoms[i].y - atoms[j].y;
-      const dz = atoms[i].z - atoms[j].z;
-      const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
-      if (dist < BOND_THRESHOLD) {
-        bonds.push([i, j]);
-      }
-    }
-  }
-
   return (
     <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{ background: '#f0f0f0' }}>
       {/* Draw Bonds */}
-      {bonds.map(([i, j], index) => (
-        <line
-          key={`bond-${index}`}
-          x1={projectX(atoms[i].x)}
-          y1={projectY(atoms[i].y)}
-          x2={projectX(atoms[j].x)}
-          y2={projectY(atoms[j].y)}
-          stroke="#333"
-          strokeWidth="3"
-        />
-      ))}
+      {bonds.map((bond, index) => {
+        const atom1 = atoms[bond.from];
+        const atom2 = atoms[bond.to];
+        const x1 = projectX(atom1.x);
+        const y1 = projectY(atom1.y);
+        const x2 = projectX(atom2.x);
+        const y2 = projectY(atom2.y);
+
+        if (bond.order === 1) {
+          return (
+            <line
+              key={`bond-${index}`}
+              x1={x1}
+              y1={y1}
+              x2={x2}
+              y2={y2}
+              stroke="#333"
+              strokeWidth="3"
+            />
+          );
+        } else if (bond.order === 2) {
+          const dx = x2 - x1;
+          const dy = y2 - y1;
+          const len = Math.sqrt(dx * dx + dy * dy);
+          const offsetX = (-dy / len) * 4;
+          const offsetY = (dx / len) * 4;
+
+          return (
+            <g key={`bond-${index}`}>
+              <line
+                x1={x1 - offsetX}
+                y1={y1 - offsetY}
+                x2={x2 - offsetX}
+                y2={y2 - offsetY}
+                stroke="#333"
+                strokeWidth="2"
+              />
+              <line
+                x1={x1 + offsetX}
+                y1={y1 + offsetY}
+                x2={x2 + offsetX}
+                y2={y2 + offsetY}
+                stroke="#333"
+                strokeWidth="2"
+              />
+            </g>
+          );
+        }
+        return null;
+      })}
 
       {/* Draw Atoms */}
       {atoms.map((atom, index) => (

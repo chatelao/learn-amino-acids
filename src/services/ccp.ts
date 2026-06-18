@@ -7,6 +7,12 @@ export interface Atom {
   z: number;
 }
 
+export interface Bond {
+  from: number;
+  to: number;
+  order: number;
+}
+
 export type AminoAcidClass = 'Nonpolar' | 'Polar' | 'Acidic' | 'Basic';
 
 export interface AminoAcid {
@@ -18,6 +24,7 @@ export interface AminoAcid {
   aaRS_class: 'Class I' | 'Class II';
   tRNA_info: string;
   atoms: Atom[];
+  bonds: Bond[];
 }
 
 export class CurriculumContentProvider {
@@ -32,6 +39,13 @@ export class CurriculumContentProvider {
    */
   getAllAminoAcids(): AminoAcid[] {
     return this.data;
+  }
+
+  /**
+   * Finds an amino acid by its name.
+   */
+  getAminoAcidByName(name: string): AminoAcid | undefined {
+    return this.data.find(aa => aa.name.toLowerCase() === name.toLowerCase());
   }
 
   /**

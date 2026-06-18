@@ -117,19 +117,19 @@ const App = () => {
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>2D Structure</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <VisualizationEngine atoms={selectedAA.atoms} mode="2D" />
+                  <VisualizationEngine atoms={selectedAA.atoms} bonds={selectedAA.bonds} mode="2D" />
                 </div>
               </section>
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>Stick Model (3D)</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <VisualizationEngine atoms={selectedAA.atoms} mode="Stick" />
+                  <VisualizationEngine atoms={selectedAA.atoms} bonds={selectedAA.bonds} mode="Stick" />
                 </div>
               </section>
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>Ball & Stick Model (3D)</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <VisualizationEngine atoms={selectedAA.atoms} mode="Ball" />
+                  <VisualizationEngine atoms={selectedAA.atoms} bonds={selectedAA.bonds} mode="Ball" />
                 </div>
               </section>
             </div>
