@@ -80,6 +80,11 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
       const material = elementMaterials[atom.element.toUpperCase()] || elementMaterials['DEFAULT'];
       const sphere = new THREE.Mesh(atomGeometry, material);
       sphere.position.set(atom.x - centerX, atom.y - centerY, atom.z - centerZ);
+
+      if (atom.element.toUpperCase() === 'H') {
+        sphere.scale.set(0.6, 0.6, 0.6);
+      }
+
       moleculeGroup.add(sphere);
     });
 
