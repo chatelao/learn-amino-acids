@@ -34,6 +34,16 @@
           "Basic"
         ]
       },
+      "aaRS_class": {
+        "type": "string",
+        "enum": [
+          "Class I",
+          "Class II"
+        ]
+      },
+      "tRNA_info": {
+        "type": "string"
+      },
       "atoms": {
         "type": "array",
         "items": {
@@ -67,6 +77,8 @@
       "code3",
       "codons",
       "class",
+      "aaRS_class",
+      "tRNA_info",
       "atoms"
     ]
   }

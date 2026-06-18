@@ -5,6 +5,8 @@
     "code3": "Ala",
     "codons": ["GCU", "GCC", "GCA", "GCG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Alanyl-tRNA synthetase via the unique G3:U70 wobble base pair in the acceptor stem.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -20,6 +22,8 @@
     "code3": "Arg",
     "codons": ["CGU", "CGC", "CGA", "CGG", "AGA", "AGG"],
     "class": "Basic",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Arginyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -41,6 +45,8 @@
     "code3": "Asn",
     "codons": ["AAU", "AAC"],
     "class": "Polar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Asparaginyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -59,6 +65,8 @@
     "code3": "Asp",
     "codons": ["GAU", "GAC"],
     "class": "Acidic",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Aspartyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -77,6 +85,8 @@
     "code3": "Cys",
     "codons": ["UGU", "UGC"],
     "class": "Polar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Cysteinyl-tRNA synthetase via the anticodon and G73; utilizes a zinc-binding site.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -93,6 +103,8 @@
     "code3": "Gln",
     "codons": ["CAA", "CAG"],
     "class": "Polar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Glutaminyl-tRNA synthetase via the anticodon and U1:G72 in the acceptor stem.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -112,6 +124,8 @@
     "code3": "Glu",
     "codons": ["GAA", "GAG"],
     "class": "Acidic",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Glutamyl-tRNA synthetase via the anticodon and G73; binding involves a major conformational change.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -131,6 +145,8 @@
     "code3": "Gly",
     "codons": ["GGU", "GGC", "GGA", "GGG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Glycyl-tRNA synthetase via the anticodon and the acceptor stem.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -145,6 +161,8 @@
     "code3": "His",
     "codons": ["CAU", "CAC"],
     "class": "Basic",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Histidyl-tRNA synthetase via the unique G-1:C73 base pair in the acceptor stem.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -165,6 +183,8 @@
     "code3": "Ile",
     "codons": ["AUU", "AUC", "AUA"],
     "class": "Nonpolar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Isoleucyl-tRNA synthetase via the anticodon; includes a pre-transfer editing site for Val discrimination.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -183,6 +203,8 @@
     "code3": "Leu",
     "codons": ["UUA", "UUG", "CUU", "CUC", "CUA", "CUG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Leucyl-tRNA synthetase via the long variable loop and the acceptor stem.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -201,6 +223,8 @@
     "code3": "Lys",
     "codons": ["AAA", "AAG"],
     "class": "Basic",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Lysyl-tRNA synthetase via the anticodon and the acceptor stem; Class II in most organisms (some Archaea use Class I).",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -220,6 +244,8 @@
     "code3": "Met",
     "codons": ["AUG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Methionyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -238,6 +264,8 @@
     "code3": "Phe",
     "codons": ["UUU", "UUC"],
     "class": "Nonpolar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Phenylalanyl-tRNA synthetase; an exception as a Class II enzyme that acylates the 2'-OH and is a heterotetramer.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -259,6 +287,8 @@
     "code3": "Pro",
     "codons": ["CCU", "CCC", "CCA", "CCG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Prolyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -276,6 +306,8 @@
     "code3": "Ser",
     "codons": ["UCU", "UCC", "UCA", "UCG", "AGU", "AGC"],
     "class": "Polar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Seryl-tRNA synthetase primarily via the long variable loop of tRNA-Ser.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -292,6 +324,8 @@
     "code3": "Thr",
     "codons": ["ACU", "ACC", "ACA", "ACG"],
     "class": "Polar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Recognized by Threonyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -309,6 +343,8 @@
     "code3": "Trp",
     "codons": ["UGG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Tryptophanyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -333,6 +369,8 @@
     "code3": "Tyr",
     "codons": ["UAU", "UAC"],
     "class": "Polar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Tyrosyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -355,6 +393,8 @@
     "code3": "Val",
     "codons": ["GUU", "GUC", "GUA", "GUG"],
     "class": "Nonpolar",
+    "aaRS_class": "Class I",
+    "tRNA_info": "Recognized by Valyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
@@ -372,6 +412,8 @@
     "code3": "Sec",
     "codons": ["UGA"],
     "class": "Polar",
+    "aaRS_class": "Class II",
+    "tRNA_info": "Synthesized by Seryl-tRNA synthetase (Class II) as Ser-tRNA^Sec, followed by conversion to Sec-tRNA^Sec.",
     "atoms": [
       { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
       { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
