@@ -10,11 +10,11 @@ export default defineConfig({
   reporter: 'html',
   use: {
     trace: 'on-first-retry',
-    baseURL: 'http://localhost:5173',
+    baseURL: 'http://localhost:5173/learn-amino-acids/',
   },
   webServer: {
     command: 'npm run dev',
-    url: 'http://localhost:5173',
+    url: 'http://localhost:5173/learn-amino-acids/',
     reuseExistingServer: !process.env.CI,
   },
   projects: [

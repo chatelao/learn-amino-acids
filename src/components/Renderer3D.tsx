@@ -75,6 +75,23 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
     const centerY = sumY / atoms.length;
     const centerZ = sumZ / atoms.length;
 
+    // --- pH Indicators ---
+    const phSphereGeometry = new THREE.SphereGeometry(1.5, 32, 32);
+    const lowPhMaterial = new THREE.MeshPhongMaterial({ color: 0xffcdd2, transparent: true, opacity: 0.3 });
+    const highPhMaterial = new THREE.MeshPhongMaterial({ color: 0xc8e6c9, transparent: true, opacity: 0.3 });
+
+    // Low pH at N atom (index 0)
+    const lowPhSphere = new THREE.Mesh(phSphereGeometry, lowPhMaterial);
+    lowPhSphere.position.set(atoms[0].x - centerX, atoms[0].y - centerY, atoms[0].z - centerZ);
+    moleculeGroup.add(lowPhSphere);
+
+    // High pH at Carboxyl C atom (index 2)
+    if (atoms[2]) {
+      const highPhSphere = new THREE.Mesh(phSphereGeometry, highPhMaterial);
+      highPhSphere.position.set(atoms[2].x - centerX, atoms[2].y - centerY, atoms[2].z - centerZ);
+      moleculeGroup.add(highPhSphere);
+    }
+
     // --- Draw Atoms ---
     atoms.forEach((atom) => {
       const material = elementMaterials[atom.element.toUpperCase()] || elementMaterials['DEFAULT'];
@@ -142,6 +159,9 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
       atomGeometry.dispose();
       bondGeometry.dispose();
       bondMaterial.dispose();
+      phSphereGeometry.dispose();
+      lowPhMaterial.dispose();
+      highPhMaterial.dispose();
       Object.values(elementMaterials).forEach(m => m.dispose());
 
       geometryDispose(moleculeGroup);

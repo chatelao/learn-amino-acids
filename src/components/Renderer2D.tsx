@@ -44,6 +44,56 @@ const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, bonds, width = 400, heig
 
   return (
     <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{ background: '#f0f0f0' }}>
+      <defs>
+        <radialGradient id="lowPHGradient">
+          <stop offset="10%" stopColor="#ffcdd2" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#ffcdd2" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient id="highPHGradient">
+          <stop offset="10%" stopColor="#c8e6c9" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#c8e6c9" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+
+      {/* pH Areas */}
+      <circle
+        cx={projectX(atoms[0].x)}
+        cy={projectY(atoms[0].y)}
+        r="40"
+        fill="url(#lowPHGradient)"
+      />
+      <text
+        x={projectX(atoms[0].x)}
+        y={projectY(atoms[0].y) - 25}
+        textAnchor="middle"
+        fontSize="12"
+        fontWeight="bold"
+        fill="#c62828"
+      >
+        pH 2.0 (+)
+      </text>
+
+      {atoms[2] && (
+        <>
+          <circle
+            cx={projectX(atoms[2].x)}
+            cy={projectY(atoms[2].y)}
+            r="40"
+            fill="url(#highPHGradient)"
+          />
+          <text
+            x={projectX(atoms[2].x)}
+            y={projectY(atoms[2].y) + 35}
+            textAnchor="middle"
+            fontSize="12"
+            fontWeight="bold"
+            fill="#2e7d32"
+          >
+            pH 12.0 (-)
+          </text>
+        </>
+      )}
+
       {/* Draw Bonds */}
       {bonds.map((bond, index) => {
         const atom1 = atoms[bond.from];
