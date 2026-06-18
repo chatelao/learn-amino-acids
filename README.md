@@ -3,6 +3,11 @@
 An interactive and comprehensive educational tool for biochemistry students and enthusiasts, facilitating a deeper understanding of molecular biology and protein synthesis through 2D and 3D visualizations.
 
 [![Documentation Status](https://readthedocs.org/projects/learn-amino-acids/badge/?version=latest)](https://learn-amino-acids.readthedocs.io/en/latest/?badge=latest)
+[![Live App](https://img.shields.io/badge/Live-App-blue)](https://chatelao.github.io/learn-amino-acids/)
+
+## Live App
+
+The application is live at [chatelao.github.io/learn-amino-acids](https://chatelao.github.io/learn-amino-acids/).
 
 ## Documentation
 
