@@ -14,7 +14,7 @@
 - ✅ Projektumfang und Architektur definieren.
 - ✅ Entwicklungsumgebung einrichten.
 - ✅ 21 Aminosäure-Modelle in drei verschiedenen Modi bereitstellen. (2026-06-17 20:46:15 UTC)
-- ⏳ Lerninhalte zu mRNA-Codons integrieren.
+- ✅ Lerninhalte zu mRNA-Codons integrieren. (2026-06-20 10:00:00 UTC)
 - ✅ Interaktives Curriculum über GitHub Pages / RTD bereitstellen. (2026-06-17 19:35:31 UTC)
 
 ## Phasen

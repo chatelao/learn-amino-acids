@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { ccp, AminoAcidClass } from './services/ccp'
 import VisualizationEngine from './components/VisualizationEngine'
-import CodonTable from './components/CodonTable'
+import CodonWheel from './components/CodonWheel'
 
 const App = () => {
   const [selectedClass, setSelectedClass] = useState<AminoAcidClass | 'All'>('All');
@@ -159,7 +159,7 @@ const App = () => {
                 </div>
               </section>
             </div>
-            <CodonTable selectedAA={selectedAA} />
+            <CodonWheel selectedAA={selectedAA} />
           </article>
         ) : (
           <p>Please select an amino acid to explore its details.</p>
