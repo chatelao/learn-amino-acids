@@ -37,10 +37,11 @@ const RendererSkeletal: React.FC<RendererSkeletalProps> = ({
   const projectY = (y: number) => height - ((y - minY) * scale + 40);
 
   // Determine sidechain atoms (indices)
+  // Filtering out hydrogens for skeletal highlight
+  const nonHAtoms = atoms.map((a, i) => ({ ...a, originalIndex: i })).filter(a => a.element.toUpperCase() !== 'H');
+
   // Usually atoms 0-4 are backbone: N, CA, C, O, OXT
-  const sidechainAtomIndices = atoms.map((_, i) => i).filter(i => i > 4 || (i === 1 && atoms.length > 5));
-  // Actually, for highlight we want to highlight the sidechain starting from CA (1)
-  const highlightIndices = atoms.map((_, i) => i).filter(i => i >= 5 || i === 1);
+  const highlightIndices = nonHAtoms.map(a => a.originalIndex).filter(i => i >= 5 || i === 1);
   // Re-evaluating: the image highlights the sidechain. For Alanine, it's the methyl group and CA?
   // Looking at the image, the highlight covers the sidechain atoms and the CA atom.
 
@@ -65,7 +66,10 @@ const RendererSkeletal: React.FC<RendererSkeletalProps> = ({
     let actualBonds = 0;
     bonds.forEach(b => {
       if (b.from === atomIndex || b.to === atomIndex) {
-        actualBonds += b.order;
+        const otherIdx = b.from === atomIndex ? b.to : b.from;
+        if (atoms[otherIdx] && atoms[otherIdx].element.toUpperCase() !== 'H') {
+          actualBonds += b.order;
+        }
       }
     });
 
@@ -115,6 +119,9 @@ const RendererSkeletal: React.FC<RendererSkeletalProps> = ({
       {bonds.map((bond, index) => {
         const atom1 = atoms[bond.from];
         const atom2 = atoms[bond.to];
+
+        // Filter out hydrogen bonds
+        if (atom1.element.toUpperCase() === 'H' || atom2.element.toUpperCase() === 'H') return null;
         const x1 = projectX(atom1.x);
         const y1 = projectY(atom1.y);
         const x2 = projectX(atom2.x);
@@ -178,6 +185,9 @@ const RendererSkeletal: React.FC<RendererSkeletalProps> = ({
 
       {/* Draw Atom Labels (only heteroatoms) */}
       {atoms.map((atom, index) => {
+        // Skip explicit hydrogens
+        if (atom.element.toUpperCase() === 'H') return null;
+
         const label = getAtomLabel(index);
         if (!label) return null;
 

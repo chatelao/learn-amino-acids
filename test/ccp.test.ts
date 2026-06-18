@@ -48,17 +48,17 @@ describe('CurriculumContentProvider', () => {
 
   it('should have structural data for Alanine and Glycine', () => {
     const ala = ccp.getAminoAcidByCode3('Ala');
-    expect(ala?.atoms.length).toBe(6);
+    expect(ala?.atoms.length).toBe(13);
 
     const gly = ccp.getAminoAcidByCode3('Gly');
-    expect(gly?.atoms.length).toBe(5);
+    expect(gly?.atoms.length).toBe(10);
   });
 
   it('should have structural data for Leu, Lys, Met, Phe, and Pro', () => {
-    expect(ccp.getAminoAcidByCode3('Leu')?.atoms.length).toBe(9);
-    expect(ccp.getAminoAcidByCode3('Lys')?.atoms.length).toBe(10);
-    expect(ccp.getAminoAcidByCode3('Met')?.atoms.length).toBe(9);
-    expect(ccp.getAminoAcidByCode3('Phe')?.atoms.length).toBe(12);
-    expect(ccp.getAminoAcidByCode3('Pro')?.atoms.length).toBe(8);
+    expect(ccp.getAminoAcidByCode3('Leu')?.atoms.length).toBe(22);
+    expect(ccp.getAminoAcidByCode3('Lys')?.atoms.length).toBe(24);
+    expect(ccp.getAminoAcidByCode3('Met')?.atoms.length).toBe(20);
+    expect(ccp.getAminoAcidByCode3('Phe')?.atoms.length).toBe(23);
+    expect(ccp.getAminoAcidByCode3('Pro')?.atoms.length).toBe(17);
   });
 });
