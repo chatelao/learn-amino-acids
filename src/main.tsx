@@ -136,6 +136,17 @@ const App = () => {
                 </div>
               </section>
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
+                <h3 style={{ marginTop: 0 }}>Chemical Notation</h3>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <VisualizationEngine
+                    atoms={selectedAA.atoms}
+                    bonds={selectedAA.bonds}
+                    mode="Notation"
+                    aminoAcidName={selectedAA.name}
+                  />
+                </div>
+              </section>
+              <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>Skeletal Formula</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <VisualizationEngine
