@@ -45,6 +45,7 @@
 
 ### Phase 4: Visualisierungs-Engine ✅
 - [x] SVG-basierten 2D-Renderer implementieren (2026-06-14 20:00:00 UTC)
+- [x] Skelettnotations-Renderer (b/w) implementieren (2026-06-19 19:40:00 UTC)
 - [x] Three.js-basierten Stick-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
 - [x] Three.js-basierten Ball-Modell-Renderer implementieren (2026-06-15 12:19:34 UTC)
 - [x] Interaktion (Drehen, Zoomen) zu 3D-Modellen hinzufügen (2026-06-15 14:30:00 UTC)
