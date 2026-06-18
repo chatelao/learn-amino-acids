@@ -93,9 +93,13 @@ const App = () => {
           <article>
             <div style={{ marginBottom: '20px' }}>
               <h2 style={{ margin: '0 0 10px 0' }}>{selectedAA.name} ({selectedAA.code3} / {selectedAA.code1})</h2>
-              <div style={{ display: 'flex', gap: '40px' }}>
+              <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
                 <p><strong>Chemical Class:</strong> <span style={{ padding: '4px 8px', backgroundColor: '#e0f7fa', borderRadius: '4px' }}>{selectedAA.class}</span></p>
                 <p><strong>mRNA Codons:</strong> {selectedAA.codons.map(c => <code key={c} style={{ marginLeft: '5px', padding: '2px 4px', backgroundColor: '#eee', borderRadius: '3px' }}>{c}</code>)}</p>
+                <p><strong>aaRS Class:</strong> <span style={{ padding: '4px 8px', backgroundColor: '#f3e5f5', borderRadius: '4px' }}>{selectedAA.aaRS_class}</span></p>
+              </div>
+              <div style={{ marginBottom: '15px', padding: '10px', backgroundColor: '#fff8e1', borderRadius: '8px', borderLeft: '5px solid #ffc107' }}>
+                <strong>tRNA Recognition:</strong> {selectedAA.tRNA_info}
               </div>
             </div>
 

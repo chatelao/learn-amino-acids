@@ -15,6 +15,8 @@ export interface AminoAcid {
   code3: string;
   codons: string[];
   class: AminoAcidClass;
+  aaRS_class: 'Class I' | 'Class II';
+  tRNA_info: string;
   atoms: Atom[];
 }
 

@@ -6,6 +6,7 @@ Das Projekt zielt darauf ab, ein interaktives und umfassendes Bildungswerkzeug f
 ## Anwendungsfälle (Use Cases)
 - **Aminosäuren visualisieren:** Benutzer können 2D-, Stick- und Ball-Modelle jeder Aminosäure betrachten, um deren Struktur zu verstehen.
 - **mRNA-Codons lernen:** Benutzer können die Zuordnung zwischen mRNA-Codons und Aminosäuren studieren.
+- **Biochemische Grundlagen (aaRS & tRNA):** Benutzer können die Klassifizierung der Aminoacyl-tRNA-Synthetasen (Class I & II) sowie spezifische tRNA-Erkennungselemente nachvollziehen (basiert auf Kaiser et al., 2020).
 - **Chemische Eigenschaften untersuchen:** Benutzer können Aminosäuren basierend auf ihren chemischen Beziehungen und Eigenschaften gruppieren und vergleichen.
 - **Interaktive Exploration:** Benutzer können mit 3D-Modellen interagieren, um die räumliche Anordnung der Atome besser zu erfassen.
 

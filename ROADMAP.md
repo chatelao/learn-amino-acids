@@ -41,6 +41,7 @@
 - [x] Strukturdaten für Aminosäuren 16-18 abrufen/erstellen (Ser, Thr, Val) (2026-06-15 21:00:00 UTC)
 - [x] Strukturdaten für Aminosäuren 19-21 abrufen/erstellen (Trp, Tyr, Sec) (2026-06-17 20:46:15 UTC)
 - [x] Codon-Mapping-Tabelle zusammenstellen (2026-06-14 11:45:00 UTC)
+- [x] aaRS- und tRNA-Daten aus Kaiser et al. (2020) integrieren (2026-06-18 04:54:10 UTC)
 
 ### Phase 4: Visualisierungs-Engine ✅
 - [x] SVG-basierten 2D-Renderer implementieren (2026-06-14 20:00:00 UTC)
