@@ -97,29 +97,32 @@ const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, bonds, width = 400, heig
       })}
 
       {/* Draw Atoms */}
-      {atoms.map((atom, index) => (
-        <g key={`atom-${index}`}>
-          <circle
-            cx={projectX(atom.x)}
-            cy={projectY(atom.y)}
-            r="10"
-            fill={getElementColor(atom.element)}
-            stroke="#000"
-            strokeWidth="1"
-          />
-          <text
-            x={projectX(atom.x)}
-            y={projectY(atom.y)}
-            textAnchor="middle"
-            dominantBaseline="central"
-            fontSize="10"
-            fontWeight="bold"
-            fill={atom.element.toUpperCase() === 'C' || atom.element.toUpperCase() === 'N' ? '#fff' : '#000'}
-          >
-            {atom.element}
-          </text>
-        </g>
-      ))}
+      {atoms.map((atom, index) => {
+        const isH = atom.element.toUpperCase() === 'H';
+        return (
+          <g key={`atom-${index}`}>
+            <circle
+              cx={projectX(atom.x)}
+              cy={projectY(atom.y)}
+              r={isH ? "6" : "10"}
+              fill={getElementColor(atom.element)}
+              stroke="#000"
+              strokeWidth="1"
+            />
+            <text
+              x={projectX(atom.x)}
+              y={projectY(atom.y)}
+              textAnchor="middle"
+              dominantBaseline="central"
+              fontSize={isH ? "8" : "10"}
+              fontWeight="bold"
+              fill={atom.element.toUpperCase() === 'C' || atom.element.toUpperCase() === 'N' ? '#fff' : '#000'}
+            >
+              {atom.element}
+            </text>
+          </g>
+        );
+      })}
     </svg>
   );
 };
