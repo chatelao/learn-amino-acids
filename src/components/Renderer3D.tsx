@@ -1,16 +1,17 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { Atom } from '../services/ccp';
+import { Atom, Bond } from '../services/ccp';
 
 interface Renderer3DProps {
   atoms: Atom[];
+  bonds: Bond[];
   mode: 'Stick' | 'Ball';
   width?: number;
   height?: number;
 }
 
-const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, height = 400 }) => {
+const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400, height = 400 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -82,32 +83,43 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, mode, width = 400, heigh
       moleculeGroup.add(sphere);
     });
 
-    // --- Find and Draw Bonds ---
-    const BOND_THRESHOLD = 1.9;
-    for (let i = 0; i < atoms.length; i++) {
-      for (let j = i + 1; j < atoms.length; j++) {
-        const p1 = new THREE.Vector3(atoms[i].x - centerX, atoms[i].y - centerY, atoms[i].z - centerZ);
-        const p2 = new THREE.Vector3(atoms[j].x - centerX, atoms[j].y - centerY, atoms[j].z - centerZ);
-        const dist = p1.distanceTo(p2);
+    // --- Draw Bonds ---
+    bonds.forEach((bond) => {
+      const atom1 = atoms[bond.from];
+      const atom2 = atoms[bond.to];
+      const p1 = new THREE.Vector3(atom1.x - centerX, atom1.y - centerY, atom1.z - centerZ);
+      const p2 = new THREE.Vector3(atom2.x - centerX, atom2.y - centerY, atom2.z - centerZ);
 
-        if (dist < BOND_THRESHOLD) {
-          const direction = new THREE.Vector3().subVectors(p2, p1);
-          const length = direction.length();
+      const direction = new THREE.Vector3().subVectors(p2, p1);
+      const length = direction.length();
+      const midpoint = new THREE.Vector3().addVectors(p1, p2).multiplyScalar(0.5);
+      const orientation = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.clone().normalize());
 
-          const cylinder = new THREE.Mesh(bondGeometry, bondMaterial);
-
-          // Position at midpoint
-          const midpoint = new THREE.Vector3().addVectors(p1, p2).multiplyScalar(0.5);
-          cylinder.position.copy(midpoint);
-
-          // Orient and scale cylinder
-          cylinder.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.clone().normalize());
-          cylinder.scale.set(1, length, 1);
-
-          moleculeGroup.add(cylinder);
+      if (bond.order === 1) {
+        const cylinder = new THREE.Mesh(bondGeometry, bondMaterial);
+        cylinder.position.copy(midpoint);
+        cylinder.quaternion.copy(orientation);
+        cylinder.scale.set(1, length, 1);
+        moleculeGroup.add(cylinder);
+      } else if (bond.order === 2) {
+        // Double bond: two parallel cylinders
+        const offsetDist = 0.12;
+        // Find a vector perpendicular to the bond direction
+        let perp = new THREE.Vector3(1, 0, 0);
+        if (Math.abs(direction.clone().normalize().dot(perp)) > 0.9) {
+          perp.set(0, 1, 0);
         }
+        const side = new THREE.Vector3().crossVectors(direction, perp).normalize().multiplyScalar(offsetDist);
+
+        [side.clone(), side.clone().negate()].forEach((offset) => {
+          const cylinder = new THREE.Mesh(bondGeometry, bondMaterial);
+          cylinder.position.copy(midpoint).add(offset);
+          cylinder.quaternion.copy(orientation);
+          cylinder.scale.set(1, length, 1);
+          moleculeGroup.add(cylinder);
+        });
       }
-    }
+    });
 
     // --- Animation Loop ---
     let animationId: number;
