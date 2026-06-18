@@ -10,3 +10,7 @@ This document lists the sources and references used in the development of the Am
 ## Biochemical Metadata (aaRS & tRNA)
 
 - **Kaiser et al. (2020).** Reference for the classification of aminoacyl-tRNA synthetases (Class I & II) and specific tRNA recognition elements.
+
+## Structural Data (tRNA)
+
+- **Chan, P.P., and Lowe, T.M. (2016).** "GtRNAdb 2.0: an expanded database of transfer RNA genes and alignments." *Nucleic Acids Research*, 44(D1):D184-D189. [http://gtrnadb.ucsc.edu/](http://gtrnadb.ucsc.edu/)
