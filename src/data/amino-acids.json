@@ -3,646 +3,2504 @@
     "name": "Alanine",
     "code1": "A",
     "code3": "Ala",
-    "codons": ["GCU", "GCC", "GCA", "GCG"],
+    "codons": [
+      "GCU",
+      "GCC",
+      "GCA",
+      "GCG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Alanyl-tRNA synthetase via the unique G3:U70 wobble base pair in the acceptor stem.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Arginine",
     "code1": "R",
     "code3": "Arg",
-    "codons": ["CGU", "CGC", "CGA", "CGG", "AGA", "AGG"],
+    "codons": [
+      "CGU",
+      "CGC",
+      "CGA",
+      "CGG",
+      "AGA",
+      "AGG"
+    ],
     "class": "Basic",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Arginyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "N", "x": 5.7, "y": -2.2, "z": 1.6 },
-      { "element": "C", "x": 6.4, "y": -3.3, "z": 2.4 },
-      { "element": "N", "x": 7.7, "y": -3.3, "z": 2.4 },
-      { "element": "N", "x": 5.8, "y": -4.4, "z": 3.2 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6,
+        "label": "δ"
+      },
+      {
+        "element": "N",
+        "x": 5.7,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "C",
+        "x": 6.4,
+        "y": -3.3,
+        "z": 2.4,
+        "label": "ζ"
+      },
+      {
+        "element": "N",
+        "x": 7.7,
+        "y": -3.3,
+        "z": 2.4
+      },
+      {
+        "element": "N",
+        "x": 5.8,
+        "y": -4.4,
+        "z": 3.2
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 1 },
-      { "from": 8, "to": 9, "order": 1 },
-      { "from": 9, "to": 10, "order": 2 },
-      { "from": 9, "to": 11, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 1
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": 1
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": 2
+      },
+      {
+        "from": 9,
+        "to": 11,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Asparagine",
     "code1": "N",
     "code3": "Asn",
-    "codons": ["AAU", "AAC"],
+    "codons": [
+      "AAU",
+      "AAC"
+    ],
     "class": "Polar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Asparaginyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 4.3, "y": -0.1, "z": 0.8 },
-      { "element": "N", "x": 4.1, "y": -2.3, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "O",
+        "x": 4.3,
+        "y": -0.1,
+        "z": 0.8
+      },
+      {
+        "element": "N",
+        "x": 4.1,
+        "y": -2.3,
+        "z": 0.8
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 2 },
-      { "from": 6, "to": 8, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 2
+      },
+      {
+        "from": 6,
+        "to": 8,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Aspartic acid",
     "code1": "D",
     "code3": "Asp",
-    "codons": ["GAU", "GAC"],
+    "codons": [
+      "GAU",
+      "GAC"
+    ],
     "class": "Acidic",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Aspartyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 4.3, "y": -0.1, "z": 0.8 },
-      { "element": "O", "x": 4.1, "y": -2.3, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "O",
+        "x": 4.3,
+        "y": -0.1,
+        "z": 0.8
+      },
+      {
+        "element": "O",
+        "x": 4.1,
+        "y": -2.3,
+        "z": 0.8
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 2 },
-      { "from": 6, "to": 8, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 2
+      },
+      {
+        "from": 6,
+        "to": 8,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Cysteine",
     "code1": "C",
     "code3": "Cys",
-    "codons": ["UGU", "UGC"],
+    "codons": [
+      "UGU",
+      "UGC"
+    ],
     "class": "Polar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Cysteinyl-tRNA synthetase via the anticodon and G73; utilizes a zinc-binding site.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "S", "x": 3.9, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "S",
+        "x": 3.9,
+        "y": -1.1,
+        "z": 0.8
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Glutamine",
     "code1": "Q",
     "code3": "Gln",
-    "codons": ["CAA", "CAG"],
+    "codons": [
+      "CAA",
+      "CAG"
+    ],
     "class": "Polar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Glutaminyl-tRNA synthetase via the anticodon and U1:G72 in the acceptor stem.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "O", "x": 3.6, "y": -3.3, "z": 2.0 },
-      { "element": "N", "x": 5.5, "y": -2.2, "z": 1.6 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6,
+        "label": "δ"
+      },
+      {
+        "element": "O",
+        "x": 3.6,
+        "y": -3.3,
+        "z": 2.0
+      },
+      {
+        "element": "N",
+        "x": 5.5,
+        "y": -2.2,
+        "z": 1.6
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 2 },
-      { "from": 7, "to": 9, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 2
+      },
+      {
+        "from": 7,
+        "to": 9,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Glutamic acid",
     "code1": "E",
     "code3": "Glu",
-    "codons": ["GAA", "GAG"],
+    "codons": [
+      "GAA",
+      "GAG"
+    ],
     "class": "Acidic",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Glutamyl-tRNA synthetase via the anticodon and G73; binding involves a major conformational change.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "O", "x": 3.6, "y": -3.3, "z": 2.0 },
-      { "element": "O", "x": 5.5, "y": -2.2, "z": 1.6 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6,
+        "label": "δ"
+      },
+      {
+        "element": "O",
+        "x": 3.6,
+        "y": -3.3,
+        "z": 2.0
+      },
+      {
+        "element": "O",
+        "x": 5.5,
+        "y": -2.2,
+        "z": 1.6
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 2 },
-      { "from": 7, "to": 9, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 2
+      },
+      {
+        "from": 7,
+        "to": 9,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Glycine",
     "code1": "G",
     "code3": "Gly",
-    "codons": ["GGU", "GGC", "GGA", "GGG"],
+    "codons": [
+      "GGU",
+      "GGC",
+      "GGA",
+      "GGG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Glycyl-tRNA synthetase via the anticodon and the acceptor stem.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Histidine",
     "code1": "H",
     "code3": "His",
-    "codons": ["CAU", "CAC"],
+    "codons": [
+      "CAU",
+      "CAC"
+    ],
     "class": "Basic",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Histidyl-tRNA synthetase via the unique G-1:C73 base pair in the acceptor stem.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "N", "x": 4.4, "y": -2.2, "z": 0.8 },
-      { "element": "C", "x": 5.7, "y": -1.9, "z": 0.8 },
-      { "element": "N", "x": 5.8, "y": -0.6, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -0.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "N",
+        "x": 4.4,
+        "y": -2.2,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -1.9,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "N",
+        "x": 5.8,
+        "y": -0.6,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -0.1,
+        "z": 0.8,
+        "label": "δ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 2 },
-      { "from": 8, "to": 9, "order": 1 },
-      { "from": 9, "to": 10, "order": 2 },
-      { "from": 10, "to": 6, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 2
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": 1
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": 2
+      },
+      {
+        "from": 10,
+        "to": 6,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Isoleucine",
     "code1": "I",
     "code3": "Ile",
-    "codons": ["AUU", "AUC", "AUA"],
+    "codons": [
+      "AUU",
+      "AUC",
+      "AUA"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Isoleucyl-tRNA synthetase via the anticodon; includes a pre-transfer editing site for Val discrimination.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 1.5, "y": -2.4, "z": 1.2 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.4, "z": 1.6 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 1.2,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.4,
+        "z": 1.6,
+        "label": "δ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 5, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Leucine",
     "code1": "L",
     "code3": "Leu",
-    "codons": ["UUA", "UUG", "CUU", "CUC", "CUA", "CUG"],
+    "codons": [
+      "UUA",
+      "UUG",
+      "CUU",
+      "CUC",
+      "CUA",
+      "CUG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Leucyl-tRNA synthetase via the long variable loop and the acceptor stem.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.4, "z": 1.2 },
-      { "element": "C", "x": 4.2, "y": 0.2, "z": 1.2 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.4,
+        "z": 1.2,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": 0.2,
+        "z": 1.2,
+        "label": "δ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 6, "to": 8, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 8,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Lysine",
     "code1": "K",
     "code3": "Lys",
-    "codons": ["AAA", "AAG"],
+    "codons": [
+      "AAA",
+      "AAG"
+    ],
     "class": "Basic",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Lysyl-tRNA synthetase via the anticodon and the acceptor stem; Class II in most organisms (some Archaea use Class I).",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "C", "x": 5.7, "y": -2.2, "z": 1.6 },
-      { "element": "N", "x": 6.3, "y": -3.3, "z": 2.4 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -2.2,
+        "z": 1.6,
+        "label": "ε"
+      },
+      {
+        "element": "N",
+        "x": 6.3,
+        "y": -3.3,
+        "z": 2.4
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 1 },
-      { "from": 8, "to": 9, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 1
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Methionine",
     "code1": "M",
     "code3": "Met",
-    "codons": ["AUG"],
+    "codons": [
+      "AUG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Methionyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "S", "x": 4.2, "y": -2.2, "z": 1.6 },
-      { "element": "C", "x": 5.7, "y": -2.2, "z": 1.6 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "S",
+        "x": 4.2,
+        "y": -2.2,
+        "z": 1.6
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -2.2,
+        "z": 1.6,
+        "label": "ε"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 8, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Phenylalanine",
     "code1": "F",
     "code3": "Phe",
-    "codons": ["UUU", "UUC"],
+    "codons": [
+      "UUU",
+      "UUC"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Phenylalanyl-tRNA synthetase; an exception as a Class II enzyme that acylates the 2'-OH and is a heterotetramer.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -2.1, "z": 0.8 },
-      { "element": "C", "x": 5.9, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 5.9, "y": -2.1, "z": 0.8 },
-      { "element": "C", "x": 6.6, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -0.1,
+        "z": 0.8,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -2.1,
+        "z": 0.8,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 5.9,
+        "y": -0.1,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "C",
+        "x": 5.9,
+        "y": -2.1,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "C",
+        "x": 6.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "ζ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 2 },
-      { "from": 7, "to": 9, "order": 1 },
-      { "from": 9, "to": 11, "order": 2 },
-      { "from": 11, "to": 10, "order": 1 },
-      { "from": 10, "to": 8, "order": 2 },
-      { "from": 8, "to": 6, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 2
+      },
+      {
+        "from": 7,
+        "to": 9,
+        "order": 1
+      },
+      {
+        "from": 9,
+        "to": 11,
+        "order": 2
+      },
+      {
+        "from": 11,
+        "to": 10,
+        "order": 1
+      },
+      {
+        "from": 10,
+        "to": 8,
+        "order": 2
+      },
+      {
+        "from": 8,
+        "to": 6,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Proline",
     "code1": "P",
     "code3": "Pro",
-    "codons": ["CCU", "CCC", "CCA", "CCG"],
+    "codons": [
+      "CCU",
+      "CCC",
+      "CCA",
+      "CCG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Prolyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 1.5, "y": -2.4, "z": 0.8 },
-      { "element": "C", "x": 0.1, "y": -2.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 0.1,
+        "y": -2.1,
+        "z": 0.8,
+        "label": "δ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 1 },
-      { "from": 7, "to": 0, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 1
+      },
+      {
+        "from": 7,
+        "to": 0,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Serine",
     "code1": "S",
     "code3": "Ser",
-    "codons": ["UCU", "UCC", "UCA", "UCG", "AGU", "AGC"],
+    "codons": [
+      "UCU",
+      "UCC",
+      "UCA",
+      "UCG",
+      "AGU",
+      "AGC"
+    ],
     "class": "Polar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Seryl-tRNA synthetase primarily via the long variable loop of tRNA-Ser.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 3.5, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "O",
+        "x": 3.5,
+        "y": -1.1,
+        "z": 0.8
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Threonine",
     "code1": "T",
     "code3": "Thr",
-    "codons": ["ACU", "ACC", "ACA", "ACG"],
+    "codons": [
+      "ACU",
+      "ACC",
+      "ACA",
+      "ACG"
+    ],
     "class": "Polar",
     "aaRS_class": "Class II",
     "tRNA_info": "Recognized by Threonyl-tRNA synthetase via the anticodon and the discriminator base G73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 1.5, "y": -2.4, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "O",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 5, "to": 7, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 7,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Tryptophan",
     "code1": "W",
     "code3": "Trp",
-    "codons": ["UGG"],
+    "codons": [
+      "UGG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Tryptophanyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.4, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -2.1, "z": 0.8 },
-      { "element": "N", "x": 5.7, "y": -0.4, "z": 0.8 },
-      { "element": "C", "x": 5.8, "y": -1.7, "z": 0.8 },
-      { "element": "C", "x": 4.5, "y": -3.5, "z": 0.8 },
-      { "element": "C", "x": 6.9, "y": -2.6, "z": 0.8 },
-      { "element": "C", "x": 5.6, "y": -4.4, "z": 0.8 },
-      { "element": "C", "x": 6.8, "y": -4.0, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.4,
+        "y": -0.1,
+        "z": 0.8,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -2.1,
+        "z": 0.8,
+        "label": "δ"
+      },
+      {
+        "element": "N",
+        "x": 5.7,
+        "y": -0.4,
+        "z": 0.8
+      },
+      {
+        "element": "C",
+        "x": 5.8,
+        "y": -1.7,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "C",
+        "x": 4.5,
+        "y": -3.5,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "C",
+        "x": 6.9,
+        "y": -2.6,
+        "z": 0.8,
+        "label": "ζ"
+      },
+      {
+        "element": "C",
+        "x": 5.6,
+        "y": -4.4,
+        "z": 0.8,
+        "label": "ζ"
+      },
+      {
+        "element": "C",
+        "x": 6.8,
+        "y": -4.0,
+        "z": 0.8,
+        "label": "η"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 2 },
-      { "from": 7, "to": 9, "order": 1 },
-      { "from": 9, "to": 10, "order": 1 },
-      { "from": 10, "to": 8, "order": 2 },
-      { "from": 8, "to": 6, "order": 1 },
-      { "from": 10, "to": 12, "order": 1 },
-      { "from": 12, "to": 14, "order": 2 },
-      { "from": 14, "to": 13, "order": 1 },
-      { "from": 13, "to": 11, "order": 2 },
-      { "from": 11, "to": 8, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 2
+      },
+      {
+        "from": 7,
+        "to": 9,
+        "order": 1
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": 1
+      },
+      {
+        "from": 10,
+        "to": 8,
+        "order": 2
+      },
+      {
+        "from": 8,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 10,
+        "to": 12,
+        "order": 1
+      },
+      {
+        "from": 12,
+        "to": 14,
+        "order": 2
+      },
+      {
+        "from": 14,
+        "to": 13,
+        "order": 1
+      },
+      {
+        "from": 13,
+        "to": 11,
+        "order": 2
+      },
+      {
+        "from": 11,
+        "to": 8,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Tyrosine",
     "code1": "Y",
     "code3": "Tyr",
-    "codons": ["UAU", "UAC"],
+    "codons": [
+      "UAU",
+      "UAC"
+    ],
     "class": "Polar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Tyrosyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 4.3, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 4.3, "y": -2.1, "z": 0.8 },
-      { "element": "C", "x": 5.7, "y": -0.1, "z": 0.8 },
-      { "element": "C", "x": 5.7, "y": -2.1, "z": 0.8 },
-      { "element": "C", "x": 6.4, "y": -1.1, "z": 0.8 },
-      { "element": "O", "x": 7.8, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 4.3,
+        "y": -0.1,
+        "z": 0.8,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 4.3,
+        "y": -2.1,
+        "z": 0.8,
+        "label": "δ"
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -0.1,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "C",
+        "x": 5.7,
+        "y": -2.1,
+        "z": 0.8,
+        "label": "ε"
+      },
+      {
+        "element": "C",
+        "x": 6.4,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "ζ"
+      },
+      {
+        "element": "O",
+        "x": 7.8,
+        "y": -1.1,
+        "z": 0.8
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 6, "to": 7, "order": 2 },
-      { "from": 7, "to": 9, "order": 1 },
-      { "from": 9, "to": 11, "order": 2 },
-      { "from": 11, "to": 10, "order": 1 },
-      { "from": 10, "to": 8, "order": 2 },
-      { "from": 8, "to": 6, "order": 1 },
-      { "from": 11, "to": 12, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": 2
+      },
+      {
+        "from": 7,
+        "to": 9,
+        "order": 1
+      },
+      {
+        "from": 9,
+        "to": 11,
+        "order": 2
+      },
+      {
+        "from": 11,
+        "to": 10,
+        "order": 1
+      },
+      {
+        "from": 10,
+        "to": 8,
+        "order": 2
+      },
+      {
+        "from": 8,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Valine",
     "code1": "V",
     "code3": "Val",
-    "codons": ["GUU", "GUC", "GUA", "GUG"],
+    "codons": [
+      "GUU",
+      "GUC",
+      "GUA",
+      "GUG"
+    ],
     "class": "Nonpolar",
     "aaRS_class": "Class I",
     "tRNA_info": "Recognized by Valyl-tRNA synthetase via the anticodon and the discriminator base A73.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 3.6, "y": -1.1, "z": 0.8 },
-      { "element": "C", "x": 1.5, "y": -2.4, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "C",
+        "x": 3.6,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "γ"
+      },
+      {
+        "element": "C",
+        "x": 1.5,
+        "y": -2.4,
+        "z": 0.8,
+        "label": "γ"
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 },
-      { "from": 5, "to": 7, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 7,
+        "order": 1
+      }
     ]
   },
   {
     "name": "Selenocysteine",
     "code1": "U",
     "code3": "Sec",
-    "codons": ["UGA"],
+    "codons": [
+      "UGA"
+    ],
     "class": "Polar",
     "aaRS_class": "Class II",
     "tRNA_info": "Synthesized by Seryl-tRNA synthetase (Class II) as Ser-tRNA^Sec, followed by conversion to Sec-tRNA^Sec.",
     "atoms": [
-      { "element": "N", "x": 0.0, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 1.45, "y": 0.0, "z": 0.0 },
-      { "element": "C", "x": 2.0, "y": 1.4, "z": 0.0 },
-      { "element": "O", "x": 1.3, "y": 2.4, "z": 0.0 },
-      { "element": "O", "x": 3.3, "y": 1.4, "z": 0.0 },
-      { "element": "C", "x": 2.1, "y": -1.1, "z": 0.8 },
-      { "element": "Se", "x": 3.9, "y": -1.1, "z": 0.8 }
+      {
+        "element": "N",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 1.45,
+        "y": 0.0,
+        "z": 0.0,
+        "label": "α"
+      },
+      {
+        "element": "C",
+        "x": 2.0,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 1.3,
+        "y": 2.4,
+        "z": 0.0
+      },
+      {
+        "element": "O",
+        "x": 3.3,
+        "y": 1.4,
+        "z": 0.0
+      },
+      {
+        "element": "C",
+        "x": 2.1,
+        "y": -1.1,
+        "z": 0.8,
+        "label": "β"
+      },
+      {
+        "element": "Se",
+        "x": 3.9,
+        "y": -1.1,
+        "z": 0.8
+      }
     ],
     "bonds": [
-      { "from": 0, "to": 1, "order": 1 },
-      { "from": 1, "to": 2, "order": 1 },
-      { "from": 2, "to": 3, "order": 2 },
-      { "from": 2, "to": 4, "order": 1 },
-      { "from": 1, "to": 5, "order": 1 },
-      { "from": 5, "to": 6, "order": 1 }
+      {
+        "from": 0,
+        "to": 1,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": 2
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": 1
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": 1
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": 1
+      }
     ]
   }
 ]

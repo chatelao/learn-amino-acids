@@ -5,6 +5,7 @@ export interface Atom {
   x: number;
   y: number;
   z: number;
+  label?: string;
 }
 
 export interface Bond {

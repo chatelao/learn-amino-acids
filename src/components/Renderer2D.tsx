@@ -117,6 +117,11 @@ const Renderer2D: React.FC<Renderer2DProps> = ({ atoms, bonds, width = 400, heig
             fill={atom.element.toUpperCase() === 'C' || atom.element.toUpperCase() === 'N' ? '#fff' : '#000'}
           >
             {atom.element}
+            {atom.label && (
+              <tspan baselineShift="sub" fontSize="7">
+                {atom.label}
+              </tspan>
+            )}
           </text>
         </g>
       ))}
