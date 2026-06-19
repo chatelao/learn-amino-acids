@@ -26,25 +26,30 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(width, height);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
     containerRef.current.appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
     scene.add(ambientLight);
 
-    const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.5);
+    const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.8);
     scene.add(hemisphereLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
     directionalLight.position.set(5, 10, 7.5);
     scene.add(directionalLight);
 
-    const pointLight1 = new THREE.PointLight(0xffffff, 0.6);
+    const pointLight1 = new THREE.PointLight(0xffffff, 1.5);
     pointLight1.position.set(10, 10, 10);
     scene.add(pointLight1);
 
-    const pointLight2 = new THREE.PointLight(0xffffff, 0.4);
+    const pointLight2 = new THREE.PointLight(0xffffff, 1.2);
     pointLight2.position.set(-10, -10, -10);
     scene.add(pointLight2);
+
+    const pointLight3 = new THREE.PointLight(0xffffff, 1.2);
+    pointLight3.position.set(0, 0, 10);
+    scene.add(pointLight3);
 
     const moleculeGroup = new THREE.Group();
     scene.add(moleculeGroup);
@@ -59,15 +64,19 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
     const bondRadius = 0.15;
     const atomGeometry = new THREE.SphereGeometry(atomRadius, 32, 32);
     const bondGeometry = new THREE.CylinderGeometry(bondRadius, bondRadius, 1, 16);
-    const bondMaterial = new THREE.MeshPhongMaterial({ color: 0x888888 });
+    const bondMaterial = new THREE.MeshStandardMaterial({
+      color: 0x888888,
+      roughness: 0.2,
+      metalness: 0.3
+    });
 
-    const elementMaterials: Record<string, THREE.MeshPhongMaterial> = {
-      'C': new THREE.MeshPhongMaterial({ color: 0x888888 }),
-      'N': new THREE.MeshPhongMaterial({ color: 0x3333ff }),
-      'O': new THREE.MeshPhongMaterial({ color: 0xff3333 }),
-      'S': new THREE.MeshPhongMaterial({ color: 0xffff33 }),
-      'H': new THREE.MeshPhongMaterial({ color: 0xffffff }),
-      'DEFAULT': new THREE.MeshPhongMaterial({ color: 0xcccccc })
+    const elementMaterials: Record<string, THREE.MeshStandardMaterial> = {
+      'C': new THREE.MeshStandardMaterial({ color: 0x888888, roughness: 0.05, metalness: 0.5 }),
+      'N': new THREE.MeshStandardMaterial({ color: 0x3333ff, roughness: 0.05, metalness: 0.5 }),
+      'O': new THREE.MeshStandardMaterial({ color: 0xff3333, roughness: 0.05, metalness: 0.5 }),
+      'S': new THREE.MeshStandardMaterial({ color: 0xffff33, roughness: 0.05, metalness: 0.5 }),
+      'H': new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.05, metalness: 0.5 }),
+      'DEFAULT': new THREE.MeshStandardMaterial({ color: 0xcccccc, roughness: 0.05, metalness: 0.5 })
     };
 
     // --- Centering Logic ---
