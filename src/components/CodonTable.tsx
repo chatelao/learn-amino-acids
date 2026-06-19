@@ -5,7 +5,7 @@ interface CodonTableProps {
   selectedAA: AminoAcid;
 }
 
-const BASES = ['U', 'C', 'A', 'G'] as const;
+const BASES = ['G', 'A', 'C', 'U'] as const;
 
 const CodonTable: React.FC<CodonTableProps> = ({ selectedAA }) => {
   const getColorForClass = (aaClass: AminoAcidClass | 'Stop') => {

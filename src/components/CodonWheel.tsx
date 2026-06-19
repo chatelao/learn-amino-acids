@@ -5,7 +5,7 @@ interface CodonWheelProps {
   selectedAA: AminoAcid;
 }
 
-const BASES = ['U', 'C', 'A', 'G'] as const;
+const BASES = ['G', 'A', 'C', 'U'] as const;
 
 const polarToCartesian = (centerX: number, centerY: number, radius: number, angleInDegrees: number) => {
   const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
