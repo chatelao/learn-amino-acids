@@ -28,18 +28,21 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
     renderer.setSize(width, height);
     containerRef.current.appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
     scene.add(ambientLight);
+
+    const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.5);
+    scene.add(hemisphereLight);
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
     directionalLight.position.set(5, 10, 7.5);
     scene.add(directionalLight);
 
-    const pointLight1 = new THREE.PointLight(0xffffff, 0.5);
+    const pointLight1 = new THREE.PointLight(0xffffff, 0.6);
     pointLight1.position.set(10, 10, 10);
     scene.add(pointLight1);
 
-    const pointLight2 = new THREE.PointLight(0xffffff, 0.3);
+    const pointLight2 = new THREE.PointLight(0xffffff, 0.4);
     pointLight2.position.set(-10, -10, -10);
     scene.add(pointLight2);
 
@@ -106,7 +109,7 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
         moleculeGroup.add(cylinder);
       } else if (bond.order === 2) {
         // Double bond: two parallel cylinders
-        const offsetDist = 0.12;
+        const offsetDist = 0.15;
         // Find a vector perpendicular to the bond direction
         let perp = new THREE.Vector3(1, 0, 0);
         if (Math.abs(direction.clone().normalize().dot(perp)) > 0.9) {
@@ -118,7 +121,8 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
           const cylinder = new THREE.Mesh(bondGeometry, bondMaterial);
           cylinder.position.copy(midpoint).add(offset);
           cylinder.quaternion.copy(orientation);
-          cylinder.scale.set(1, length, 1);
+          // Scale down the double bond sticks to make them thinner
+          cylinder.scale.set(0.7, length, 0.7);
           moleculeGroup.add(cylinder);
         });
       }
