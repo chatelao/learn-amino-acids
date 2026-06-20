@@ -24,70 +24,120 @@ def cross_product(v1, v2):
     ]
 
 def get_orthogonal(v):
-    # Try [1, 0, 0]
     ortho = cross_product(v, [1, 0, 0])
     if math.sqrt(sum(x*x for x in ortho)) < 0.1:
-        # If v is parallel to [1,0,0], use [0,1,0]
         ortho = cross_product(v, [0, 1, 0])
     return normalize(ortho)
 
-def calculate_h_positions(atom_pos, neighbor_positions, num_h):
+def rotate_vec(v, axis, angle_rad):
+    # Rodrigues' rotation formula
+    cos_a = math.cos(angle_rad)
+    sin_a = math.sin(angle_rad)
+    axis = normalize(axis)
+
+    # v * cos_a + (axis x v) * sin_a + axis * (axis . v) * (1 - cos_a)
+    term1 = scale_vec(v, cos_a)
+    term2 = scale_vec(cross_product(axis, v), sin_a)
+    dot = sum(x*y for x, y in zip(axis, v))
+    term3 = scale_vec(axis, dot * (1 - cos_a))
+
+    return add_vec(add_vec(term1, term2), term3)
+
+def calculate_h_positions(atom_pos, neighbor_positions, num_h, element):
+    # Bond lengths
+    lengths = {'C': 1.09, 'N': 1.01, 'O': 0.96, 'S': 1.33, 'SE': 1.47}
+    h_dist = lengths.get(element.upper(), 1.0)
+
     if not neighbor_positions:
-        # Should not happen in this project
-        return [[atom_pos[0]+1, atom_pos[1], atom_pos[2]] for _ in range(num_h)]
+        # Fallback if no neighbors (not expected)
+        return [add_vec(atom_pos, [h_dist, 0, 0])]
 
-    # Vectors from atom to neighbors
     vecs = [normalize(sub_vec(p, atom_pos)) for p in neighbor_positions]
-
-    # Average direction of neighbors
     avg_vec = [sum(v[i] for v in vecs)/len(vecs) for i in range(3)]
 
     # Direction to place H (opposite to neighbors)
-    h_dir_base = normalize(scale_vec(avg_vec, -1))
+    h_dir_base = scale_vec(avg_vec, -1)
+    if math.sqrt(sum(x*x for x in h_dir_base)) < 0.001:
+        # Perfectly balanced neighbors (like linear), find any orthogonal
+        h_dir_base = get_orthogonal(vecs[0])
+    else:
+        h_dir_base = normalize(h_dir_base)
 
     if num_h == 1:
-        if math.sqrt(sum(x*x for x in avg_vec)) < 0.01 and len(vecs) == 2:
-            # Linear arrangement, pick an arbitrary orthogonal direction
-            h_dir = get_orthogonal(vecs[0])
-        else:
-            h_dir = h_dir_base
-        return [add_vec(atom_pos, scale_vec(h_dir, 1.0))]
+        if len(vecs) == 1:
+            # Case like -O-H or -S-H. Needs bent angle (~109.5)
+            # Pick an arbitrary orthogonal vector to rotate around
+            ortho = get_orthogonal(vecs[0])
+            # Rotate -vecs[0] by ~70.5 degrees (180-109.5)
+            h_dir = rotate_vec(scale_vec(vecs[0], -1), ortho, math.radians(70.5))
+            return [add_vec(atom_pos, scale_vec(h_dir, h_dist))]
+        elif len(vecs) == 2:
+            # Case like >C-H. H should be in the plane bisecting the neighbors
+            return [add_vec(atom_pos, scale_vec(h_dir_base, h_dist))]
+        elif len(vecs) == 3:
+            # Case like >C-H (tertiary). H opposite to the tripod
+            return [add_vec(atom_pos, scale_vec(h_dir_base, h_dist))]
 
     if num_h == 2:
         if len(vecs) == 1:
-            # Sp3 nitrogen or oxygen at end of chain
-            # Place two H at ~109.5 degrees from the neighbor
-            ortho1 = get_orthogonal(vecs[0])
-            ortho2 = cross_product(vecs[0], ortho1)
-            # angle is 109.5 -> cos(109.5) = -1/3
-            # H = -1/3 * neighbor_dir + sqrt(8/9) * ortho
-            h1_dir = normalize(add_vec(scale_vec(vecs[0], -0.333), scale_vec(ortho1, 0.942)))
-            h2_dir = normalize(add_vec(scale_vec(vecs[0], -0.333), scale_vec(ortho1, -0.942)))
-            return [add_vec(atom_pos, scale_vec(h1_dir, 1.0)), add_vec(atom_pos, scale_vec(h2_dir, 1.0))]
+            # Case like -NH2. Sp3-like.
+            # Angle between H-N-H should be 109.5. Angle H-N-C also ~109.5.
+            ortho = get_orthogonal(vecs[0])
+            # Rotate h_dir_base around ortho and -ortho by half of 109.5
+            rot_axis = ortho
+            h1_dir = rotate_vec(h_dir_base, rot_axis, math.radians(109.5/2))
+            h2_dir = rotate_vec(h_dir_base, rot_axis, math.radians(-109.5/2))
+            return [add_vec(atom_pos, scale_vec(h1_dir, h_dist)), add_vec(atom_pos, scale_vec(h2_dir, h_dist))]
         elif len(vecs) == 2:
-            # Sp3 carbon/nitrogen in chain
-            # Place two H perpendicular to the plane of neighbors
-            plane_norm = normalize(cross_product(vecs[0], vecs[1]))
-            # Adjust h_dir_base to be halfway between the plane_norm and its negative
-            h1_dir = normalize(add_vec(scale_vec(h_dir_base, 0.5), scale_vec(plane_norm, 0.866)))
-            h2_dir = normalize(add_vec(scale_vec(h_dir_base, 0.5), scale_vec(plane_norm, -0.866)))
-            return [add_vec(atom_pos, scale_vec(h1_dir, 1.0)), add_vec(atom_pos, scale_vec(h2_dir, 1.0))]
+            # Case like -CH2-.
+            # Neighbors define a plane. H atoms should be above/below this plane.
+            # Plane normal
+            norm = normalize(cross_product(vecs[0], vecs[1]))
+            # The h_dir_base is already the bisector.
+            # We need to rotate h_dir_base towards norm and -norm.
+            # Angle between H atoms is 109.5.
+            # In a tetrahedron, the angle between the bisector of two bonds
+            # and the bonds themselves is half the tetrahedral angle ONLY if we
+            # rotate into the correct plane.
+            # Actually, the angle between the bisector of two legs and the other two legs
+            # (which are also bisected by the same line in the other plane) is 90 degrees? No.
+            # In CH4, C is at origin. Neighbors at (1,1,1), (1,-1,-1), (-1,1,-1), (-1,-1,1)
+            # Bisector of first two is (1,0,0). Bisector of last two is (-1,0,0).
+            # The angle from (1,0,0) to (1,1,1) is acos(1/sqrt(3)) = 54.74 degrees.
+            # 2 * 54.74 = 109.48. Correct.
+            # So we rotate h_dir_base around the other bisector (which is perp to both h_dir_base and norm)
+            # Wait, the rotation axis should be the norm of the plane of current neighbors? No.
+            # Let's just use the norm as rotation axis.
+            # We want H1, H2 such that angle(H1, H2) = 109.5 and they are symmetric about h_dir_base
+            # and the plane (H1, atom, H2) is perpendicular to plane(N1, atom, N2).
+            # The direction of H1+H2 is h_dir_base.
+            # The direction of H1-H2 is norm.
+            # H1 = cos(109.5/2) * h_dir_base + sin(109.5/2) * norm
+            # H2 = cos(109.5/2) * h_dir_base - sin(109.5/2) * norm
+            c = math.cos(math.radians(109.5/2))
+            s = math.sin(math.radians(109.5/2))
+            h1_dir = add_vec(scale_vec(h_dir_base, c), scale_vec(norm, s))
+            h2_dir = add_vec(scale_vec(h_dir_base, c), scale_vec(norm, -s))
+            return [add_vec(atom_pos, scale_vec(h1_dir, h_dist)), add_vec(atom_pos, scale_vec(h2_dir, h_dist))]
 
     if num_h == 3:
-        # Only for NH3+ maybe, but we use neutral NH2.
-        # If we had NH3+:
-        ortho1 = get_orthogonal(vecs[0])
-        ortho2 = cross_product(vecs[0], ortho1)
-        # 120 degrees apart in the plane perp to neighbor
-        h1_dir = normalize(add_vec(scale_vec(vecs[0], -0.333), scale_vec(ortho1, 0.942)))
-        # h2 is h1 rotated by 120 around vecs[0]
-        # simplified:
-        h2_dir = normalize(add_vec(add_vec(scale_vec(vecs[0], -0.333), scale_vec(ortho1, -0.471)), scale_vec(ortho2, 0.816)))
-        h3_dir = normalize(add_vec(add_vec(scale_vec(vecs[0], -0.333), scale_vec(ortho1, -0.471)), scale_vec(ortho2, -0.816)))
-        return [add_vec(atom_pos, scale_vec(h1_dir, 1.0)), add_vec(atom_pos, scale_vec(h2_dir, 1.0)), add_vec(atom_pos, scale_vec(h3_dir, 1.0))]
+        # Case like -CH3.
+        # H1 is in a plane, H2, H3 rotated by 120.
+        # Let's just place H1 at h_dir_base then rotate? No, that's not tetrahedral.
+        # In -CH3, neighbors = 1.
+        # h_dir_base is opposite to neighbor.
+        # H atoms are at 109.5 to the neighbor, so 180-109.5 = 70.5 to h_dir_base? No.
+        # Angle(Neighbor, C, H) = 109.5.
+        # So H is rotated 109.5 from Neighbor.
+        axis = get_orthogonal(vecs[0])
+        h1_dir = rotate_vec(vecs[0], axis, math.radians(109.5))
+        h2_dir = rotate_vec(h1_dir, vecs[0], math.radians(120))
+        h3_dir = rotate_vec(h2_dir, vecs[0], math.radians(120))
+        return [add_vec(atom_pos, scale_vec(h1_dir, h_dist)),
+                add_vec(atom_pos, scale_vec(h2_dir, h_dist)),
+                add_vec(atom_pos, scale_vec(h3_dir, h_dist))]
 
-    # Default fallback
-    return [add_vec(atom_pos, scale_vec(h_dir_base, 1.0)) for _ in range(num_h)]
+    return [add_vec(atom_pos, scale_vec(h_dir_base, h_dist)) for _ in range(num_h)]
 
 def process_amino_acids(filepath):
     with open(filepath, 'r') as f:
@@ -99,9 +149,7 @@ def process_amino_acids(filepath):
         atoms = aa['atoms']
         bonds = aa['bonds']
 
-        # Remove existing hydrogens to avoid duplicates if rerun
         new_atoms = [a for a in atoms if a['element'] != 'H']
-        # Map old indices to new indices
         index_map = {}
         curr = 0
         for i, a in enumerate(atoms):
@@ -121,14 +169,12 @@ def process_amino_acids(filepath):
         aa['atoms'] = new_atoms
         aa['bonds'] = new_bonds
 
-        # Calculate missing hydrogens
         h_to_add = []
         for i, atom in enumerate(aa['atoms']):
             element = atom['element'].upper()
             target_valency = valencies.get(element, 0)
             if target_valency == 0: continue
 
-            # Count current bonds
             current_valency = 0
             neighbors = []
             for b in aa['bonds']:
@@ -143,7 +189,7 @@ def process_amino_acids(filepath):
             if num_h > 0:
                 neighbor_positions = [[n['x'], n['y'], n['z']] for n in neighbors]
                 atom_pos = [atom['x'], atom['y'], atom['z']]
-                h_positions = calculate_h_positions(atom_pos, neighbor_positions, num_h)
+                h_positions = calculate_h_positions(atom_pos, neighbor_positions, num_h, element)
 
                 for pos in h_positions:
                     h_to_add.append({
@@ -154,7 +200,6 @@ def process_amino_acids(filepath):
                         'parent': i
                     })
 
-        # Add H atoms and bonds
         for h in h_to_add:
             parent_idx = h.pop('parent')
             h_idx = len(aa['atoms'])
