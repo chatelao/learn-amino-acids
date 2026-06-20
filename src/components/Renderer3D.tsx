@@ -3,15 +3,19 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Atom, Bond } from '../services/ccp';
 
+// Module-level cache for sync states
+const syncCache: Record<string, { position: THREE.Vector3, quaternion: THREE.Quaternion, target: THREE.Vector3 }> = {};
+
 interface Renderer3DProps {
   atoms: Atom[];
   bonds: Bond[];
   mode: 'Stick' | 'Ball';
+  syncId?: string;
   width?: number;
   height?: number;
 }
 
-const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400, height = 400 }) => {
+const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, syncId, width = 400, height = 400 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -58,6 +62,49 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
     controls.enableDamping = true;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2.0;
+
+    // --- Synchronization ---
+    let isInternalUpdate = false;
+
+    const handleSync = (event: any) => {
+      if (!syncId || event.detail.syncId !== syncId || event.detail.source === controls) return;
+
+      isInternalUpdate = true;
+      const { position, quaternion, target } = event.detail.state;
+      camera.position.copy(position);
+      camera.quaternion.copy(quaternion);
+      controls.target.copy(target);
+      controls.update();
+      isInternalUpdate = false;
+    };
+
+    if (syncId) {
+      // Initialize from cache if exists
+      if (syncCache[syncId]) {
+        const state = syncCache[syncId];
+        camera.position.copy(state.position);
+        camera.quaternion.copy(state.quaternion);
+        controls.target.copy(state.target);
+        controls.update();
+      }
+
+      window.addEventListener('renderer3d-sync', handleSync as EventListener);
+
+      controls.addEventListener('change', () => {
+        if (isInternalUpdate) return;
+
+        const state = {
+          position: camera.position.clone(),
+          quaternion: camera.quaternion.clone(),
+          target: controls.target.clone()
+        };
+        syncCache[syncId] = state;
+
+        window.dispatchEvent(new CustomEvent('renderer3d-sync', {
+          detail: { syncId, state, source: controls }
+        }));
+      });
+    }
 
     // --- Geometries & Materials (Reused) ---
     const atomRadius = mode === 'Ball' ? 0.6 : 0.2;
@@ -148,6 +195,9 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
 
     // --- Cleanup ---
     return () => {
+      if (syncId) {
+        window.removeEventListener('renderer3d-sync', handleSync as EventListener);
+      }
       cancelAnimationFrame(animationId);
       controls.dispose();
       if (containerRef.current) {
@@ -163,7 +213,7 @@ const Renderer3D: React.FC<Renderer3DProps> = ({ atoms, bonds, mode, width = 400
       geometryDispose(moleculeGroup);
       renderer.dispose();
     };
-  }, [atoms, mode, width, height]);
+  }, [atoms, mode, width, height, syncId]);
 
   // Recursively dispose of geometries and materials
   const geometryDispose = (object: THREE.Object3D) => {
