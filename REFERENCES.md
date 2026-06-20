@@ -14,3 +14,7 @@ This document lists the sources and references used in the development of the Am
 ## Structural Data (tRNA)
 
 - **Chan, P.P., and Lowe, T.M. (2016).** "GtRNAdb 2.0: an expanded database of transfer RNA genes and alignments." *Nucleic Acids Research*, 44(D1):D184-D189. [http://gtrnadb.ucsc.edu/](http://gtrnadb.ucsc.edu/)
+
+## Ribosome & Translation
+
+- **Jia, B., Wang, T., & Lehmann, J.** (2021). "Peptidyl transferase center decompaction and structural constraints during early protein elongation on the ribosome." *Scientific Reports*, 11(1). [https://www.nature.com/articles/s41598-021-02985-7](https://www.nature.com/articles/s41598-021-02985-7)
