@@ -17,6 +17,10 @@ Das Ribosom besitzt drei spezifische Bindungsstellen für tRNAs:
 2.  **P-Stelle (Peptidyl-Stelle):** Hält die tRNA, an der die wachsende Polypeptidkette befestigt ist.
 3.  **E-Stelle (Exit-Stelle):** Hier verlassen die entladenen tRNAs das Ribosom.
 
+## Ablauf der Translation
+
+![RNA Translation Ablauf](./RNA_TRANSLATION_FLOW.puml)
+
 ## Phasen der Translation
 
 ### 1. Initiation (Start)
@@ -55,3 +59,16 @@ Die Translation endet, wenn das Ribosom auf ein **Stop-Codon** (UAA, UAG oder UG
 
 - **Jakubowski, H., and Flatt, P.** "Fundamentals of Biochemistry." Biology LibreTexts.
 - **Lodish et al.** "Molecular Cell Biology."
+
+## Anhang: PDB-Referenzen
+
+Die folgenden PDB-Einträge bieten detaillierte strukturelle Einblicke in die beteiligten Makromoleküle:
+
+| Molekül / Komplex | Organismus | PDB ID | Link |
+| :--- | :--- | :--- | :--- |
+| **Ribosom (70S)** | *Thermus thermophilus* | 4V42 | [4V42](https://www.rcsb.org/structure/4V42) |
+| **Ribosom (80S)** | *Homo sapiens* | 4UG0 | [4UG0](https://www.rcsb.org/structure/4UG0) |
+| **Initiationsfaktor IF2** | *Thermus thermophilus* | 1Z9B | [1Z9B](https://www.rcsb.org/structure/1Z9B) |
+| **Elongationsfaktor EF-Tu** | *Escherichia coli* | 1EFT | [1EFT](https://www.rcsb.org/structure/1EFT) |
+| **Elongationsfaktor EF-G** | *Thermus thermophilus* | 1FNM | [1FNM](https://www.rcsb.org/structure/1FNM) |
+| **Releasefaktor RF1** | *Thermus thermophilus* | 3MS1 | [3MS1](https://www.rcsb.org/structure/3MS1) |
