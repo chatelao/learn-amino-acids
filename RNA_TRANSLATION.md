@@ -28,24 +28,31 @@ Das Ribosom besitzt drei spezifische Bindungsstellen für tRNAs:
 Der Prozess beginnt an einem spezifischen **Start-Codon** (meist AUG, das für Methionin codiert).
 
 *   **Beteiligte Proteine:** Initiationsfaktoren (eIFs bei Eukaryoten, IFs bei Prokaryoten).
-*   **Ablauf:** Die kleine Untereinheit bindet an die mRNA. Die Initiator-tRNA (beladen mit Methionin) bindet an das Start-Codon. Anschließend lagert sich die große Untereinheit an, wobei die Initiator-tRNA in der P-Stelle positioniert wird.
+*   **Chemische Reaktion:** Die Bindung der großen Untereinheit wird durch die **Hydrolyse von GTP** zu GDP und Phosphat durch den Faktor IF2 (prokaryotisch) bzw. eIF2 (eukaryotisch) energetisch angetrieben.
+*   **Ablauf:** Die kleine Untereinheit bindet an die mRNA. Die Initiator-tRNA (beladen mit Methionin) bindet an das Start-Codon. Anschließend lagert sich unter GTP-Verbrauch die große Untereinheit an, wobei die Initiator-tRNA in der P-Stelle positioniert wird.
 
 ### 2. Elongation (Verlängerung)
 
 Die Polypeptidkette wird Aminosäure für Aminosäure verlängert.
 
 *   **Beteiligte Proteine:** Elongationsfaktoren (eEFs/EFs, z. B. EF-Tu, EF-G).
+*   **Chemische Mechanismen:**
+    *   **tRNA-Selektion:** EF-Tu (eEF1A) bindet GTP und bringt die Aminoacyl-tRNA zur A-Stelle. Die korrekte Codon-Anticodon-Paarung löst die **GTP-Hydrolyse** aus, woraufhin EF-Tu das Ribosom verlässt.
+    *   **Peptidyltransferase-Reaktion:** Die 23S rRNA (Prokaryoten) bzw. 28S rRNA (Eukaryoten) fungiert als **Ribozym**. Die freie $\alpha$-Aminogruppe ($-\text{NH}_2$) der Aminosäure in der A-Stelle führt einen **nukleophilen Angriff** auf das Carbonyl-Kohlenstoffatom der Esterbindung zwischen der P-Stellen-tRNA und der wachsenden Peptidkette aus.
+    *   **Translokation:** Der Faktor EF-G (eEF2) katalysiert unter **GTP-Hydrolyse** die konformative Änderung des Ribosoms, die zur Bewegung der tRNAs und der mRNA führt.
 *   **Ablauf:**
-    1.  Eine neue Aminoacyl-tRNA tritt in die A-Stelle ein (unterstützt durch EF-Tu/eEF1A).
-    2.  **Peptidyltransferase:** Die Aminosäurekette wird von der tRNA in der P-Stelle auf die Aminosäure der tRNA in der A-Stelle übertragen.
-    3.  **Translokation:** Das Ribosom rückt um ein Codon weiter (unterstützt durch EF-G/eEF2). Die entladene tRNA wandert in die E-Stelle und verlässt das Ribosom, während die tRNA mit der Peptidkette von der A- in die P-Stelle rückt.
+    1.  Eine neue Aminoacyl-tRNA tritt unter GTP-Verbrauch in die A-Stelle ein.
+    2.  **Peptidyltransferase:** Die Peptidbindung wird geknüpft; die Kette wird von der tRNA in der P-Stelle auf die Aminosäure in der A-Stelle übertragen.
+    3.  **Translokation:** Das Ribosom rückt unter erneutem GTP-Verbrauch um ein Codon weiter. Die entladene tRNA wandert in die E-Stelle, während die Peptidyl-tRNA von der A- in die P-Stelle rückt.
 
 ### 3. Termination (Abschluss)
 
 Die Translation endet, wenn das Ribosom auf ein **Stop-Codon** (UAA, UAG oder UGA) trifft.
 
 *   **Beteiligte Proteine:** Releasefaktoren (eRFs/RFs).
-*   **Ablauf:** Da es keine tRNAs gibt, die Stop-Codons erkennen, binden Releasefaktoren an die A-Stelle. Dies führt zur Freisetzung der fertigen Polypeptidkette und zum Zerfall des Ribosom-Komplexes in seine Untereinheiten.
+*   **Chemische Reaktion:** Releasefaktoren (RF1/RF2) imitieren die Struktur einer tRNA und bringen ein **Wassermolekül** in das aktive Zentrum. Die Peptidyltransferase katalysiert nun die **hydrolytische Spaltung** der Esterbindung zwischen der Polypeptidkette und der tRNA in der P-Stelle.
+*   **Energie:** Der Prozess wird durch die **GTP-Hydrolyse** durch den Faktor RF3 (oder eRF3) abgeschlossen, was die Dissoziation des Komplexes einleitet.
+*   **Ablauf:** Da es keine tRNAs für Stop-Codons gibt, binden Releasefaktoren an die A-Stelle. Dies führt zur hydrolytischen Freisetzung der Polypeptidkette und zum Zerfall des Ribosoms.
 
 ## Zusammenfassung der beteiligten Faktoren
 
