@@ -13,6 +13,7 @@ interface VisualizationEngineProps {
   mode: VisualizationMode;
   aminoAcidName?: string;
   aminoAcidClass?: AminoAcidClass;
+  syncId?: string;
   width?: number;
   height?: number;
 }
@@ -23,6 +24,7 @@ const VisualizationEngine: React.FC<VisualizationEngineProps> = ({
   mode,
   aminoAcidName = '',
   aminoAcidClass,
+  syncId,
   width = 400,
   height = 400
 }) => {
@@ -35,7 +37,7 @@ const VisualizationEngine: React.FC<VisualizationEngineProps> = ({
       return <RendererNotation atoms={atoms} bonds={bonds} name={aminoAcidName} width={width} height={height} />;
     case 'Stick':
     case 'Ball':
-      return <Renderer3D atoms={atoms} bonds={bonds} mode={mode} width={width} height={height} />;
+      return <Renderer3D atoms={atoms} bonds={bonds} mode={mode} syncId={syncId} width={width} height={height} />;
     default:
       return <div>Unknown visualization mode.</div>;
   }

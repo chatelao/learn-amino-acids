@@ -147,13 +147,23 @@ const App = () => {
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>Stick Model (3D)</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <VisualizationEngine atoms={selectedAA.atoms} bonds={selectedAA.bonds} mode="Stick" />
+                  <VisualizationEngine
+                    atoms={selectedAA.atoms}
+                    bonds={selectedAA.bonds}
+                    mode="Stick"
+                    syncId="amino-3d-sync"
+                  />
                 </div>
               </section>
               <section style={{ border: '1px solid #eee', borderRadius: '8px', padding: '15px', textAlign: 'center' }}>
                 <h3 style={{ marginTop: 0 }}>Ball & Stick Model (3D)</h3>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <VisualizationEngine atoms={selectedAA.atoms} bonds={selectedAA.bonds} mode="Ball" />
+                  <VisualizationEngine
+                    atoms={selectedAA.atoms}
+                    bonds={selectedAA.bonds}
+                    mode="Ball"
+                    syncId="amino-3d-sync"
+                  />
                 </div>
               </section>
             </div>
