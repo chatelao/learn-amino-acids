@@ -80,8 +80,9 @@ For more detailed information on the project's structure and goals, please refer
 - [ROADMAP.md](./ROADMAP.md)
 - [REFERENCES.md](./REFERENCES.md)
 
-## Sources
+## SOURCES
 
 This project utilizes scientific data and educational materials from:
 - [Biology LibreTexts: Amino Acids and Peptides](https://bio.libretexts.org/Bookshelves/Biochemistry/Fundamentals_of_Biochemistry_(Jakubowski_and_Flatt)/01:_Unit_I-_Structure_and_Catalysis/03:_Amino_Acids_Peptides_and_Proteins/3.01:_Amino_Acids_and_Peptides)
+- [Jia et al. (2021): Peptidyl transferase center decompaction and structural constraints during early protein elongation on the ribosome](https://www.nature.com/articles/s41598-021-02985-7)
 - Kaiser et al. (2020) for aaRS and tRNA metadata.
