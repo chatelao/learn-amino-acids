@@ -18,6 +18,8 @@ This document lists the sources and references used in the development of the Am
 ## Ribosome & Translation
 
 - **Jia, B., Wang, T., & Lehmann, J.** (2021). "Peptidyl transferase center decompaction and structural constraints during early protein elongation on the ribosome." *Scientific Reports*, 11(1). [https://www.nature.com/articles/s41598-021-02985-7](https://www.nature.com/articles/s41598-021-02985-7)
+- **Petrov, A. S., et al.** (2014). "Evolution of the ribosome at atomic resolution." *Proceedings of the National Academy of Sciences (PNAS)*, 111(28). [https://www.pnas.org/doi/10.1073/pnas.1407205111](https://www.pnas.org/doi/10.1073/pnas.1407205111)
+- **Petrov, A. S., et al.** (2015). "History of the ribosome and the origin of translation." *Proceedings of the National Academy of Sciences (PNAS)*, 112(50). [https://www.pnas.org/doi/abs/10.1073/pnas.1509761112](https://www.pnas.org/doi/abs/10.1073/pnas.1509761112)
 
 ## Protein Structural Data
 
