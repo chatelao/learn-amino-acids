@@ -18,3 +18,10 @@ This document lists the sources and references used in the development of the Am
 ## Ribosome & Translation
 
 - **Jia, B., Wang, T., & Lehmann, J.** (2021). "Peptidyl transferase center decompaction and structural constraints during early protein elongation on the ribosome." *Scientific Reports*, 11(1). [https://www.nature.com/articles/s41598-021-02985-7](https://www.nature.com/articles/s41598-021-02985-7)
+
+## Protein Structural Data
+
+- **[PROTEINS.md](PROTEINS.md):** A comprehensive directory of human protein structures related to translation and amino acid metabolism, including links to PDB, UniProt, and Proteopedia.
+- **RCSB Protein Data Bank (PDB):** [https://www.rcsb.org/](https://www.rcsb.org/)
+- **UniProt Knowledgebase:** [https://www.uniprot.org/](https://www.uniprot.org/)
+- **Proteopedia:** [https://proteopedia.org/](https://proteopedia.org/)

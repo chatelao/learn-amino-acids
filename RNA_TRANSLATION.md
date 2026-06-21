@@ -123,15 +123,19 @@ Die Translation endet, wenn das Ribosom auf ein **Stop-Codon** (UAA, UAG oder UG
 
 ## Anhang: PDB-Referenzen
 
-Die folgenden PDB-Einträge bieten detaillierte strukturelle Einblicke in die beteiligten Makromoleküle:
+Die folgende Tabelle listet wichtige PDB-Strukturen auf, wobei der Schwerpunkt auf den menschlichen (H. sapiens) Faktoren liegt. Eine vollständige Liste aller menschlichen Translationsfaktoren und Aminoacyl-tRNA-Synthetasen finden Sie in [PROTEINS.md](PROTEINS.md).
 
 | Molekül / Komplex | Organismus | PDB ID | Link |
 | :--- | :--- | :--- | :--- |
-| **Ribosom (70S)** | *Thermus thermophilus* | 4V42 | [4V42](https://www.rcsb.org/structure/4V42) |
 | **Ribosom (80S)** | *Homo sapiens* | 4UG0 | [4UG0](https://www.rcsb.org/structure/4UG0) |
+| **Ribosom (70S)** | *Thermus thermophilus* | 4V42 | [4V42](https://www.rcsb.org/structure/4V42) |
 | **tRNA** | *Saccharomyces cerevisiae* | 1TRA | [1TRA](https://www.rcsb.org/structure/1TRA) |
+| **Initiationsfaktor eIF2** | *Homo sapiens* | 6I3M | [6I3M](https://www.rcsb.org/structure/6I3M) |
 | **Initiationsfaktor IF2** | *Thermus thermophilus* | 1Z9B | [1Z9B](https://www.rcsb.org/structure/1Z9B) |
+| **Elongationsfaktor eEF1A** | *Homo sapiens* | 5LZW | [5LZW](https://www.rcsb.org/structure/5LZW) |
 | **Elongationsfaktor EF-Tu** | *Escherichia coli* | 1EFT | [1EFT](https://www.rcsb.org/structure/1EFT) |
+| **Elongationsfaktor eEF2** | *Homo sapiens* | 4V6X | [4V6X](https://www.rcsb.org/structure/4V6X) |
 | **Elongationsfaktor EF-G** | *Thermus thermophilus* | 1FNM | [1FNM](https://www.rcsb.org/structure/1FNM) |
+| **Releasefaktor eRF1** | *Homo sapiens* | 5GAK | [5GAK](https://www.rcsb.org/structure/5GAK) |
 | **Releasefaktor RF1** | *Thermus thermophilus* | 1GQE | [1GQE](https://www.rcsb.org/structure/1GQE) |
 | **mRNA (Ausschnitt)** | *N/A* | 4V42 | [4V42](https://www.rcsb.org/structure/4V42) |
