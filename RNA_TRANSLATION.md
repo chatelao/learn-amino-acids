@@ -126,6 +126,9 @@ Die Translation endet, wenn das Ribosom auf ein **Stop-Codon** (UAA, UAG oder UG
 
 - **Jakubowski, H., and Flatt, P.** "Fundamentals of Biochemistry." Biology LibreTexts.
 - **Lodish et al.** "Molecular Cell Biology."
+- **Akkretionsmodell des Ribosoms:** Das Modell wurde von einer Forschungsgruppe des Georgia Institute of Technology um Loren D. Williams detailliert ausgearbeitet.
+    - **Petrov et al. (2014):** „Evolution of the ribosome at atomic resolution“, *PNAS*, 111(28). [https://www.pnas.org/doi/10.1073/pnas.1407205111](https://www.pnas.org/doi/10.1073/pnas.1407205111)
+    - **Petrov et al. (2015):** „History of the ribosome and the origin of translation“, *PNAS*, 112(50). [https://www.pnas.org/doi/abs/10.1073/pnas.1509761112](https://www.pnas.org/doi/abs/10.1073/pnas.1509761112)
 
 ## Anhang: PDB-Referenzen
 

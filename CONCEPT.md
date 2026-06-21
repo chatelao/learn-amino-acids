@@ -73,3 +73,5 @@ Die Daten werden zur Laufzeit direkt von Diensten wie PubChem oder der Protein D
 ## Quellen
 - **Jakubowski, H., and Flatt, P.** "3.1: Amino Acids and Peptides." *Fundamentals of Biochemistry*. Biology LibreTexts. [Link](https://bio.libretexts.org/Bookshelves/Biochemistry/Fundamentals_of_Biochemistry_(Jakubowski_and_Flatt)/01:_Unit_I-_Structure_and_Catalysis/03:_Amino_Acids_Peptides_and_Proteins/3.01:_Amino_Acids_and_Peptides)
 - **Kaiser et al. (2020).** Referenz für die Klassifizierung von Aminoacyl-tRNA-Synthetasen und tRNA-Erkennungselemente.
+- **Petrov et al. (2014).** "Evolution of the ribosome at atomic resolution." *PNAS*, 111(28).
+- **Petrov et al. (2015).** "History of the ribosome and the origin of translation." *PNAS*, 112(50).
