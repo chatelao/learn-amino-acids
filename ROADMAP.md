@@ -44,6 +44,7 @@
 - [x] aaRS- und tRNA-Daten aus Kaiser et al. (2020) integrieren (2026-06-18 04:54:10 UTC)
 - [x] Menschliche tRNA-Sequenzen und Sekundärstrukturen aus GtRNAdb abrufen (2026-06-18 19:55:00 UTC)
 - [x] Dokumentation zur RNA-Translation und Ribosomenstruktur erstellen (2026-06-20 12:00:00 UTC)
+- [x] PlantUML-Diagramme für Translation und Architektur repariert (2026-06-21 15:20:00 UTC)
 
 ### Phase 4: Visualisierungs-Engine ✅
 - [x] SVG-basierten 2D-Renderer implementieren (2026-06-14 20:00:00 UTC)

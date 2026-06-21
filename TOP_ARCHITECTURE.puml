@@ -1,4 +1,3 @@
-@startuml TOP_ARCHITECTURE
 !define RECTANGLE class
 
 package "Amino Acid Curriculum System" {
@@ -12,5 +11,3 @@ UI --> CCP : Content Retrieval Interface
 UI --> VE : Visualization Interface
 CCP --> DR : Data Access Interface
 VE --> DR : Data Access Interface
-
-@enduml
