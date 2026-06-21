@@ -7,9 +7,9 @@ This document provides a summary of the current research on the origin and evolu
 ### The Proto-Ribosome Theory
 The **Proto-Ribosome theory**, championed by **Ada Yonath** and colleagues, suggests that the modern ribosome evolved from a much smaller, primitive RNA apparatus.
 
-*   **The Symmetrical Pocket:** High-resolution crystal structures revealed a nearly perfectly symmetrical pocket at the core of the large ribosomal subunit. This pocket is formed by two L-shaped RNA motifs that are related by a pseudo-twofold rotation axis.
+*   **The Symmetrical Pocket:** High-resolution crystal structures (e.g., **PDB 1NKW**) revealed a nearly perfectly symmetrical pocket at the core of the large ribosomal subunit. This pocket is formed by two L-shaped RNA motifs that are related by a pseudo-twofold rotation axis.
 *   **The Ancestral Dimer:** The theory proposes that the proto-ribosome was a dimer of two identical (or very similar) RNA molecules. This dimer spontaneously formed a pocket capable of binding two amino-acid-carrying molecules (primitive tRNAs) and facilitating their fusion.
-*   **The Peptide Bond Machine:** In this model, the proto-ribosome's primary function was simply to link amino acids together, possibly producing random peptides before it was recruited by the genetic coding system.
+*   **The Peptide Bond Machine:** In this model, the proto-ribosome's primary function was simply to link amino acids together, possibly producing random peptides before it was recruited by the genetic coding system. The structural environment of this machine is captured in high detail in structures like **PDB 1JJ2**.
 
 ### Current PTC Knowledge
 The **Peptidyl Transferase Center (PTC)** is the catalytic heart of the modern ribosome, located deep within the large subunit (50S in bacteria, 60S in eukaryotes).
@@ -19,6 +19,21 @@ The **Peptidyl Transferase Center (PTC)** is the catalytic heart of the modern r
     *   **Proximity and Orientation:** Bringing the A-site amino group and P-site ester bond into the precise geometry needed for a nucleophilic attack.
     *   **Proton Shuttle:** The 2' hydroxyl group of the terminal adenosine (A76) of the P-site tRNA plays a critical role in a proton-transfer network.
 *   **Structural Conservation:** The core residues of the PTC (e.g., A2451, U2585 in *E. coli*) are among the most highly conserved sequences in all of biology, reflecting their ancient origin.
+
+## Structural Models (PDB)
+
+The following high-resolution structures were instrumental in the discovery of the symmetrical pocket and the development of the Proto-Ribosome theory.
+
+| Model / Complex | PDB ID | Source Organism | Description |
+| :--- | :--- | :--- | :--- |
+| **50S Ribosomal Subunit** | [1NKW](https://www.rcsb.org/structure/1NKW) | *Haloarcula marismortui* | Structure used to identify the symmetrical pocket at the PTC. |
+| **50S Ribosomal Subunit** | [1JJ2](https://www.rcsb.org/structure/1JJ2) | *Haloarcula marismortui* | High-resolution structure of the large subunit. |
+
+![50S Ribosomal Subunit (PDB 1NKW)](https://cdn.rcsb.org/images/structures/1nkw_assembly-1.jpeg)
+*Figure: The large ribosomal subunit (50S) of H. marismortui (PDB 1NKW), used for the identification of the symmetrical center.*
+
+![50S Ribosomal Subunit (PDB 1JJ2)](https://cdn.rcsb.org/images/structures/1jj2_assembly-1.jpeg)
+*Figure: Another high-resolution view of the 50S subunit (PDB 1JJ2) showing the chemical environment of the PTC.*
 
 ## Timeline of PTC & Proto-Ribosome Research
 
