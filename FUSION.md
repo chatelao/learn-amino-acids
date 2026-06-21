@@ -28,6 +28,9 @@ The "fusion" is a nucleophilic displacement reaction:
 *   **Nucleophile:** The $\alpha$-amino group ($-NH_2$) of the amino acid attached to the A-site tRNA.
 *   **Electrophile:** The carbonyl carbon ($C=O$) of the ester bond linking the polypeptide chain to the P-site tRNA.
 
+**Chemical Equation:**
+$$ \text{Peptidyl-tRNA}_n (\text{P-site}) + \text{Aminoacyl-tRNA} (\text{A-site}) \xrightarrow{\text{PTC}} \text{tRNA} (\text{P-site}) + \text{Peptidyl-tRNA}_{n+1} (\text{A-site}) $$
+
 **Mechanism:**
 1.  The $\alpha$-amino group of the A-site aminoacyl-tRNA performs a **nucleophilic attack** on the ester linkage of the P-site peptidyl-tRNA.
 2.  A tetrahedral intermediate is formed, stabilized by the ribosomal environment (specifically the 2' OH of the A76 residue of the tRNA itself and PTC residues).
@@ -38,6 +41,13 @@ The 23S rRNA facilitates this reaction through:
 *   **Proximity and Orientation:** Placing the reactants in the perfect geometry (within ~3 Å) for the attack.
 *   **Proton Shuttle:** rRNA residues and the 2' OH of the P-site tRNA's terminal adenosine (A76) participate in a proton-transfer network that facilitates the leaving of the deacylated tRNA.
 *   **Water exclusion:** The PTC creates a hydrophobic environment that prevents the premature hydrolysis of the peptidyl-tRNA bond (which only happens during termination).
+
+## Visual Representation
+
+```{plantuml}
+:caption: Peptidyl Transferase Reaction
+!include PTC_REACTION.puml
+```
 
 ## Outcome of Fusion
 
