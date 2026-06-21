@@ -1,4 +1,3 @@
-@startuml RNA_TRANSLATION_FLOW
 title Ablauf der RNA-Translation
 
 skinparam activity {
@@ -7,25 +6,25 @@ skinparam activity {
   BackgroundColor<<Termination>> LightCoral
 }
 
-(*) --> "Kleine Untereinheit bindet mRNA" <<Initiation>>
---> "Initiator-tRNA bindet an Start-Codon (AUG)" <<Initiation>>
---> "Große Untereinheit lagert sich an" <<Initiation>>
---> "Komplex bereit an P-Stelle" <<Initiation>>
+start
+
+:Kleine Untereinheit bindet mRNA; <<Initiation>>
+:Initiator-tRNA bindet an Start-Codon (AUG); <<Initiation>>
+:Große Untereinheit lagert sich an; <<Initiation>>
+:Komplex bereit an P-Stelle; <<Initiation>>
 
 partition Elongation {
-  "Aminoacyl-tRNA tritt in A-Stelle ein" <<Elongation>> --> "Peptidbindungsbildung (Peptidyltransferase)" <<Elongation>>
-  "Peptidbindungsbildung (Peptidyltransferase)" --> "Translokation (Ribosom rückt weiter)" <<Elongation>>
-  "Translokation (Ribosom rückt weiter)" --> "Entladene tRNA verlässt E-Stelle" <<Elongation>>
+  repeat
+    :Aminoacyl-tRNA tritt in A-Stelle ein; <<Elongation>>
+    :Peptidbindungsbildung (Peptidyltransferase); <<Elongation>>
+    :Translokation (Ribosom rückt weiter); <<Elongation>>
+    :Entladene tRNA verlässt E-Stelle; <<Elongation>>
+  repeat while (Stop-Codon erreicht?) is (nein)
+  -> ja;
 }
 
-"Entladene tRNA verlässt E-Stelle" --> if "Stop-Codon erreicht?" then
-  --> [nein] "Aminoacyl-tRNA tritt in A-Stelle ein"
-else
-  --> [ja] "Releasefaktor bindet an A-Stelle" <<Termination>>
-endif
+:Releasefaktor bindet an A-Stelle; <<Termination>>
+:Freisetzung der Polypeptidkette; <<Termination>>
+:Zerfall des Ribosoms in Untereinheiten; <<Termination>>
 
---> "Freisetzung der Polypeptidkette" <<Termination>>
---> "Zerfall des Ribosoms in Untereinheiten" <<Termination>>
---> (*)
-
-@enduml
+stop

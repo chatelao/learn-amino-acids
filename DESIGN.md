@@ -18,7 +18,11 @@ Die Anwendung ist als clientseitige Webanwendung strukturiert.
 
 ### Komponentendiagramm
 Die Architektur wird durch das folgende Diagramm visualisiert:
-![Top Architektur](./TOP_ARCHITECTURE.puml)
+
+```{plantuml}
+:caption: Top-Level-Architektur des Aminosäure-Lerncurriculums
+!include TOP_ARCHITECTURE.puml
+```
 
 ## Wichtige technische Entscheidung 1: 3D-Rendering-Framework
 Wir haben drei Optionen für die 3D-Visualisierung bewertet:

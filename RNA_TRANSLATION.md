@@ -43,7 +43,10 @@ Die mRNA trägt den genetischen Code in Form von Codons (Basentriplets).
 
 ## Ablauf der Translation
 
-![RNA Translation Ablauf](./RNA_TRANSLATION_FLOW.puml)
+```{plantuml}
+:caption: Ablauf der RNA-Translation
+!include RNA_TRANSLATION_FLOW.puml
+```
 
 ## Phasen der Translation
 

@@ -12,6 +12,7 @@ root_doc = 'index'
 
 extensions = [
     'myst_parser',
+    'sphinxcontrib.plantuml',
 ]
 
 templates_path = []
