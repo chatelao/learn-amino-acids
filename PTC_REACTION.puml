@@ -1,0 +1,32 @@
+@startuml
+title Peptidyl-Transferase-Reaktion (PTC)
+
+skinparam componentStyle rectangle
+
+package "PRE-Translokationszustand" {
+  [P-Stelle: Peptidyl-tRNA] as P_PRE
+  [A-Stelle: Aminoacyl-tRNA] as A_PRE
+
+  P_PRE -right-> A_PRE : "Nukleophiler Angriff\n(NH₂ -> C=O)"
+}
+
+node "Katalyse im PTC (Ribozym)" as PTC
+
+P_PRE ..> PTC
+A_PRE ..> PTC
+
+package "POST-Translokationszustand (nach Fusion)" {
+  [P-Stelle: Deacylierte tRNA] as P_POST
+  [A-Stelle: Peptidyl-tRNA (verlängert)] as A_POST
+}
+
+PTC -down-> P_POST
+PTC -down-> A_POST
+
+note right of A_POST
+  Die Peptidkette wurde
+  auf die neue Aminosäure
+  in der A-Stelle übertragen.
+end note
+
+@enduml

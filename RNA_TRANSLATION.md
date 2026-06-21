@@ -83,7 +83,13 @@ Die Polypeptidkette wird Aminosäure für Aminosäure verlängert.
 *   **Chemische Mechanismen:**
     *   **tRNA-Selektion:** EF-Tu (eEF1A) bindet GTP und bringt die Aminoacyl-tRNA zur A-Stelle. Die korrekte Codon-Anticodon-Paarung löst die **GTP-Hydrolyse** aus, woraufhin EF-Tu das Ribosom verlässt.
     *   **Peptidyltransferase-Reaktion:** Die 23S rRNA (Prokaryoten) bzw. 28S rRNA (Eukaryoten) fungiert als **Ribozym**. Die freie $\alpha$-Aminogruppe ($-\text{NH}_2$) der Aminosäure in der A-Stelle führt einen **nukleophilen Angriff** auf das Carbonyl-Kohlenstoffatom der Esterbindung zwischen der P-Stellen-tRNA und der wachsenden Peptidkette aus.
+        *   **Reaktionsgleichung:** $$ \text{Peptidyl-tRNA}_n (\text{P-Stelle}) + \text{Aminoacyl-tRNA} (\text{A-Stelle}) \xrightarrow{\text{PTC}} \text{tRNA} (\text{P-Stelle}) + \text{Peptidyl-tRNA}_{n+1} (\text{A-Stelle}) $$
     *   **Translokation:** Der Faktor EF-G (eEF2) katalysiert unter **GTP-Hydrolyse** die konformative Änderung des Ribosoms, die zur Bewegung der tRNAs und der mRNA führt.
+
+```{plantuml}
+:caption: Peptidyl-Transferase-Reaktion
+!include PTC_REACTION.puml
+```
 
 ![Elongationsfaktor EF-G (PDB 1FNM)](https://cdn.rcsb.org/images/structures/1fnm_assembly-1.jpeg)
 *Abbildung: EF-G, dessen Struktur die einer tRNA-EF-Tu-Komplexes imitiert ("Molecular Mimicry").*

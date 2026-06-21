@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { ccp, AminoAcidClass } from './services/ccp'
 import VisualizationEngine from './components/VisualizationEngine'
 import CodonWheel from './components/CodonWheel'
+import RendererPTC from './components/RendererPTC'
 
 const App = () => {
   const [selectedClass, setSelectedClass] = useState<AminoAcidClass | 'All'>('All');
@@ -167,6 +168,14 @@ const App = () => {
                 </div>
               </section>
             </div>
+
+            <section style={{ marginTop: '40px', border: '1px solid #eee', borderRadius: '8px', padding: '20px' }}>
+              <h3 style={{ marginTop: 0, textAlign: 'center' }}>Ribosomal Reaction: Peptide Bond Formation (PTC)</h3>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <RendererPTC aminoAcidName={selectedAA.name} />
+              </div>
+            </section>
+
             <CodonWheel selectedAA={selectedAA} />
           </article>
         ) : (
