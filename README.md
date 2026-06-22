@@ -87,4 +87,5 @@ This project utilizes scientific data and educational materials from:
 - [Jia et al. (2021): Peptidyl transferase center decompaction and structural constraints during early protein elongation on the ribosome](https://www.nature.com/articles/s41598-021-02985-7)
 - [Petrov et al. (2014): Evolution of the ribosome at atomic resolution](https://www.pnas.org/doi/10.1073/pnas.1407205111)
 - [Petrov et al. (2015): History of the ribosome and the origin of translation](https://www.pnas.org/doi/abs/10.1073/pnas.1509761112)
+- [RiboVision (Georgia Tech): Visualization for ribosomes and RNA–protein complexes](http://ribovision.chemistry.gatech.edu/)
 - Kaiser et al. (2020) for aaRS and tRNA metadata.
