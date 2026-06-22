@@ -9,7 +9,7 @@ Das Ribosom ist der zentrale Ort der Proteinsynthese. Es besteht aus zwei Untere
 *   **Kleine Untereinheit (40S bei Eukaryoten, 30S bei Prokaryoten):** Bindet die mRNA und stellt die korrekte Paarung zwischen mRNA-Codons und tRNA-Anticodons sicher.
     *   **Reaktionszentrum:** Das **Decoding Center** (Dekodierungszentrum) in der 16S/18S rRNA kontrolliert die Genauigkeit der Codon-Anticodon-Interaktion.
 *   **Große Untereinheit (60S bei Eukaryoten, 50S bei Prokaryoten):** Beinhaltet das katalytische Zentrum (Peptidyltransferase), das die Peptidbindungen zwischen den Aminosäuren knüpft.
-    *   **Reaktionszentrum:** Das **Peptidyltransferase-Zentrum (PTC)** tief in der 23S/28S rRNA katalysiert die Peptidbindung.
+    *   **Reaktionszentrum:** Das **Peptidyltransferase-Zentrum (PTC)** tief in der 23S/28S rRNA katalysiert die Peptidbindung (siehe [Domain V](DOMAIN_V_23S.md)).
 
 ![70S Ribosom (PDB 4V42)](https://cdn.rcsb.org/images/structures/4v42_assembly-1.jpeg)
 *Abbildung: Struktur des prokaryotischen 70S Ribosoms (mit mRNA und tRNAs).*
