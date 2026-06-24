@@ -1,188 +1,79 @@
-# Inhibitors of mRNA Translation
+# Inhibitors of mRNA Translation: Mechanisms and Examples
 
-This document provides a comprehensive list of 100+ substances that inhibit protein synthesis by targeting the ribosome, tRNA, or translation factors. These inhibitors range from clinical antibiotics and antifungal agents to potent biological toxins.
-
----
-
-## 1. Small Subunit (30S/40S) Inhibitors
-
-These substances bind to the small ribosomal subunit (30S in bacteria, 40S in eukaryotes), interfering with mRNA decoding, tRNA binding, or subunit assembly.
-
-### 1.1 Aminoglycosides (30S A-site / Decoding Center)
-Aminoglycosides induce mRNA misreading and inhibit translocation by binding to the 16S rRNA.
-1.  **Streptomycin** (The first aminoglycoside)
-2.  **Kanamycin**
-3.  **Tobramycin**
-4.  **Gentamicin**
-5.  **Neomycin**
-6.  **Amikacin** (Semi-synthetic derivative)
-7.  **Netilmicin**
-8.  **Sisomicin**
-9.  **Paromomycin** (Used for protozoal infections)
-10. **Spectinomycin** (Aminocyclitol; inhibits translocation without misreading)
-11. **Apramycin**
-12. **Hygromycin B** (Inhibits translocation and recycling)
-13. **Plazomicin** (Next-generation aminoglycoside)
-14. **Dibekacin**
-15. **Arbekacin**
-16. **Isepamicin**
-17. **Ribostamycin**
-18. **Butirosin**
-19. **Lividomycin**
-20. **Verdamicin**
-
-### 1.2 Tetracyclines and Glycylcyclines (30S A-site Blockers)
-Tetracyclines physically block the A-site, preventing the entry of aminoacyl-tRNA.
-21. **Tetracycline**
-22. **Chlortetracycline** (Aureomycin)
-23. **Oxytetracycline** (Terramycin)
-24. **Demyclocycline**
-25. **Rolitetracycline**
-26. **Lymecycline**
-27. **Meclocycline**
-28. **Methacycline**
-29. **Minocycline**
-30. **Doxycycline**
-31. **Tigecycline** (First-in-class glycylcycline)
-32. **Eravacycline** (Fluorocycline)
-33. **Omadacycline** (Aminomethylcycline)
-34. **Sarecycline**
-
-### 1.3 Other 30S/40S Inhibitors
-35. **Kasugamycin** (Inhibits initiation on 30S)
-36. **Pactamycin** (Potent inhibitor of initiation in both pro- and eukaryotes)
-37. **Negamycin** (Peptide-like antibiotic; induces misreading)
-38. **Edeine** (Inhibits 30S initiation)
-39. **Thermomycin**
-40. **Aurintricarboxylic acid (ATA)** (Inhibits protein-nucleic acid interactions)
+This document provides a structured and comprehensive overview of 100+ substances that inhibit mRNA translation. These range from clinically vital antibiotics to experimental compounds and lethal biological toxins, categorized by their specific mechanism of action (MoA).
 
 ---
 
-## 2. Large Subunit (50S/60S) Inhibitors
+## 1. Tabular Overview of Translation Inhibitors
 
-These substances target the Peptidyl Transferase Center (PTC), the Exit Tunnel (NPET), or the GTPase Associated Center (GAC).
+Each category includes 2-3 specific examples (totaling 100+ items across the document).
 
-### 2.1 Macrolides (NPET / Exit Tunnel Blockers)
-Macrolides bind near the PTC and block the exit tunnel, causing "peptidyl-tRNA drop-off."
-41. **Erythromycin**
-42. **Azithromycin** (Zithromax)
-43. **Clarithromycin** (Biaxin)
-44. **Roxithromycin**
-45. **Telithromycin** (Ketolide)
-46. **Solithromycin** (Fluoroketolide)
-47. **Josamycin**
-48. **Spiramycin**
-49. **Oleandomycin**
-50. **Tylosin** (Veterinary use)
-51. **Tilmicosin** (Veterinary use)
-52. **Midecamycin**
-53. **Kitasamycin**
-54. **Fidaxomicin** (Primarily inhibits RNA polymerase but has secondary effects)
-55. **Cethromycin**
-
-### 2.2 Lincosamides (PTC A- and P-site)
-56. **Lincomycin**
-57. **Clindamycin**
-58. **Pirlimycin**
-
-### 2.3 Phenicols (PTC A-site)
-59. **Chloramphenicol**
-60. **Thiamphenicol**
-61. **Florfenicol**
-
-### 2.4 Oxazolidinones (PTC A-site / Initiation)
-62. **Linezolid** (Zyvox)
-63. **Tedizolid**
-64. **Posizolid**
-65. **Radezolid**
-66. **Cycloserine** (Indirectly affects peptidoglycan but has translational links)
-67. **Eperezolid**
-
-### 2.5 Pleuromutilins (PTC Core)
-68. **Tiamulin**
-69. **Valnemulin**
-70. **Lefamulin** (First for human systemic use)
-71. **Retapamulin** (Topical)
-
-### 2.6 Streptogramins (Synergistic PTC/NPET)
-72. **Quinupristin** (Group B)
-73. **Dalfopristin** (Group A)
-74. **Pristinamycin IA / IIA**
-75. **Virginiamycin M1 / S1**
-
-### 2.7 Other 50S/60S Inhibitors
-76. **Cycloheximide** (Glutarimide; inhibits eukaryotic translocation on 60S)
-77. **Anisomycin** (Inhibits PTC in eukaryotes and archaea)
-78. **Sparsomycin** (Universal inhibitor of peptidyl transfer)
-79. **Blasticidin S** (Inhibits peptide bond formation)
-80. **Gougerotin**
-81. **Amicetin**
-82. **Micrococcin** (Binds the GAC/L11 stalk)
-83. **Thiostrepton** (Binds the GAC; inhibits factor recruitment)
-84. **Siomycin**
-85. **Nosiheptide**
+| Inhibition Mechanism | Target Site / Target Factor | 2-3 Representative Examples |
+| :--- | :--- | :--- |
+| **Inhibition of 30S Initiation** | Small subunit P-site | Kasugamycin, Edeine, Thermomycin |
+| **Inhibition of 40S Initiation** | mRNA binding path | Pactamycin, Aurintricarboxylic acid, Sinefungin |
+| **Cap-Binding Inhibition** | eIF4E (Eukaryotes) | Ribavirin, 4EGI-1, 4E1RCat |
+| **eIF4A Helicase Inhibition** | eIF4A (RNA unwinding) | Hippuristanol, Pateamine A, Rocaglates (Silvestrol) |
+| **Ternary Complex Blockage** | eIF2·GTP·tRNA-Met | Salubrinal, Guanabenz, ISRIB |
+| **Induction of 30S Misreading** | 16S rRNA Decoding Center | Streptomycin, Gentamicin, Tobramycin |
+| **Induction of 30S Misreading (II)** | 16S rRNA (h44) | Kanamycin, Amikacin, Neomycin |
+| **Blockage of 30S A-site** | 30S A-site (Steric) | Tetracycline, Doxycycline, Minocycline |
+| **Blockage of 30S A-site (Glycyls)** | 30S A-site (High affinity) | Tigecycline, Eravacycline, Omadacycline |
+| **Inhibition of Subunit Joining** | 30S/50S Interface | Aminoglycosides (Paromomycin), Linezolid, Pactamycin |
+| **Inhibition of PTC A-site** | PTC A-site (Phenicols) | Chloramphenicol, Thiamphenicol, Florfenicol |
+| **Inhibition of PTC A-site (Oxazos)** | PTC A-site (Oxazolidinones) | Linezolid, Tedizolid, Radezolid |
+| **Inhibition of PTC (Core)** | PTC (Induced fit) | Lefamulin, Tiamulin, Valnemulin |
+| **Inhibition of PTC (Universal)** | PTC (Catalytic core) | Sparsomycin, Blasticidin S, Gougerotin |
+| **Blockage of NPET (14-mem)** | Exit Tunnel (H75) | Erythromycin, Clarithromycin, Roxithromycin |
+| **Blockage of NPET (15-mem)** | Exit Tunnel (H75) | Azithromycin, Gamithromycin, Tulathromycin |
+| **Blockage of NPET (16-mem)** | Exit Tunnel (H75) | Josamycin, Spiramycin, Tylosin |
+| **Blockage of NPET (Ketolides)** | Exit Tunnel (Extended) | Telithromycin, Solithromycin, Cethromycin |
+| **Premature Chain Release** | PTC (tRNA mimicry) | Puromycin, Amicetin, Gougerotin |
+| **Inhibition of 50S Translocation** | 50S Subunit | Spectinomycin, Hygromycin B, Viomycin |
+| **Inhibition of 60S Translocation** | 60S Subunit | Cycloheximide, Anisomycin, Lactimidomycin |
+| **Inhibition of GAC Function** | GTPase Associated Center | Thiostrepton, Micrococcin, Siomycin |
+| **RIP-I (Depurination)** | SRL (Adenine removal) | Saporin, PAP (Pokeweed), Gelonin |
+| **RIP-II (Depurination)** | SRL (Adenine removal) | Ricin, Abrin, Shiga Toxin |
+| **Ribotoxins (Cleavage)** | SRL (Backbone cleavage) | Alpha-Sarcin, Mitogillin, Restrictocin |
+| **Inhibition of EF-Tu Binding** | EF-Tu (Prokaryotes) | Pulvomycin, GE2270A, Amythiamicin |
+| **Prevention of EF-Tu Release** | EF-Tu (GTP-locked) | Kirromycin, Enacyloxin, Efrotomycin |
+| **Stabilization of EF-G** | EF-G (GDP-locked) | Fusidic Acid, Helvolic Acid, Viridominic Acid |
+| **Inhibition of eEF2** | Fungal eEF2 | Sordarin, Azasordarin, Moracin |
+| **Inactivation of eEF2 (ADP-R)** | eEF2 (Diphthamide) | Diphtheria Toxin, Exotoxin A, Cholix Toxin |
+| **Inhibition of eEF1A** | eEF1A (Eukaryotes) | Didemnin B, Plitidepsin, Ternatin |
+| **aaRS Inhibition (Ile)** | Isoleucyl-tRNA Synthetase | Mupirocin, Pseudomonic acid, Thiomarinol |
+| **aaRS Inhibition (Leu)** | Leucyl-tRNA Synthetase | Tavaborole, Granaticin, Kalimantacin |
+| **aaRS Inhibition (Thr/Pro)** | Thr/Pro-tRNA Synthetase | Borrelidin, Halofuginone, Febrifugine |
+| **Termination Blockage** | Release Factors (RF1/2) | Apidaecin, Oncocin, Tur1 (PrAMPs) |
+| **Ribosome Recycling Inhibition** | RRF / Subunit dissociation | Negamycin, Hygromycin B, Spectinomycin |
+| **Ribosome Biogenesis Inhibition** | rRNA processing | 5-Fluorouracil, Actinomycin D, CX-5461 |
 
 ---
 
-## 3. Ribosome-Inactivating Proteins (RIPs)
+## 2. Quantitative Summary: The "100+ Things"
 
-RIPs are toxins that enzymatically damage the ribosome, usually by removing a specific adenine (depurination) from the Sarcin/Ricin Loop (SRL).
+The list above represents 37 distinct mechanisms. Below is a supplementary count of specific chemical and biological inhibitors mentioned throughout the curriculum's documentation:
 
-86. **Ricin** (From castor beans; Type II RIP)
-87. **Abrin** (From rosary peas; extremely potent)
-88. **Shiga Toxin** (From *Shigella dysenteriae*)
-89. **Shiga-like Toxins (Vero toxins)** (From EHEC *E. coli*)
-90. **Saporin** (From soapwort; Type I RIP)
-91. **Pokeweed Antiviral Protein (PAP)**
-92. **Gelonin**
-93. **Momordin**
-94. **Trichosanthin**
-95. **Alpha-Sarcin** (A ribotoxin that cleaves the SRL backbone)
+1.  **Aminoglycosides (20+):** Streptomycin, Kanamycin, Tobramycin, Gentamicin, Neomycin, Amikacin, Netilmicin, Sisomicin, Paromomycin, Spectinomycin, Apramycin, Hygromycin B, Plazomicin, Dibekacin, Arbekacin, Isepamicin, Ribostamycin, Butirosin, Lividomycin, Verdamicin.
+2.  **Tetracyclines/Glycyls (15+):** Tetracycline, Chlortetracycline, Oxytetracycline, Demeclocycline, Rolitetracycline, Lymecycline, Meclocycline, Methacycline, Minocycline, Doxycycline, Tigecycline, Eravacycline, Omadacycline, Sarecycline, Apicycline.
+3.  **Macrolides/Ketolides (20+):** Erythromycin, Azithromycin, Clarithromycin, Roxithromycin, Telithromycin, Solithromycin, Josamycin, Spiramycin, Oleandomycin, Tylosin, Tilmicosin, Midecamycin, Kitasamycin, Cethromycin, Fidaxomicin, Flurithromycin, Dirithromycin, Tulathromycin, Gamithromycin, Tildipirosin.
+4.  **Phenicols/Lincosamides (6+):** Chloramphenicol, Thiamphenicol, Florfenicol, Lincomycin, Clindamycin, Pirlimycin.
+5.  **Oxazolidinones/Mutilins (10+):** Linezolid, Tedizolid, Posizolid, Radezolid, Eperezolid, Tiamulin, Valnemulin, Lefamulin, Retapamulin, Azamulin.
+6.  **RIPs and Toxins (15+):** Ricin, Abrin, Shiga Toxin, Shiga-like Toxin (Vero), Saporin, PAP, Gelonin, Momordin, Trichosanthin, Alpha-Sarcin, Mitogillin, Restrictocin, Diphtheria Toxin, Exotoxin A, Cholix Toxin.
+7.  **aaRS/Factor/Misc (15+):** Puromycin, Mupirocin, Borrelidin, Granaticin, Tavaborole, Indolmycin, Microcin C, Fusidic acid, Kirromycin, Pulvomycin, Sordarin, Didemnin B, Ternatin, Apidaecin, Oncocin.
 
 ---
 
-## 4. tRNA, aaRS, and Mimicry Inhibitors
+## 3. Deep-Dive: Representative Mechanisms
 
-These substances interfere with the "charging" of tRNA or mimic tRNA structure to "poison" the ribosome.
+### 3.1 The "Stalled Motor" (Fusidic Acid)
+Fusidic acid inhibits translation by binding to **EF-G** after it has catalyzed translocation. It prevents the release of EF-G-GDP from the ribosome. This effectively "jams" the ribosome machinery, as no new aminoacyl-tRNAs can enter the A-site while EF-G is still bound.
 
-96. **Puromycin** (Tyrosinyl-tRNA mimic; causes premature chain termination)
-97. **Mupirocin** (Pseudomonic acid; inhibits Isoleucyl-tRNA synthetase)
-98. **Borrelidin** (Inhibits Threonyl-tRNA synthetase)
-99. **Granaticin** (Inhibits Leucyl-tRNA synthetase)
-100. **Ochratoxin A** (Mycotoxin; inhibits Phenylalanyl-tRNA synthetase)
-101. **Indolmycin** (Inhibits Tryptophanyl-tRNA synthetase)
-102. **AN2690 (Tavaborole)** (Antifungal; inhibits Leucyl-tRNA synthetase via boron-tRNA adduct)
-103. **Microcin C** (Pro-drug; inhibits Aspartyl-tRNA synthetase)
+### 3.2 The "Decoy" (Puromycin)
+Puromycin is an analog of the 3' end of tyrosinyl-tRNA. It enters the ribosomal A-site and participates in the peptidyltransferase reaction. However, because it lacks the tRNA body, the growing peptide chain is transferred to puromycin and released from the ribosome, resulting in truncated, inactive proteins.
+
+### 3.3 The "Master Switch" (ISRIB)
+In eukaryotes, the Integrated Stress Response (ISR) inhibits translation by phosphorylating eIF2. **ISRIB** (Integrated Stress Response InhiBitor) is a small molecule that reverses this effect by promoting the assembly of eIF2B (the GEF for eIF2), thereby maintaining protein synthesis even under stress conditions.
 
 ---
-
-## 5. Translation Factor Inhibitors
-
-These substances target the proteins that assist the ribosome (IFs, EFs, RFs).
-
-104. **Fusidic Acid** (Stabilizes EF-G-GDP complex on the ribosome, preventing turnover)
-105. **Kirromycin** (Stabilizes EF-Tu-GDP complex on the ribosome)
-106. **Pulvomycin** (Prevents EF-Tu from binding aminoacyl-tRNA)
-107. **Diphtheria Toxin** (ADP-ribosylates eukaryotic eEF-2, inactivating it)
-108. **Exotoxin A** (From *Pseudomonas*; same mechanism as Diphtheria toxin)
-109. **Sordarin** (Inhibits fungal eEF-2)
-110. **Didemnin B** (Inhibits eukaryotic eEF-1)
-111. **Ternatin** (Targets eEF1A)
-
----
-
-## Summary Table of Mechanism of Action
-
-| Mechanism | Representative Inhibitors |
-| :--- | :--- |
-| **Misreading / Decoding** | Aminoglycosides (Gentamicin, Streptomycin) |
-| **A-site Blocking** | Tetracyclines, Phenicols |
-| **Peptidyl Transfer (PTC)** | Pleuromutilins, Lincosamides, Sparsomycin |
-| **Translocation** | EF-G inhibitors (Fusidic acid), Cycloheximide |
-| **NPET Blocking** | Macrolides (Erythromycin, Azithromycin) |
-| **SRL Damage (RIPs)** | Ricin, Shiga Toxin, Alpha-Sarcin |
-| **aaRS Inhibition** | Mupirocin, Tavaborole |
-| **Premature Chain Release** | Puromycin |
-
----
-*This list is part of the [Amino Acid Curriculum](index.md) documentation.*
+*This list is part of the [Amino Acid Curriculum](index.md) documentation. For more on the Peptidyl Transferase Center, see [DOMAIN_V_23S.md](DOMAIN_V_23S.md).*
