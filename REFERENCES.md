@@ -27,3 +27,9 @@ This document lists the sources and references used in the development of the Am
 - **RCSB Protein Data Bank (PDB):** [https://www.rcsb.org/](https://www.rcsb.org/)
 - **UniProt Knowledgebase:** [https://www.uniprot.org/](https://www.uniprot.org/)
 - **Proteopedia:** [https://proteopedia.org/](https://proteopedia.org/)
+
+## Inhibitors & Pharmacology
+
+- **Wilson, D. N. (2014).** "Ribosome-targeting antibiotics and mechanisms of bacterial resistance." *Nature Reviews Microbiology*, 12(1):35-48.
+- **Vázquez-Laslop, N., & Mankin, A. S. (2018).** "How Antibiotics Hijack the Ribosome to Exert Their Effect." *Cell*, 172(6):1186-1194.
+- **Schmeing, T. M., & Ramakrishnan, V. (2009).** "What structures reveal about the mechanisms of protein synthesis." *Nature*, 459(7250):1234-1242.
