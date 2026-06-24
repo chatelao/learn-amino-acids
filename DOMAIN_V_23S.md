@@ -37,6 +37,35 @@ While Domain V contains hundreds of nucleotides, a select few are the primary ac
 *   **U2506:** Critical for the environment of the P-site and involved in the discrimination of correct substrates. It acts as a "sensor" for the state of the tRNA.
 *   **A2058/A2059:** Located in the exit tunnel (H75). These residues are the "gatekeepers" of the tunnel and the primary binding site for macrolide antibiotics.
 
+### 1.4 ASCII Roadkill-Diagramm
+Das folgende Diagramm zeigt die sekundäre „Roadkill“-Struktur von Domäne V. Es verdeutlicht die Anordnung der Helices (H73-H93) um die zentrale Schleife des PTC (Peptidyl-Transferase-Zentrum).
+
+```text
+                [H89]
+               A-Loop
+               (U2552)
+                  |
+                  |
+        /---------+---------\
+       /         PTC         \
+   [H80]      Zentrale       [H93]
+  P-Loop      Schleife       Term.
+  (G2252)     (A2451)          |
+     |        (U2585)          |
+     |           |             |
+      \      Kernbereich      /
+       \--- H90/H91/H92 ---/
+                 |
+                 |
+             [H74/H75]
+           NPET-Tunnel
+           (A2058/59)
+                 |
+                 |
+               [H73]
+               Basis
+```
+
 ---
 
 ## 2. The Peptidyl Transferase Mechanism
