@@ -26,6 +26,7 @@ Domain V consists of a series of helices that provide both the structural scaffo
 | **H91** | Core | Interacts with H89 and H92 to stabilize the A-site environment and coordinate with the L11 stalk and Factor Binding Site. |
 | **H92** | Core | Part of the highly conserved inner circle of the PTC; directly involved in substrate orientation and the "Proton Shuttle." |
 | **H93** | Termination | Involved in interactions that facilitate the termination of translation and the entry of release factors (RFs). |
+| **H95** | **SRL** | The **Sarcin/Ricin Loop**; essential for stimulating GTP hydrolysis in translational GTPases (EF-Tu, EF-G). |
 
 ### 1.3 The Catalytic Nucleotides (E. coli numbering)
 While Domain V contains hundreds of nucleotides, a select few are the primary actors in the chemistry of life. These residues are conserved in almost every organism ever sequenced:

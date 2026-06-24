@@ -35,6 +35,8 @@ Facilitate the assembly of the ribosome on the mRNA.
 | **eIF2 Complex** | [6I3M](https://www.rcsb.org/structure/6I3M) | [Multiple] | [eIF2](https://proteopedia.org/wiki/index.php/EIF2) |
 | **eIF3 Complex** | [5W6G](https://www.rcsb.org/structure/5W6G) | [Multiple] | [eIF3](https://proteopedia.org/wiki/index.php/EIF3) |
 | **eIF4E (Cap-binding)** | [1WKW](https://www.rcsb.org/structure/1WKW) | [P06730](https://www.uniprot.org/uniprotkb/P06730) | [eIF4E](https://proteopedia.org/wiki/index.php/EIF4E) |
+| **eIF4A (Helicase)** | [2VSO](https://www.rcsb.org/structure/2VSO) | [P60842](https://www.uniprot.org/uniprotkb/P60842) | [eIF4A](https://proteopedia.org/wiki/index.php/EIF4A) |
+| **eIF4G (Scaffold)** | [5ZMW](https://www.rcsb.org/structure/5ZMW) | [Q04637](https://www.uniprot.org/uniprotkb/Q04637) | [eIF4G](https://proteopedia.org/wiki/index.php/EIF4G) |
 
 ### Elongation Factors (eEFs)
 Drive the addition of amino acids to the growing peptide chain.
@@ -51,6 +53,14 @@ Recognize stop codons and trigger the release of the completed protein.
 | :--- | :--- | :--- | :--- |
 | **eRF1** | [5GAK](https://www.rcsb.org/structure/5GAK) | [P62495](https://www.uniprot.org/uniprotkb/P62495) | [eRF1](https://proteopedia.org/wiki/index.php/ERF1) |
 | **eRF3** | [5GAK](https://www.rcsb.org/structure/5GAK) | [P48272](https://www.uniprot.org/uniprotkb/P48272) | [eRF3](https://proteopedia.org/wiki/index.php/ERF3) |
+
+### Recycling Factors
+Mediate the dissociation of the ribosome subunits.
+
+| Factor | PDB ID | UniProt | Proteopedia |
+| :--- | :--- | :--- | :--- |
+| **ABCE1** | [5ZMU](https://www.rcsb.org/structure/5ZMU) | [P61221](https://www.uniprot.org/uniprotkb/P61221) | [ABCE1](https://proteopedia.org/wiki/index.php/ABCE1) |
+| **MRRF (Mito RRF)** | [1Y6G](https://www.rcsb.org/structure/1Y6G) | [Q9P0U0](https://www.uniprot.org/uniprotkb/Q9P0U0) | [RRF](https://proteopedia.org/wiki/index.php/Ribosome_recycling_factor) |
 
 ---
 

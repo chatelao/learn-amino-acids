@@ -10,6 +10,8 @@ Das Ribosom ist der zentrale Ort der Proteinsynthese. Es besteht aus zwei Untere
     *   **Reaktionszentrum:** Das **Decoding Center** (Dekodierungszentrum) in der 16S/18S rRNA kontrolliert die Genauigkeit der Codon-Anticodon-Interaktion.
 *   **Große Untereinheit (60S bei Eukaryoten, 50S bei Prokaryoten):** Beinhaltet das katalytische Zentrum (Peptidyltransferase), das die Peptidbindungen zwischen den Aminosäuren knüpft.
     *   **Reaktionszentrum:** Das **Peptidyltransferase-Zentrum (PTC)** tief in der 23S/28S rRNA katalysiert die Peptidbindung (siehe [Domain V](DOMAIN_V_23S.md)).
+    *   **GTPase Associated Center (GAC):** Ein strukturelles Element (H42-H44/L11-Stalk), das für die Rekrutierung und Aktivierung von Translations-GTPasen (EF-Tu, EF-G) verantwortlich ist.
+    *   **Sarcin/Ricin Loop (SRL):** Ein hochkonservierter RNA-Loop (H95), der für die Stimulation der GTP-Hydrolyse in Translationsfaktoren essentiell ist.
 
 ![70S Ribosom (PDB 4V42)](https://cdn.rcsb.org/images/structures/4v42_assembly-1.jpeg)
 *Abbildung: Struktur des prokaryotischen 70S Ribosoms (mit mRNA und tRNAs).*
@@ -55,6 +57,7 @@ Die mRNA trägt den genetischen Code in Form von Codons (Basentriplets).
 Der Prozess beginnt an einem spezifischen **Start-Codon** (meist AUG, das für Methionin codiert).
 
 *   **Beteiligte Proteine:** Initiationsfaktoren (eIFs bei Eukaryoten, IFs bei Prokaryoten).
+    *   **eIF4F-Komplex:** Besteht aus **eIF4E** (Cap-Bindung), **eIF4G** (Gerüstprotein) und **eIF4A** (RNA-Helikase). Er bereitet die mRNA für die Bindung an die 40S-Untereinheit vor.
     *   **IF2 (eIF2):** Eine GTPase, die die Initiator-tRNA zum Ribosom bringt.
 *   **Reaktionszentren:**
     *   **G-Domäne (IF2):** Ort der GTP-Hydrolyse, die die Konformationsänderung für den Zusammenbau des Ribosoms bewirkt.
@@ -112,7 +115,17 @@ Die Translation endet, wenn das Ribosom auf ein **Stop-Codon** (UAA, UAG oder UG
 *Abbildung: Releasefaktor RF1.*
 
 *   **Energie:** Der Prozess wird durch die **GTP-Hydrolyse** durch den Faktor RF3 (oder eRF3) abgeschlossen, was die Dissoziation des Komplexes einleitet.
-*   **Ablauf:** Da es keine tRNAs für Stop-Codons gibt, binden Releasefaktoren an die A-Stelle. Dies führt zur hydrolytischen Freisetzung der Polypeptidkette und zum Zerfall des Ribosoms.
+
+### 4. Recycling (Wiederverwertung)
+
+Nach der Freisetzung des Proteins muss das Ribosom in seine Untereinheiten zerlegt werden, um für eine neue mRNA bereit zu sein.
+
+*   **Beteiligte Proteine:** Ribosome Recycling Factor (**RRF**) und EF-G (bei Prokaryoten) bzw. eIF1, eIF1A, eIF3 und ABCE1 (bei Eukaryoten).
+*   **Ablauf:** RRF bindet an die A-Stelle und rekrutiert EF-G. Unter GTP-Verbrauch werden die Untereinheiten und die mRNA getrennt.
+
+## Mitochondriale Translation
+
+Mitochondrien besitzen ihren eigenen Translationsapparat, der eher dem von Bakterien ähnelt (70S-Ribosomen), aber einzigartige Proteine und rRNA-Strukturen aufweist. Dies erklärt, warum einige Antibiotika (wie Chloramphenicol) mitochondriale Nebenwirkungen haben können.
 
 ## Zusammenfassung der beteiligten Faktoren
 
