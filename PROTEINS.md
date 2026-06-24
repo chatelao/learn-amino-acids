@@ -54,6 +54,16 @@ Recognize stop codons and trigger the release of the completed protein.
 
 ---
 
+## Human tRNA Maturation Factors
+
+These enzymes are responsible for the post-transcriptional modification and maturation of tRNAs.
+
+| Factor | PDB ID | UniProt |
+| :--- | :--- | :--- |
+| **TRNT1 (CCA-adding enzyme)** | [4X4W](https://www.rcsb.org/structure/4X4W) | [Q96Q11](https://www.uniprot.org/uniprotkb/Q96Q11) |
+
+---
+
 ## Human Aminoacyl-tRNA Synthetases (Cytosolic)
 
 These enzymes are responsible for "charging" tRNAs with their correct amino acids.
