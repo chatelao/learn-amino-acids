@@ -30,7 +30,7 @@ Das Ribosom besitzt drei spezifische Bindungsstellen für tRNAs:
 Die tRNA fungiert als Adapter zwischen mRNA und Aminosäure.
 
 *   **Anticodon-Schleife:** Erkennt das mRNA-Codon durch komplementäre Basenpaarung.
-*   **Akzeptorarm (3'-Ende):** Besitzt die Sequenz **CCA**, an deren terminalem Adenosin die Aminosäure via Esterbindung gebunden ist.
+*   **Akzeptorarm (3'-Ende):** Besitzt die Sequenz **CCA**, an deren terminalem Adenosin die Aminosäure via Esterbindung gebunden ist. Die CCA-Sequenz wird post-transkriptionell durch das Enzym **TRNT1** (CCA-adding enzyme, PDB [4X4W](https://www.rcsb.org/structure/4X4W)) angehängt.
 
 ![tRNA (PDB 1TRA)](https://cdn.rcsb.org/images/structures/1tra_assembly-1.jpeg)
 *Abbildung: Tertiärstruktur (L-Form) der tRNA.*
@@ -148,3 +148,4 @@ Die folgende Tabelle listet wichtige PDB-Strukturen auf, wobei der Schwerpunkt a
 | **Releasefaktor eRF1** | *Homo sapiens* | 5GAK | [5GAK](https://www.rcsb.org/structure/5GAK) |
 | **Releasefaktor RF1** | *Thermus thermophilus* | 1GQE | [1GQE](https://www.rcsb.org/structure/1GQE) |
 | **mRNA (Ausschnitt)** | *N/A* | 4V42 | [4V42](https://www.rcsb.org/structure/4V42) |
+| **CCA-Adding Enzym (TRNT1)** | *Homo sapiens* | 4X4W | [4X4W](https://www.rcsb.org/structure/4X4W) |
